@@ -3,6 +3,7 @@ function Home() {
 		<>
 			<header className="hero">
 				<h1>Matt Creates Things</h1>
+                <p>I do some stuff</p>
 			</header>
 			<section>
 				<h2>Skills</h2>
@@ -24,15 +25,15 @@ function Home() {
                 </ul>
 			</section>
             <section>
-				<h2>Currently Learning</h2>
+				<h2>Currently Learning...</h2>
 				<ul>
                     <li>Next.js</li>
                 </ul>
 			</section>
             <section>
-				<h2>Currently Working On</h2>
+				<h2>Currently Improving...</h2>
 				<ul>
-                    <li>A basic Typescript synthesiser</li>
+                    <li>My Typescript skillsr</li>
                 </ul>
 			</section>
 			<section>
@@ -46,9 +47,14 @@ function Home() {
 			<section>
 				<h2>Additional Info</h2>
 				<p>Paragraph</p>
+                <h2>Currently...</h2>
+                <ul>
+                    <li>listening to Hania Rani</li>
+                    <li>reading Dawn by Octavia E. Butler</li>
+                </ul>
 			</section>
 			<footer><a target="_blank" href="">LinkedIn</a> email
-                <br/>App made using React.js, hosted by GitHub
+                <br/>App made using React.js and hosted by GitHub pages
             </footer>
 		</>
 	);
