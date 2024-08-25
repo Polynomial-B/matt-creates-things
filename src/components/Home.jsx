@@ -7,7 +7,7 @@ function Home() {
 			<header id="splash">
 				<h1 translate="no">Matt<br/>Lamb</h1>
                 <div className="splash-container">
-                <img src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg" alt=""/>
+                <img src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg" alt="" draggable="false"/>
                 {/* <figcaption>&copy; Matt Lamb {new Date().getFullYear()}</figcaption> */}
                 </div>
 			</header>

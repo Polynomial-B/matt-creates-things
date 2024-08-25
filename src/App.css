@@ -23,6 +23,7 @@ ul {
     border-radius: 10%;
     -webkit-user-drag: none;
     user-drag: none;
+    pointer-events: none;
 }
 
 #splash figcaption {
