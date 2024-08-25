@@ -1,12 +1,15 @@
+
 import '../App.css'
 
 
 function Home() {
+
+
 	return (
 		<>
 			<header id="splash">
-				<h1 translate="no">Matt<br/>Lamb</h1>
-                <div className="splash-container">
+				<h1 translate="no">MATT<br/>LAMB</h1>
+                <div id="splash-container">
                 <img src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg" alt="" draggable="false"/>
                 {/* <figcaption>&copy; Matt Lamb {new Date().getFullYear()}</figcaption> */}
                 </div>
@@ -42,7 +45,7 @@ function Home() {
                 </ul>
 			</section>
 			<section>
-				<h2>Projects</h2>
+				<h2>Past Projects</h2>
 				<h3>SynthSounds | 10 Days | Solo Project</h3>
                 <span>GIF, slow enough to see, slow down on hover?</span>
                 <p>React.js, Tone.js, Heroku, Django, PostgreSQL</p>

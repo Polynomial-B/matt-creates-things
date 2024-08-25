@@ -1,7 +1,8 @@
 
 h1 {
-    font-size: clamp(4rem, 15vw, 7rem);
+    font-size: clamp(5rem, 17vw, 7rem);
     color: greenyellow;
+    align-self: center;
 }
 
 ul {
@@ -14,18 +15,21 @@ ul {
     display: flex;
     margin: 50px 0 0;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 10vw;
     user-select: none;
 }
 
 #splash img {
-    width: 50vw;
+    width: 90vw;
     border-radius: 10%;
     -webkit-user-drag: none;
     user-drag: none;
     pointer-events: none;
+    max-width: 300px;
 }
 
-#splash figcaption {
-    display: block;
+#splash-container {
+    width: auto;
+    align-content: center;
 }
