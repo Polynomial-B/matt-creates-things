@@ -5,13 +5,15 @@ function Home() {
 	return (
 		<>
 			<header id="splash">
-				<h1 translate="no">Matt Lamb</h1>
+				<h1 translate="no">Matt<br/>Lamb</h1>
+                <div className="splash-container">
                 <img src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg" alt=""/>
-                <figcaption>&copy; Matt Lamb {new Date().getFullYear()}</figcaption>
-                <p>A full-stack web developer, interested in building creative/innovative/smart/impactful applications.</p>
+                {/* <figcaption>&copy; Matt Lamb {new Date().getFullYear()}</figcaption> */}
+                </div>
 			</header>
             <section>
                 <h2>About Me</h2>
+                <p>A full-stack web developer, interested in building creative/innovative/smart/impactful applications.</p>
                 <p>{"I've always had an interest in functionality. My professional journey has allowed me to engage deeply with the welfare state, espresso, all-weather lifeboats, cartography and linguistics. I love learning and deepening my understanding, especially when I can apply it practically. I'm drawn to Software Engineering for its vast applications and creativity. Most of all, I find it immensely satisfying to build something and understand how it works."}</p>
                 <h2>Skills</h2>
                 Tech Skills
@@ -80,10 +82,10 @@ function Home() {
                         <a target="_blank" href="https://github.com/Polynomial-B" rel="noopener noreferrer">GitHub</a>
                     </li>
                     <li>
-                        <a target="_blank" href="mailto:m.lamb.dev@gmail.com" rel="noopener noreferrer">Contact</a>
+                        <a target="_blank" href="mailto:m.lamb.dev@gmail.com" rel="noopener noreferrer">m.lamb.dev@gmail.com</a>
                     </li>
                 </ul>
-                App made using React.js | 2024
+                App made using React.js
             </footer>
 		</>
 	);

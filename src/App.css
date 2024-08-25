@@ -10,6 +10,21 @@ ul {
     margin: 0;
 }
 
+#splash {
+    display: flex;
+    margin: 50px 0 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    user-select: none;
+}
+
 #splash img {
     width: 50vw;
+    border-radius: 10%;
+    -webkit-user-drag: none;
+    user-drag: none;
+}
+
+#splash figcaption {
+    display: block;
 }

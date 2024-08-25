@@ -1,8 +1,10 @@
+import '../Nav.css'
+
 function Nav() {
     return <>
-    
-    <button>EN/ES</button>
-    
+        <nav>
+            <button>EN/ES</button>
+        </nav>
     </>
 }
 
