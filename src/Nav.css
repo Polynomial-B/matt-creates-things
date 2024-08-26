@@ -1,12 +1,54 @@
 nav {
-    margin: 0;
-    padding: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    width: 99%;
     top: 0;
     left: 0;
-    position: fixed;
+    position: sticky;
+    position: -webkit-sticky;
+    position: absolute;
+    z-index: 1;
+    background-color: aqua;
+}
+
+/* nav {
+
+    color: rgb(187, 27, 201);
+
+    background-color: #d5e000;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    border-bottom: solid rgb(218, 233, 255) 1px;
+    margin-bottom: 30px;
     width: 100%;
-    z-index: 5;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: rgb(35, 35, 35);
+} */
+
+
+button {
+    height: 44px;
+    width: 44px;
+    padding: 0;
+    border-radius: 100%;
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: rgba(209, 209, 209, 0.631);
+}
+
+button:active {
+    background-color: rgba(47, 47, 47, 0.475);
+}
+
+.light {
+    background-color: rgb(167, 167, 167);
+}
+
+.dark {
+    background-color: rgb(58, 58, 58);
 }

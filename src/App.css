@@ -20,11 +20,19 @@ ul {
     user-select: none;
 }
 
+main {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+img {
+    -webkit-user-drag: none;
+    user-drag: none;
+}
+
 #splash img {
     width: 90vw;
     border-radius: 10%;
-    -webkit-user-drag: none;
-    user-drag: none;
     pointer-events: none;
     max-width: 300px;
 }
@@ -32,4 +40,37 @@ ul {
 #splash-container {
     width: auto;
     align-content: center;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px
+}
+
+i[class^="devicon"] {
+    font-size: 80px;
+    margin: 0px;
+    position: absolute;
+    z-index: 1;
+
+}
+[class^="devicon-"],
+[class*=" devicon-"] {
+  font-family: "devicon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+
+
+.skill-element {
+    flex-wrap: wrap;
+    width: 80px;
+    height: 100px;
+    text-align: center;
+    z-index: 0;
 }
