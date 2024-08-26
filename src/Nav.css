@@ -1,7 +1,7 @@
 nav {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
-    width: 99%;
+    width: 97%;
     top: 0;
     left: 0;
     position: sticky;
@@ -9,23 +9,9 @@ nav {
     position: absolute;
     z-index: 1;
     background-color: aqua;
-}
-
-/* nav {
-
-    color: rgb(187, 27, 201);
-
-    background-color: #d5e000;
-    font-size: 24px;
-    display: flex;
     justify-content: center;
     align-items: center;
-    height: 6vh;
-    border-bottom: solid rgb(218, 233, 255) 1px;
-    margin-bottom: 30px;
-    width: 100%;
-} */
-
+}
 
 button {
     height: 44px;
