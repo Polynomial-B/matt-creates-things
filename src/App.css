@@ -1,8 +1,18 @@
 
 h1 {
+    font-family: Verdana, Arial, sans-serif;
     font-size: clamp(5rem, 17vw, 7rem);
-    color: greenyellow;
-    align-self: center;
+    color: rgb(207, 113, 253);
+    text-align: center;
+    line-height: 100%;
+    position: relative;
+}
+
+.job-title {
+    text-align: center;
+    font-size: clamp(1rem, 5vw, 4rem);
+    width: 100vw;
+    margin: 0;
 }
 
 ul {
@@ -13,7 +23,7 @@ ul {
 
 #splash {
     display: flex;
-    margin: 50px 0 0;
+    margin: 80px 0 0;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10vw;
@@ -28,18 +38,15 @@ main {
 img {
     -webkit-user-drag: none;
     user-drag: none;
-}
-
-#splash img {
-    width: 90vw;
     border-radius: 10%;
     pointer-events: none;
     max-width: 300px;
+    flex-wrap: wrap;
 }
 
 #splash-container {
     width: auto;
-    align-content: center;
+    align-content: space-evenly;
 }
 
 .skills-container {
@@ -49,23 +56,13 @@ img {
     gap: 20px
 }
 
-i[class^="devicon"] {
+[class^="devicon"] {
     font-size: 80px;
     margin: 0px;
-    position: absolute;
     z-index: 1;
-
+    color: rgb(207, 113, 253);
+    display: block;
 }
-[class^="devicon-"],
-[class*=" devicon-"] {
-  font-family: "devicon";
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-}
-
 
 .skill-element {
     flex-wrap: wrap;
@@ -73,4 +70,20 @@ i[class^="devicon"] {
     height: 100px;
     text-align: center;
     z-index: 0;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+}
+
+
+.project-element {
+    display: flex;
+    flex-direction: row;
+}
+
+.project-element:nth-child(even) {
+    flex-direction: row-reverse;
 }

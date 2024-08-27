@@ -28,8 +28,8 @@ function Nav() {
 	return (
 		<>
 			<nav>
-				<button></button>
-				<button onClick={handleClick} className={isDark}></button>
+				{/* <button>{isEnglish}</button> */}
+				<button onClick={handleClick} className={isDark}>{isDark === "dark" ? "🌕" : "🌙"}</button>
 			</nav>
 		</>
 	);

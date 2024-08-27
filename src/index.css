@@ -1,10 +1,11 @@
 :root {
 	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 	line-height: 1.5;
-	font-weight: 400;
+	/* font-weight: 400; */
 
 	color-scheme: light dark;
-	color: rgba(255, 255, 255, 0.87);
+    --background-color: #F8F8FF;
+    --text-color: #2f2f2f;
 
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
@@ -14,19 +15,21 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-color: ;
-    --text-color: ;
+    --background-color: #202020;
+    --text-color: #F8F8FF;
   }
 }
+
+html {
+	scroll-snap-type: block;
+	color: var(--text-color);
+	background-color: var(--background-color);
+  }
 
 @media (prefers-reduced-motion: no-preference) {
 	html {
 		scroll-behavior: smooth;
 	}
-}
-
-html {
-  scroll-snap-type: block;
 }
 
 html, body {
@@ -37,7 +40,7 @@ body {
   padding: 0 20px;
 }
 
-h1, h2, h3, p {
+h1 {
   margin: 0;
 }
 
