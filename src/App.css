@@ -1,18 +1,19 @@
 
 h1 {
-    font-family: Verdana, Arial, sans-serif;
+    font-family: "Nerko One", Verdana, Arial, sans-serif;
     font-size: clamp(5rem, 17vw, 7rem);
-    color: rgb(207, 113, 253);
     text-align: center;
     line-height: 100%;
     position: relative;
 }
 
 .job-title {
+    font-family: "Nerko One", Verdana, Arial, sans-serif;
     text-align: center;
     font-size: clamp(1rem, 5vw, 4rem);
     width: 100vw;
     margin: 0;
+    scroll-snap-type: none;
 }
 
 ul {
@@ -26,7 +27,7 @@ ul {
     margin: 80px 0 0;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10vw;
+    gap: 1vw;
     user-select: none;
 }
 
@@ -56,14 +57,6 @@ img {
     gap: 20px
 }
 
-[class^="devicon"] {
-    font-size: 80px;
-    margin: 0px;
-    z-index: 1;
-    color: rgb(207, 113, 253);
-    display: block;
-}
-
 .skill-element {
     flex-wrap: wrap;
     width: 80px;
@@ -77,7 +70,6 @@ img {
     flex-direction: column;
     max-width: 700px;
 }
-
 
 .project-element {
     display: flex;

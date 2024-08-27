@@ -6,14 +6,13 @@ function Home() {
 		<>
 			<header id="splash">
 				<h1 translate="no">MATT LAMB</h1>
-				<h2 className="job-title">Software Engineer</h2>
+				<h2 className="job-title">Full-stack Engineer</h2>
 				<div id="splash-container">
 					<img
 						src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
 						alt=""
 						draggable="false"
 					/>
-					{/* <figcaption>&copy; Matt Lamb {new Date().getFullYear()}</figcaption> */}
 				</div>
 			</header>
 
@@ -55,11 +54,10 @@ function Home() {
 							<img
 								src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
 								alt="Picture/gif of..."
-							></img>
+							/>
 							<div className="card-content">
 								<h3 className="card-title">
-									SynthSounds 🔗 | 10 Days | Solo
-									Project
+									SynthSounds 🔗 | 10 Days | Solo Project
 								</h3>
 								<div className="card-description">
 									<p>
@@ -73,7 +71,7 @@ function Home() {
 							<img
 								src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
 								alt="Picture/gif of..."
-							></img>
+							/>
 							<div className="card-content">
 								<h3 className="card-title">
 									Shirtify 🔗 | 7 Days | Paired Project
@@ -89,7 +87,7 @@ function Home() {
 							<img
 								src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
 								alt="Picture/gif of..."
-							></img>
+							/>
 							<div className="card-content">
 								<h3 className="card-title">
 									MycoProject 🔗 | 7 Days | Solo Project
@@ -103,7 +101,7 @@ function Home() {
 							<img
 								src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
 								alt="Picture/gif of..."
-							></img>
+							/>
 							<div className="card-content">
 								<h3 className="card-title">
 									Cosmic Ray 🔗 | 7 Days | Solo Project
@@ -166,7 +164,8 @@ function Home() {
 						</a>
 					</li>
 				</ul>
-				App made using React.js
+				App made using React.js | &copy; Matt Lamb{" "}
+				{new Date().getFullYear()}
 			</footer>
 		</>
 	);

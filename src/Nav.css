@@ -1,14 +1,11 @@
 nav {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
-    width: 97%;
-    top: 0;
-    left: 0;
+    top: 2vh;
+    left: 90vw;
     position: sticky;
     position: -webkit-sticky;
     position: absolute;
     z-index: 1;
-    background-color: rgb(94, 94, 94);
     justify-content: center;
     align-items: center;
     padding: 5px;
@@ -26,20 +23,15 @@ button {
     justify-content: center;
     align-items: center;
     background-color: transparent;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
 }
 
 button:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
-/* button:active {
-    background-color: rgba(47, 47, 47, 0.475);
-} */
-
-/* .light {
-    background-color: rgb(167, 167, 167);
+button:active {
+    transform: scale(0.9);
 }
-
-.dark {
-    background-color: rgb(58, 58, 58);
-} */
