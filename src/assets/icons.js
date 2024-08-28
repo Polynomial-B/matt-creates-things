@@ -1,8 +1,8 @@
 const icons = [
     { name: 'JavaScript', icon: 'devicon-javascript-plain' },
     { name: 'React.js', icon: 'devicon-react-original' },
-    { name: 'HTML', icon: 'devicon-html5-plain' },
     { name: 'CSS', icon: 'devicon-css3-plain' },
+    { name: 'HTML', icon: 'devicon-html5-plain' },
     { name: 'TypeScript', icon: 'devicon-typescript-plain' },
     { name: 'Express', icon: 'devicon-express-original' },
     { name: 'Node.js', icon: 'devicon-nodejs-plain' },

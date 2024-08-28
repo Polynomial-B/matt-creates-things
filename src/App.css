@@ -103,3 +103,33 @@ img {
     width: 160px;
     font-weight: 100;
 }
+
+footer {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 600px;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.contact li {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+}
+
+figure svg {
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+.legal {
+    margin: 5vh 0;
+}

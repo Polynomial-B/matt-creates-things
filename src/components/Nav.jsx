@@ -10,11 +10,11 @@ function Nav() {
 		return prefersDark ? "dark-mode" : "light-mode";
 	};
 
-    const getLang = navigator.language
-    console.log(getLang)
+    // const getLang = navigator.language
+    // console.log(getLang)
 
 	const [isDark, setIsDark] = useState(getTheme);
-    const [isEnglish, setIsEnglish] = useState(getLang)
+    // const [isEnglish, setIsEnglish] = useState(getLang)
 
 	function handleClick() {
 		setIsDark(previousState => {
