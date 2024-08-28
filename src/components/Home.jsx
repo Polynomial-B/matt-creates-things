@@ -5,14 +5,20 @@ function Home() {
 	return (
 		<>
 			<header id="splash">
+				<div id="splash-container">
 				<h1 translate="no">MATT LAMB</h1>
 				<h2 className="job-title">software engineer</h2>
-				<div id="splash-container">
 					<img
 						src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
 						alt=""
 						draggable="false"
 					/>
+				<div className="links-container">
+					<button>bio</button>
+					<button>portfolio</button>
+					<button>contact</button>
+
+				</div>
 				</div>
 			</header>
 

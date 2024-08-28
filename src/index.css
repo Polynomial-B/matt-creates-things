@@ -83,6 +83,15 @@ body {
 	}
 }
 
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none;
+        transition: none;
+        scroll-behavior: auto;
+    }
+}
+
+
 html,
 body {
 	size: 100%;
@@ -113,4 +122,8 @@ h2 {
     z-index: 1;
     color: var(--icons);
     display: block;
+}
+
+button {
+    color: var(--text-color);
 }

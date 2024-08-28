@@ -26,10 +26,11 @@ button {
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
+    cursor: pointer;
 }
 
 button:hover {
-    transform: scale(1.1);
+    transform: scale(102%);
 }
 
 button:active {
