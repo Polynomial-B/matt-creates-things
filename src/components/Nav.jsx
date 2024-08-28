@@ -36,7 +36,7 @@ function Nav() {
 		<>
 			<nav>
 				{/* <button>{isEnglish}</button> */}
-				<button onClick={handleClick} className={isDark}>{isDark === "dark-mode" ? "🌞" : "🌑" }</button>
+				<button onClick={handleClick} className={isDark}>{isDark === "dark-mode" ? "☀️" : "🌑" }</button>
 			</nav>
 		</>
 	);

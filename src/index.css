@@ -1,6 +1,7 @@
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
+	font-weight: 400;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -18,7 +19,7 @@
         #00c9a7 100%
     );
     --header-color: #333;
-	--icons: #003028;
+	--icons: #0a2722;
 }
 
 .light-mode {
@@ -55,6 +56,7 @@
     :root {
         --background-color: #202020;
         --text-color: #f8f8ff;
+		--header-color: #f8f8ff;
         --background: linear-gradient(
             135deg,
             #1a252f 0%,
@@ -64,6 +66,7 @@
             #3e5664 100%
         );
         --header-color: #e0e0e0;
+		--icons: #00c9a7;
     }
 }
 
@@ -91,7 +94,7 @@ body {
 
 h2,
 h3 {
-	font-family: "Patrick Hand", cursive;
+	font-family: "Encode Sans", sans-serif;
 	font-size: 2em;
 }
 

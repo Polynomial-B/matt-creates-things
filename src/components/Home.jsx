@@ -6,7 +6,7 @@ function Home() {
 		<>
 			<header id="splash">
 				<h1 translate="no">MATT LAMB</h1>
-				<h2 className="job-title">Full-stack Engineer</h2>
+				<h2 className="job-title">software engineer</h2>
 				<div id="splash-container">
 					<img
 						src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
@@ -28,24 +28,28 @@ function Home() {
 							"UPDATE: I've always had an interest in functionality. My professional journey has allowed me to engage deeply with the welfare state, espresso, all-weather lifeboats, cartography and linguistics. I love learning and deepening my understanding, especially when I can apply it practically. I'm drawn to Software Engineering for its vast applications and creativity. Most of all, I find it immensely satisfying to build something and understand how it works."
 						}
 					</p>
+				</section>
+				<section>
 					<h2>Skills</h2>
 					<div className="skills-container">
 						{icons.map((icon) => {
 							return (
 								<div className="skill-element" key={icon.name}>
 									{icon.name}
-									<i className={icon.icon} />
+									<i className={icon.icon}/>
 								</div>
 							);
 						})}
 					</div>
-					Languages
-				</section>
-				<section>
-					<h2>Above languages Currently Learning...</h2>
-					<ul>
-						<li>Next.js</li>
-					</ul>
+					<h2>Currently Learning</h2>
+						Next.js
+						<i className="devicon-nextjs-plain"/>
+					<h2>Languages</h2>
+						<ul>
+							<li>English (fluent)</li>
+							<li>Spanish (conversational)</li>
+							<li>Basque (beginner)</li>
+						</ul>
 				</section>
 				<section>
 					<h2>Projects</h2>
