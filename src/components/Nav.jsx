@@ -36,7 +36,7 @@ function Nav() {
 		<>
 			<nav>
 				{/* <button>{isEnglish}</button> */}
-				<button onClick={handleClick} className={isDark} title={`Activate ${isDark === "dark-mode" ? "light-mode" : "dark-mode"}`}>{isDark === "dark-mode" ? "☀️" : "🌑" }</button>
+				<button onClick={handleClick} className={isDark} title={`Activate ${isDark === "dark-mode" ? "light-mode" : "dark-mode"}`}>{isDark === "dark-mode" ? <img width="44" src="src/assets/mercury.png"></img> : "🌑" }</button>
 			</nav>
 		</>
 	);

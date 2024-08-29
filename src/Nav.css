@@ -27,10 +27,11 @@ button {
     -webkit-user-select: none;
     -moz-user-select: none;
     cursor: pointer;
+    overflow: hidden;
 }
 
 button:hover {
-    transform: scale(102%);
+    filter: brightness(1.5)
 }
 
 button:active {
