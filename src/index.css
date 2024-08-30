@@ -21,10 +21,7 @@
 	--icons: #0a2722;
 }
 
-html,
-body {
-	width: 100vw;
-    overflow-x: hidden;
+html {
     margin: 0;
     padding: 0;
     scroll-snap-type: y proximity;
@@ -50,11 +47,11 @@ body {
     --header-color: #f8f8ff;
     --background: linear-gradient(
         135deg,
-        #1D2A40 0%,
-        #2D3D60 25%,
-        #2b1d70 50%,
-        #283f7f 75%,
-        #364156 100%
+        #1a252f 0%,
+        #22303b 25%,
+        #2b3c48 50%,
+        #344956 75%,
+        #3e5664 100%
     );
 	--icons: #00c9a7;
 }
@@ -106,8 +103,13 @@ h3 {
 	font-size: 2em;
 }
 
-h2 {
+#splash, .card, h2 {
 	scroll-snap-align: start;
+}
+
+section {
+    padding: 2em;
+    text-align: justify;
 }
 
 [class^="devicon"] {
@@ -122,6 +124,13 @@ button {
     color: var(--text-color);
     border-radius: 0;
     height: auto;
+    background-color: transparent;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    cursor: pointer;
+    overflow: hidden;
+    border: none;
 }
 
 a, a:visited {

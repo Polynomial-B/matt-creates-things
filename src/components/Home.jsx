@@ -1,10 +1,15 @@
 import "../App.css";
 import icons from "../assets/icons";
+import { useRef } from "react";
+import Darklight from "./Darklight";
 
 function Home() {
+	const aboutRef = useRef()
+	
 	return (
 		<>
 			<header id="splash">
+		<Darklight/>
 				<div id="splash-container">
 					<h1 translate="no">MATT LAMB</h1>
 					<h2 className="job-title">SOFTWARE ENGINEER</h2>
@@ -14,16 +19,16 @@ function Home() {
 						draggable="false"
 					/>
 					<div className="links-container">
-						<button>about</button>
-						<button>projects</button>
-						<button>contact</button>
+						<button href="#about">about</button>
+						<button href="#projects">projects</button>
+						<button href="#contact">contact</button>
 					</div>
 				</div>
 			</header>
 
 			<main>
 				<section>
-					<h2>About Me</h2>
+					<h2 id="about">About Me</h2>
 					<p>
 						A full-stack web developer, interested in building
 						creative/innovative/smart/impactful applications.
@@ -59,7 +64,7 @@ function Home() {
 					</ul>
 				</section>
 				<section>
-					<h2>Projects</h2>
+					<h2 id="projects">Projects</h2>
 					<div className="project-container">
 						<div className="card">
 							<div className="card-image">
@@ -155,7 +160,7 @@ function Home() {
 			</main>
 			<footer>
 				<section className="contact">
-				<h2>Contact</h2>
+				<h2 id="contact">Contact</h2>
 				<ul>
 					<li className="contact-link">
 						<a
@@ -196,7 +201,8 @@ function Home() {
 				</ul>
 				</section>
 				<section className="legal">
-				&copy; Matt Lamb {new Date().getFullYear()} | m.lamb.dev@gmail.com
+				<div className="footer-email">m.lamb.dev@gmail.com</div>
+				<div className="footer-content">&copy; Matt Lamb {new Date().getFullYear()}</div>
 				</section>
 			</footer>
 		</>

@@ -1,7 +1,7 @@
-import "../Nav.css";
+import "../Darklight.css";
 import { useState } from "react";
 
-function Nav() {
+function Darklight() {
 	const getTheme = () => {
 		const prefersDark = window.matchMedia(
 			"(prefers-color-scheme: dark)"
@@ -36,10 +36,10 @@ function Nav() {
 		<>
 			<nav>
 				{/* <button>{isEnglish}</button> */}
-				<button onClick={handleClick} className={isDark} title={`Activate ${isDark === "dark-mode" ? "light-mode" : "dark-mode"}`}>{isDark === "dark-mode" ? <img width="44" src="src/assets/mercury.png"></img> : "🌑" }</button>
+				<button onClick={handleClick} id="toggle" className={isDark} title={`Activate ${isDark === "dark-mode" ? "light-mode" : "dark-mode"}`}>{isDark === "dark-mode" ? <img width="44" src="src/assets/mercury.png"></img> : "🌑" }</button>
 			</nav>
 		</>
 	);
 }
 
-export default Nav;
+export default Darklight;
