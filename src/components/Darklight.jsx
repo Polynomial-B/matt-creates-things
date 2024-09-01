@@ -34,7 +34,7 @@ function Darklight() {
 
 	return (
 		<>
-			<nav>
+			<nav className="dark-light">
 				{/* <button>{isEnglish}</button> */}
 				<button onClick={handleClick} id="toggle" className={isDark} title={`Activate ${isDark === "dark-mode" ? "light-mode" : "dark-mode"}`}>{isDark === "dark-mode" ? <img width="44" src="src/assets/mercury.png"></img> : "🌑" }</button>
 			</nav>

@@ -1,8 +1,6 @@
-nav {
-    z-index: 1;
-    position: fixed;
-    top: 10px;
-    right: 10px;
+.dark-light {
+    z-index: 2;
+    height: auto;
 }
 
 #toggle {
@@ -16,7 +14,11 @@ nav {
     align-items: center;
 }
 
-button:hover {
+.light-mode button:hover {
+    filter: brightness(0.5)
+}
+
+.dark-mode button:hover {
     filter: brightness(1.5)
 }
 

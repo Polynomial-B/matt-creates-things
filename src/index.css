@@ -21,9 +21,12 @@
 	--icons: #0a2722;
 }
 
-html {
+body, html {
     margin: 0;
     padding: 0;
+}
+
+html {
     scroll-snap-type: y proximity;
     -webkit-scroll-snap-type: y proximity;
 }
@@ -89,6 +92,7 @@ body {
         animation: none;
         transition: none;
         scroll-behavior: auto;
+        scroll-snap-align: none;
     }
 }
 
@@ -103,13 +107,15 @@ h3 {
 	font-size: 2em;
 }
 
-#splash, .card, h2 {
+#splash, .project-card, h2, .links-container {
 	scroll-snap-align: start;
 }
 
 section {
     padding: 2em;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
 }
 
 [class^="devicon"] {

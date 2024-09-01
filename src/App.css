@@ -1,3 +1,7 @@
+main {
+    max-width: 700px;
+    margin: 0 auto;
+}
 h1 {
 	font-weight: 800;
     letter-spacing: 5px;
@@ -20,7 +24,8 @@ h1 {
 
 h2 {
     text-align: center;
-    margin: 15vh 0 5vh;
+    margin: 5vh 0 5vh;
+    padding: 5vh 0 0;
 }
 
 /* ul {
@@ -33,31 +38,44 @@ h2 {
 
 #splash * {
     font-family: "Encode Sans", sans-serif;
+    z-index: 1;
 }
 
 #splash {
     display: flex;
-    margin: 80px 0 0;
+    margin: 5vh 0 0;
     flex-wrap: wrap;
-    align-content: space-around;
+    align-content: space-between;
     justify-content: center;
-    align-items: center;
     user-select: none;
-    height: 90vh;
-    height: 90svh;
+    height: 95vh;
+    height: 95svh;
 }
 
 #splash-container {
     display: flex;
     flex-direction:column;
-    width: auto;
+    height: 100%;
     justify-content: space-around;
     align-items: center;
 }
 
-main {
-    max-width: 700px;
-    margin: 0 auto;
+.links-container {
+    margin: 0;
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    justify-content: space-around;
+    align-self: flex-end;
+}
+
+.links-container button {
+    font-size: clamp(1rem, 40px, 4rem);
+    width: auto;
+    font-weight: 100;
+    border-radius: 0%;
+    align-self: center;
+    justify-content: center;
 }
 
 img {
@@ -73,15 +91,19 @@ img {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 20px
+    gap: 20px;
 }
 
 .skill-element {
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    width: 80px;
-    height: 100px;
+    height: 120px;
     text-align: center;
     z-index: 0;
+    font-family: "Encode Sans", sans-serif;
+    font-weight: 350;
+    justify-content: space-between;
 }
 
 .project-container {
@@ -90,33 +112,29 @@ img {
     max-width: 700px;
 }
 
-.project-element {
+.project-card {
     display: flex;
     flex-direction: row;
+    padding: 5rem 0;
 }
 
-/* .project-element:nth-child(even) {
+.project-card:nth-child(even) {
     flex-direction: row-reverse;
-} */
-
-.links-container {
-    margin: 5rem 0 0;
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
 }
 
-.links-container button {
-    font-size: 2rem;
-    width: 160px;
-    font-weight: 100;
-    border-radius: 0%;
+.scroll-to-top {
+    font-size: 2em;
+    text-align: center;
+    padding: 10vh 0;
+    font-family: "Encode Sans", sans-serif;
+    font-weight: 200;
 }
 
 footer {
     margin: 0 auto;
     text-align: center;
     max-width: 600px;
+    
 }
 
 footer ul {
@@ -128,7 +146,6 @@ footer ul {
 
 .contact li {
     display: flex;
-    /* align-content: space-between; */
 }
 
 .contact figure {
@@ -142,6 +159,7 @@ footer ul {
 .contact-link *:hover {
     color: rgb(162, 16, 113);
     fill: rgb(162, 16, 113);
+    
 }
 
 figure svg {
@@ -154,12 +172,22 @@ figure svg {
 
 .legal {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-content: center;
     margin: 10vh 0 20vh;
     flex-wrap: wrap;
 }
 
 .legal > * {
+    display: flex;
     margin: 10px;
     padding: 5px;
+    align-self: center;
+    font-weight: 200;
+}
+
+#footer-email {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    font-family: "Encode Sans", sans-serif;
 }
