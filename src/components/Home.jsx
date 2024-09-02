@@ -11,10 +11,10 @@ function Home() {
 
 	return (
 		<>
-			<header id="splash" ref={homeRef}>
 				{/* <Darklight/> */}
+			<header id="splash" ref={homeRef}>
 				<div id="splash-container">
-					<h1 translate="no">MATT LAMB</h1>
+					<h1 translate="no" id="splash-title">Matt Lamb</h1>
 					<h2 className="job-title">SOFTWARE ENGINEER</h2>
 					<img
 						src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
@@ -22,16 +22,16 @@ function Home() {
 						draggable="false"
 					/>
 					<nav className="links-container">
-						<button
+						<button className="link-hover"
 							onClick={() =>
 								aboutRef.current?.scrollIntoView({
 									behavior: "smooth",
 								})
 							}
 						>
-							about
+						about
 						</button>
-						<button
+						<button className="link-hover"
 							onClick={() =>
 								projectsRef.current?.scrollIntoView({
 									behavior: "smooth",
@@ -40,7 +40,7 @@ function Home() {
 						>
 							projects
 						</button>
-						<button
+						<button className="link-hover"
 							onClick={() =>
 								contactRef.current?.scrollIntoView({
 									behavior: "smooth",
@@ -56,7 +56,7 @@ function Home() {
 			<main>
 				<section>
 					<h2 id="about" ref={aboutRef}>
-						About Me
+						About
 					</h2>
 					<p>
 						A full-stack web developer, interested in building
@@ -86,6 +86,11 @@ function Home() {
 							Next.js
 							<i className="devicon-nextjs-plain" />
 						</div>
+						<div className="skill-element">
+							Jest
+							<i className="devicon-jest-plain"/>
+          
+						</div>
 					</div>
 					<h2>Languages</h2>
 					<ul>
@@ -94,7 +99,7 @@ function Home() {
 						<li>Basque (beginner)</li>
 					</ul>
 				</section>
-				<section>
+				<section id="project-section">
 					<h2 id="projects" ref={projectsRef}>
 						Projects
 					</h2>
@@ -108,9 +113,10 @@ function Home() {
 							</div>
 							<div className="card-content">
 								<h3 className="card-title">
-									SynthSounds | 10 Days | Solo Project
+									SynthSounds
 								</h3>
 								<div className="card-description">
+									<p>10 Days | Solo Project</p>
 									<p>
 										React.js, Tone.js, Heroku, Django,
 										PostgreSQL
@@ -127,9 +133,10 @@ function Home() {
 							</div>
 							<div className="card-content">
 								<h3 className="card-title">
-									Shirtify | 7 Days | Paired Project
+									Shirtify
 								</h3>
 								<div className="card-description">
+									<p>7 Days | Paired Project</p>
 									<p>
 										MongoDB, Express.js, React.js, Node.js
 									</p>
@@ -145,9 +152,10 @@ function Home() {
 							</div>
 							<div className="card-content">
 								<h3 className="card-title">
-									MycoProject | 7 Days | Solo Project
+									MycoProject
 								</h3>
 								<div className="card-description">
+									<p>7 Days | Solo Project</p>
 									<p>MongoDB, Express.js, Node.js, EJS</p>
 								</div>
 							</div>
@@ -161,9 +169,10 @@ function Home() {
 							</div>
 							<div className="card-content">
 								<h3 className="card-title">
-									Cosmic Ray | 7 Days | Solo Project
+									Cosmic Ray
 								</h3>
 								<div className="card-description">
+									<p>7 Days | Solo Project</p>
 									<p>JavaScript, HTML and CSS</p>
 								</div>
 							</div>

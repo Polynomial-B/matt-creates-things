@@ -1,25 +1,18 @@
 main {
     max-width: 700px;
     margin: 0 auto;
-}
-h1 {
-	font-weight: 800;
-    letter-spacing: 5px;
-	font-optical-sizing: auto;
-    font-size: clamp(5rem, 17vw, 7rem);
-    text-align: center;
-    line-height: 100%;
-    position: relative;
+    padding: 0 7vw;
 }
 
 .job-title {
     font-family: "Encode Sans", sans-serif;
     font-variant: small-caps;
     text-align: center;
-    font-size: clamp(2rem, 5vw, 3rem);
-    margin: 2rem;
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    margin: 0;
+    padding: 0;
     scroll-snap-align: none;
-    font-weight: 200;
+    font-weight: 100;
 }
 
 h2 {
@@ -28,14 +21,6 @@ h2 {
     padding: 5vh 0 0;
 }
 
-/* ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-around;
-} */
-
 #splash * {
     font-family: "Encode Sans", sans-serif;
     z-index: 1;
@@ -43,13 +28,13 @@ h2 {
 
 #splash {
     display: flex;
-    margin: 5vh 0 0;
     flex-wrap: wrap;
     align-content: space-between;
     justify-content: center;
     user-select: none;
-    height: 95vh;
-    height: 95svh;
+    height: 100vh;
+    height: 100svh;
+    max-height: 1080px;
 }
 
 #splash-container {
@@ -60,18 +45,32 @@ h2 {
     align-items: center;
 }
 
+#splash-title {
+	font-weight: 500;
+    letter-spacing: 0px;
+	font-optical-sizing: auto;
+    font-size: clamp(5.8em, 17vw, 7rem);
+    text-align: center;
+    /* line-height: 100%; */
+    position: relative;
+    line-height: 80%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
 .links-container {
     margin: 0;
     display: flex;
     width: 100%;
-    height: 5rem;
+    height: auto;
     justify-content: space-around;
     align-self: flex-end;
+    flex-wrap: wrap;
 }
 
 .links-container button {
-    font-size: clamp(1rem, 40px, 4rem);
-    width: auto;
+    font-size: clamp(1em, 2.2em, 3em);
+    width: 180px;
     font-weight: 100;
     border-radius: 0%;
     align-self: center;
@@ -83,7 +82,10 @@ img {
     user-drag: none;
     border-radius: 10%;
     pointer-events: none;
-    max-width: 300px;
+}
+
+#splash img {
+    width: clamp(220px, 20vw, 300px);
 }
 
 .skills-container {
@@ -104,22 +106,6 @@ img {
     font-family: "Encode Sans", sans-serif;
     font-weight: 350;
     justify-content: space-between;
-}
-
-.project-container {
-    display: flex;
-    flex-direction: column;
-    max-width: 700px;
-}
-
-.project-card {
-    display: flex;
-    flex-direction: row;
-    padding: 5rem 0;
-}
-
-.project-card:nth-child(even) {
-    flex-direction: row-reverse;
 }
 
 .scroll-to-top {
@@ -157,8 +143,8 @@ footer ul {
 }
 
 .contact-link *:hover {
-    color: rgb(162, 16, 113);
-    fill: rgb(162, 16, 113);
+    color: var(--icon-hover);
+    fill: var(--icon-hover);
     
 }
 
@@ -190,4 +176,49 @@ figure svg {
     font-size: 1.4rem;
     letter-spacing: 2px;
     font-family: "Encode Sans", sans-serif;
+}
+
+#project-section {
+    width: auto;
+    padding: 0;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card {
+    display: flex;
+    padding: 5rem 0;
+    flex-direction: column-reverse;
+    width: 100%;
+    align-items: center;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 3em;
+    margin: 0 0 15px;
+}
+
+.card-description {
+    height: 100%;
+    text-align: center;
+}
+.card-image img {
+    width: 60vw;
+    max-width: 500px;
+}
+
+@media screen and (max-width: 600px) {
+    .links-container {
+        flex-direction: column;
+    }
 }

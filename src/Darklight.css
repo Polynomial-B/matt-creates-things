@@ -1,6 +1,8 @@
 .dark-light {
     z-index: 2;
     height: auto;
+    position: absolute;
+    margin: 5vh 90vw;
 }
 
 #toggle {
