@@ -1,7 +1,10 @@
-import "../App.css";
-import icons from "../assets/icons";
-import { useRef } from "react";
+import { useRef, useEffect, useState, Suspense } from "react";
 import Darklight from "./Darklight";
+import Titles from "./Titles";
+import icons from "../assets/icons";
+import "../App.css";
+import ProjectImage from "./ProjectImage";
+import ErrorBoundary from "./ErrorBoundary";
 
 function Home() {
 	const aboutRef = useRef();
@@ -11,27 +14,31 @@ function Home() {
 
 	return (
 		<>
-				{/* <Darklight/> */}
+			{/* <Darklight/> */}
 			<header id="splash" ref={homeRef}>
 				<div id="splash-container">
-					<h1 translate="no" id="splash-title">Matt Lamb</h1>
-					<h2 className="job-title">SOFTWARE ENGINEER</h2>
+					<h1 translate="no" id="splash-title">
+						Matt Lamb
+					</h1>
+					<Titles />
 					<img
 						src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
 						alt=""
 						draggable="false"
 					/>
 					<nav className="links-container">
-						<button className="link-hover"
+						<button
+							className="link-hover"
 							onClick={() =>
 								aboutRef.current?.scrollIntoView({
 									behavior: "smooth",
 								})
 							}
 						>
-						about
+							about
 						</button>
-						<button className="link-hover"
+						<button
+							className="link-hover"
 							onClick={() =>
 								projectsRef.current?.scrollIntoView({
 									behavior: "smooth",
@@ -40,7 +47,8 @@ function Home() {
 						>
 							projects
 						</button>
-						<button className="link-hover"
+						<button
+							className="link-hover"
 							onClick={() =>
 								contactRef.current?.scrollIntoView({
 									behavior: "smooth",
@@ -88,8 +96,7 @@ function Home() {
 						</div>
 						<div className="skill-element">
 							Jest
-							<i className="devicon-jest-plain"/>
-          
+							<i className="devicon-jest-plain" />
 						</div>
 					</div>
 					<h2>Languages</h2>
@@ -106,15 +113,17 @@ function Home() {
 					<div className="project-container">
 						<div className="project-card">
 							<div className="card-image">
-								<img
-									src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
-									alt="Picture/gif of..."
-								/>
+							<ErrorBoundary>
+									<Suspense>
+										<ProjectImage
+											// imageSource={"src/assets/cosmic-ray-screenshot.png"}
+											altText={"Space-themed arcade game with moving planets, asteroids and a manta ray"}
+										/>
+									</Suspense>
+								</ErrorBoundary>
 							</div>
 							<div className="card-content">
-								<h3 className="card-title">
-									SynthSounds
-								</h3>
+								<h3 className="card-title">SynthSounds</h3>
 								<div className="card-description">
 									<p>10 Days | Solo Project</p>
 									<p>
@@ -126,15 +135,17 @@ function Home() {
 						</div>
 						<div className="project-card">
 							<div className="card-image">
-								<img
-									src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
-									alt="Picture/gif of..."
-								/>
+							<ErrorBoundary>
+									<Suspense>
+										<ProjectImage
+											// imageSource={"src/assets/cosmic-ray-screenshot.png"}
+											altText={"Space-themed arcade game with moving planets, asteroids and a manta ray"}
+										/>
+									</Suspense>
+								</ErrorBoundary>
 							</div>
 							<div className="card-content">
-								<h3 className="card-title">
-									Shirtify
-								</h3>
+								<h3 className="card-title">Shirtify</h3>
 								<div className="card-description">
 									<p>7 Days | Paired Project</p>
 									<p>
@@ -145,15 +156,17 @@ function Home() {
 						</div>
 						<div className="project-card">
 							<div className="card-image">
-								<img
-									src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
-									alt="Picture/gif of..."
-								/>
+							<ErrorBoundary>
+									<Suspense>
+										<ProjectImage
+											// imageSource={"src/assets/cosmic-ray-screenshot.png"}
+											altText={"Space-themed arcade game with moving planets, asteroids and a manta ray"}
+										/>
+									</Suspense>
+								</ErrorBoundary>
 							</div>
 							<div className="card-content">
-								<h3 className="card-title">
-									MycoProject
-								</h3>
+								<h3 className="card-title">MycoProject</h3>
 								<div className="card-description">
 									<p>7 Days | Solo Project</p>
 									<p>MongoDB, Express.js, Node.js, EJS</p>
@@ -162,15 +175,17 @@ function Home() {
 						</div>
 						<div className="project-card">
 							<div className="card-image">
-								<img
-									src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
-									alt="Picture/gif of..."
-								/>
+								<ErrorBoundary>
+									<Suspense>
+										<ProjectImage
+											imageSource={"src/assets/cosmic-ray-screenshot.png"}
+											altText={"Space-themed arcade game with moving planets, asteroids and a manta ray"}
+										/>
+									</Suspense>
+								</ErrorBoundary>
 							</div>
 							<div className="card-content">
-								<h3 className="card-title">
-									Cosmic Ray
-								</h3>
+								<h3 className="card-title">Cosmic Ray</h3>
 								<div className="card-description">
 									<p>7 Days | Solo Project</p>
 									<p>JavaScript, HTML and CSS</p>
@@ -202,7 +217,6 @@ function Home() {
 			</main>
 			<footer>
 				<section className="contact">
-					
 					<h2 id="contact" ref={contactRef}>
 						Contact
 					</h2>
@@ -262,9 +276,7 @@ function Home() {
 				</section>
 				<section className="legal">
 					<div id="footer-email">m.lamb.dev@gmail.com</div>
-					<div>
-						&copy; Matt Lamb {new Date().getFullYear()}
-					</div>
+					<div>&copy; Matt Lamb {new Date().getFullYear()}</div>
 				</section>
 			</footer>
 		</>
