@@ -116,7 +116,7 @@ function Home() {
 							<ErrorBoundary>
 									<Suspense>
 										<ProjectImage
-											// imageSource={"src/assets/cosmic-ray-screenshot.png"}
+											imageSource={"src/assets/synth-screenshot.png"}
 											altText={"Space-themed arcade game with moving planets, asteroids and a manta ray"}
 										/>
 									</Suspense>
@@ -138,7 +138,7 @@ function Home() {
 							<ErrorBoundary>
 									<Suspense>
 										<ProjectImage
-											// imageSource={"src/assets/cosmic-ray-screenshot.png"}
+											imageSource={"src/assets/shirtify-screenshot.png"}
 											altText={"Space-themed arcade game with moving planets, asteroids and a manta ray"}
 										/>
 									</Suspense>
@@ -159,7 +159,7 @@ function Home() {
 							<ErrorBoundary>
 									<Suspense>
 										<ProjectImage
-											// imageSource={"src/assets/cosmic-ray-screenshot.png"}
+											imageSource={"src/assets/myco-screenshot.png"}
 											altText={"Space-themed arcade game with moving planets, asteroids and a manta ray"}
 										/>
 									</Suspense>

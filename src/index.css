@@ -19,6 +19,7 @@
     );
     --header-color: #333;
 	--icon-hover: rgb(129, 129, 129);
+    --icons: #2f2f2f;
 }
 
 body, html {
@@ -146,7 +147,7 @@ button {
 
 a, a:visited {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--icons);
 }
 
 a {
@@ -154,7 +155,7 @@ a {
 }
 
 svg {
-    fill: var(--text-color);
+    fill: var(--icons);
 }
 
 .link-hover {
