@@ -4,17 +4,6 @@ main {
     padding: 0 7vw;
 }
 
-.job-title {
-    font-family: "Encode Sans", sans-serif;
-    font-variant: small-caps;
-    text-align: center;
-    font-size: clamp(1.8rem, 5vw, 3rem);
-    margin: 0;
-    padding: 0;
-    scroll-snap-align: none;
-    font-weight: 100;
-}
-
 h2 {
     text-align: center;
     margin: 5vh 0 5vh;
@@ -34,7 +23,6 @@ h2 {
     user-select: none;
     height: 100vh;
     height: 100svh;
-    max-height: 1080px;
 }
 
 #splash-container {
@@ -54,8 +42,31 @@ h2 {
     /* line-height: 100%; */
     position: relative;
     line-height: 80%;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Tenor Sans", "Montserrat", sans-serif;
     font-weight: 700;
+}
+
+#job-title {
+    font-size: clamp(2rem, 10vw, 4rem);
+    margin: 0;
+    padding: 0;
+    width: 40vw;
+    scroll-snap-align: none;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    gap: 0.3em;
+}
+
+#job-item-one, #job-item-two {
+    display: flex;
+    width: 100%;
+}
+
+#job-item-one {
+    /* justify-content: flex-end; */
 }
 
 .links-container {
@@ -145,7 +156,7 @@ footer ul {
 .contact-link *:hover {
     color: var(--icon-hover);
     fill: var(--icon-hover);
-    
+    transform: rotateX(10)
 }
 
 figure svg {
@@ -158,10 +169,11 @@ figure svg {
 
 .legal {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-content: center;
-    margin: 10vh 0 20vh;
+    margin: 10vh 0 3vh;
     flex-wrap: wrap;
+    height: 30vh;
 }
 
 .legal > * {
@@ -222,3 +234,4 @@ figure svg {
         flex-direction: column;
     }
 }
+
