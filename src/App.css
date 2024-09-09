@@ -4,10 +4,8 @@ main {
     padding: 0 7vw;
 }
 
-h2 {
-    text-align: center;
-    margin: 5vh 0 5vh;
-    padding: 5vh 0 0;
+nav {
+    padding: 10px 0;
 }
 
 #splash * {
@@ -21,52 +19,59 @@ h2 {
     align-content: space-between;
     justify-content: center;
     user-select: none;
-    height: 100vh;
-    height: 100svh;
+    height: 80vh;
+    height: 80svh;
+    padding: 0 0 10vh;
 }
 
 #splash-container {
     display: flex;
     flex-direction:column;
     height: 100%;
+    width: 100vw;
     justify-content: space-around;
     align-items: center;
 }
 
-#splash-title {
+#splash-title span {
+    display: flex;
+    flex-wrap: wrap;
 	font-weight: 500;
     letter-spacing: 0px;
 	font-optical-sizing: auto;
-    font-size: clamp(5.8em, 17vw, 7rem);
+    font-size: clamp(3em, 8vw, 6em);
     text-align: center;
-    /* line-height: 100%; */
-    position: relative;
     line-height: 80%;
     font-family: "Tenor Sans", "Montserrat", sans-serif;
     font-weight: 700;
+    width: 50vw;
+}
+#splash img {
+    width: clamp(220px, 20vw, 300px);
+}
+
+#splash-text {
+    border: 1px solid red;
+    display: flex;
+    width: 100%;
+    padding: 0 10px;
 }
 
 #job-title {
     font-size: clamp(2rem, 10vw, 4rem);
     margin: 0;
     padding: 0;
-    width: 40vw;
     scroll-snap-align: none;
     font-weight: 100;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    justify-self: center;
-    gap: 0.3em;
+    width: 50vw;
 }
 
 #job-item-one, #job-item-two {
     display: flex;
     width: 100%;
-}
-
-#job-item-one {
-    /* justify-content: flex-end; */
 }
 
 .links-container {
@@ -80,9 +85,10 @@ h2 {
 }
 
 .links-container button {
+    font-family: "Encode Sans", sans-serif;
     font-size: clamp(1em, 2.2em, 3em);
     width: 180px;
-    font-weight: 100;
+    font-weight: 210;
     border-radius: 0%;
     align-self: center;
     justify-content: center;
@@ -95,8 +101,10 @@ img {
     pointer-events: none;
 }
 
-#splash img {
-    width: clamp(220px, 20vw, 300px);
+h2 {
+    text-align: center;
+    margin: 5vh 0 5vh;
+    padding: 5vh 0 0;
 }
 
 .skills-container {
@@ -119,26 +127,34 @@ img {
     justify-content: space-between;
 }
 
+.experience img {
+    width: 80px;
+}
+
 .scroll-to-top {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    width: fit-content;
+    height: 44px;
     font-size: 2em;
     text-align: center;
-    padding: 10vh 0;
+    margin: 10vh 0;
     font-family: "Encode Sans", sans-serif;
     font-weight: 200;
+    border-radius: 7px;
 }
 
 footer {
     margin: 0 auto;
     text-align: center;
     max-width: 600px;
-    
+    height: 100vh;
 }
 
 footer ul {
-    list-style-type: none;
     display: flex;
     justify-content: space-evenly;
-    padding: 0;
 }
 
 .contact li {
@@ -156,7 +172,6 @@ footer ul {
 .contact-link *:hover {
     color: var(--icon-hover);
     fill: var(--icon-hover);
-    transform: rotateX(10)
 }
 
 figure svg {
@@ -202,7 +217,7 @@ figure svg {
 
 .project-card {
     display: flex;
-    padding: 5rem 0;
+    margin: 3rem 0;
     flex-direction: column-reverse;
     width: 100%;
     align-items: center;
@@ -216,7 +231,6 @@ figure svg {
 
 .card-title {
     text-align: center;
-    font-size: 3em;
     margin: 0 0 15px;
 }
 
@@ -225,13 +239,24 @@ figure svg {
     text-align: center;
 }
 .card-image img {
-    width: 60vw;
-    max-width: 500px;
+    width: 80vw;
+    max-width: 700px;
+    box-shadow:
+        0 0 8px 4px rgba(0, 0, 0, 0.237);
+    border-radius: 0;
 }
 
-@media screen and (max-width: 600px) {
-    .links-container {
-        flex-direction: column;
-    }
+.languages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    gap: 10vw;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.5rem;
 }
 
+.language-header {
+    font-size: 2rem;
+}
