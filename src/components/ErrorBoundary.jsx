@@ -16,7 +16,7 @@ class ErrorBoundary extends React.Component {
 
   render() {
     if (this.state.hasError) {
-      return <img src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg" alt="Image template without content" />;
+      return <img src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg" alt="Content failed to load." />;
     }
 
     return this.props.children; 

@@ -1,3 +1,5 @@
+import "../App.css";
+import "../index.css";
 import "../Darklight.css";
 import { useState } from "react";
 
@@ -10,11 +12,7 @@ function Darklight() {
 		return prefersDark ? "dark-mode" : "light-mode";
 	};
 
-    // const getLang = navigator.language
-    // console.log(getLang)
-
 	const [isDark, setIsDark] = useState(getTheme);
-    // const [isEnglish, setIsEnglish] = useState(getLang)
 
 	function handleClick() {
 		setIsDark(previousState => {
@@ -27,17 +25,14 @@ function Darklight() {
 				document.body.classList.add("dark-mode");
 			}
 	
-			console.log(newState);
 			return newState;
 		});
 	}
 
 	return (
 		<>
-			<nav className="dark-light">
 				{/* <button>{isEnglish}</button> */}
-				<button onClick={handleClick} id="toggle" className={isDark} title={`Activate ${isDark === "dark-mode" ? "light-mode" : "dark-mode"}`}>{isDark === "dark-mode" ? <img width="44" src="src/assets/mercury.png"></img> : "🌑" }</button>
-			</nav>
+				<button onClick={handleClick} id={isDark} className="link-hover" title={`Activate ${isDark === "dark-mode" ? "light-mode" : "dark-mode"}`}>{isDark === "dark-mode" ? "lightmode" : "darkmode" }</button>
 		</>
 	);
 }

@@ -1,29 +1,7 @@
-.dark-light {
-    z-index: 2;
-    height: auto;
-    position: absolute;
-    margin: 5vh 90vw;
+#light-mode {
+    color: var(--icons);
 }
 
-#toggle {
-    height: 44px;
-    width: 44px;
-    padding: 0;
-    border-radius: 100%;
-    font-size: 44px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.light-mode button:hover {
-    filter: brightness(0.5)
-}
-
-.dark-mode button:hover {
-    filter: brightness(1.5)
-}
-
-button:active {
-    transform: scale(0.9);
+#dark-mode {
+    color: var(--icons);
 }

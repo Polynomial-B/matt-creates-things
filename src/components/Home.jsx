@@ -3,8 +3,9 @@ import Darklight from "./Darklight";
 import Titles from "./Titles";
 import icons from "../assets/icons";
 import "../App.css";
-import ProjectImage from "./ProjectImage";
+import Image from "./Image";
 import ErrorBoundary from "./ErrorBoundary";
+import Project from "./Project";
 
 function Home() {
 	const aboutRef = useRef();
@@ -14,50 +15,53 @@ function Home() {
 
 	return (
 		<>
-			{/* <Darklight/> */}
-			<header id="splash" ref={homeRef}>
+			<nav className="links-container" ref={homeRef}>
+				<button
+					className="link-hover"
+					onClick={() =>
+						aboutRef.current?.scrollIntoView({
+							behavior: "smooth",
+						})
+					}
+				>
+					about
+				</button>
+				<button
+					className="link-hover"
+					onClick={() =>
+						projectsRef.current?.scrollIntoView({
+							behavior: "smooth",
+						})
+					}
+				>
+					projects
+				</button>
+				<button
+					className="link-hover"
+					onClick={() =>
+						contactRef.current?.scrollIntoView({
+							behavior: "smooth",
+						})
+					}
+				>
+					contact
+				</button>
+				<Darklight />
+			</nav>
+			<header id="splash">
 				<div id="splash-container">
+					<div id="splash-text">
 					<h1 translate="no" id="splash-title">
-						Matt Lamb
+						<span>Matt</span>
+						<span>Lamb</span>
 					</h1>
 					<Titles />
+					</div>
 					<img
 						src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
 						alt=""
 						draggable="false"
 					/>
-					<nav className="links-container">
-						<button
-							className="link-hover"
-							onClick={() =>
-								aboutRef.current?.scrollIntoView({
-									behavior: "smooth",
-								})
-							}
-						>
-							about
-						</button>
-						<button
-							className="link-hover"
-							onClick={() =>
-								projectsRef.current?.scrollIntoView({
-									behavior: "smooth",
-								})
-							}
-						>
-							projects
-						</button>
-						<button
-							className="link-hover"
-							onClick={() =>
-								contactRef.current?.scrollIntoView({
-									behavior: "smooth",
-								})
-							}
-						>
-							contact
-						</button>
-					</nav>
 				</div>
 			</header>
 
@@ -81,132 +85,120 @@ function Home() {
 					<div className="skills-container">
 						{icons.map((icon) => {
 							return (
-								<div className="skill-element" key={icon.name}>
+								<span className="skill-element" key={icon.name}>
 									{icon.name}
 									<i className={icon.icon} />
-								</div>
+								</span>
 							);
 						})}
 					</div>
 					<h2>Learning</h2>
 					<div className="skills-container">
-						<div className="skill-element">
+						<span className="skill-element">
 							Next.js
 							<i className="devicon-nextjs-plain" />
-						</div>
-						<div className="skill-element">
+						</span>
+						<span className="skill-element">
 							Jest
 							<i className="devicon-jest-plain" />
-						</div>
+						</span>
 					</div>
 					<h2>Languages</h2>
-					<ul>
-						<li>English (fluent)</li>
-						<li>Spanish (conversational)</li>
-						<li>Basque (beginner)</li>
+					<ul className="languages">
+						<li><span className="language-header">English</span><br/><span>native</span></li>
+						<li><span className="language-header">Spanish</span><br/><span>conversational</span></li>
+						<li><span className="language-header">Basque</span><br/><span>beginner</span></li>
 					</ul>
 				</section>
 				<section id="project-section">
-					<h2 id="projects" ref={projectsRef}>
+					<h2 ref={projectsRef}>
 						Projects
 					</h2>
 					<div className="project-container">
-						<div className="project-card">
-							<div className="card-image">
-							<ErrorBoundary>
-									<Suspense>
-										<ProjectImage
-											imageSource={"src/assets/synth-screenshot.png"}
-											altText={"Space-themed arcade game with moving planets, asteroids and a manta ray"}
-										/>
-									</Suspense>
-								</ErrorBoundary>
-							</div>
-							<div className="card-content">
-								<h3 className="card-title">SynthSounds</h3>
-								<div className="card-description">
-									<p>10 Days | Solo Project</p>
-									<p>
-										React.js, Tone.js, Heroku, Django,
-										PostgreSQL
-									</p>
-								</div>
-							</div>
-						</div>
-						<div className="project-card">
-							<div className="card-image">
-							<ErrorBoundary>
-									<Suspense>
-										<ProjectImage
-											imageSource={"src/assets/shirtify-screenshot.png"}
-											altText={"Space-themed arcade game with moving planets, asteroids and a manta ray"}
-										/>
-									</Suspense>
-								</ErrorBoundary>
-							</div>
-							<div className="card-content">
-								<h3 className="card-title">Shirtify</h3>
-								<div className="card-description">
-									<p>7 Days | Paired Project</p>
-									<p>
-										MongoDB, Express.js, React.js, Node.js
-									</p>
-								</div>
-							</div>
-						</div>
-						<div className="project-card">
-							<div className="card-image">
-							<ErrorBoundary>
-									<Suspense>
-										<ProjectImage
-											imageSource={"src/assets/myco-screenshot.png"}
-											altText={"Space-themed arcade game with moving planets, asteroids and a manta ray"}
-										/>
-									</Suspense>
-								</ErrorBoundary>
-							</div>
-							<div className="card-content">
-								<h3 className="card-title">MycoProject</h3>
-								<div className="card-description">
-									<p>7 Days | Solo Project</p>
-									<p>MongoDB, Express.js, Node.js, EJS</p>
-								</div>
-							</div>
-						</div>
-						<div className="project-card">
-							<div className="card-image">
-								<ErrorBoundary>
-									<Suspense>
-										<ProjectImage
-											imageSource={"src/assets/cosmic-ray-screenshot.png"}
-											altText={"Space-themed arcade game with moving planets, asteroids and a manta ray"}
-										/>
-									</Suspense>
-								</ErrorBoundary>
-							</div>
-							<div className="card-content">
-								<h3 className="card-title">Cosmic Ray</h3>
-								<div className="card-description">
-									<p>7 Days | Solo Project</p>
-									<p>JavaScript, HTML and CSS</p>
-								</div>
-							</div>
-						</div>
+					<Project
+							name="SynthSounds"
+							description="9 Days | Solo Project"
+							technologies="React.js, Tone.js, Django, Heroku"
+							imageSource="src/assets/synth-screenshot.png"
+							altText=""
+						/>
+						<Project
+							name="Shirtify"
+							description="7 Days | Paired Project"
+							technologies="React.js, MongoDB, Express.js, Node.js"
+							imageSource="src/assets/shirtify-home.png"
+							altText=""
+						/>
+						<Project
+							name="MycoProject"
+							description="7 Days | Solo Project"
+							technologies="MongoDB, Express.js, Node.js, EJS"
+							imageSource="src/assets/myco-home.png"
+							altText=""
+						/>
+						<Project
+							name="Cosmic Ray"
+							description="7 Days | Solo Project"
+							technologies="JavaScript, HTML and CS"
+							imageSource="src/assets/cosmic-ray-screenshot.png"
+							altText="Space-themed arcade game with moving planets, asteroids and a manta ray"
+						/>
 					</div>
 				</section>
 				<section>
 					<h2>Experience</h2>
-					<ul>
-						<li>General Assembly, SEB - 2024</li>
-						<li>Private English Tutor - dates</li>
-						<li>Lifeboat Operations Coordinator, RNLI - dates</li>
+					<ul className="experience">
+						<li>
+							General Assembly, SEB - 2024
+							<ErrorBoundary>
+								<Suspense>
+									<Image
+										imageSource={
+											"./src/assets/general-assembly-cog-logo.png"
+										}
+										altText={
+											"Red mechanical cog with 'GA' inside"
+										}
+									/>
+								</Suspense>
+							</ErrorBoundary>
+						</li>
+						<li>
+							Private English Tutor
+							<ErrorBoundary>
+								<Suspense>
+									<Image
+										imageSource={
+											"./src/assets/RNLI-logo.png"
+										}
+										altText={""}
+									/>
+								</Suspense>
+							</ErrorBoundary>
+						</li>
+						<li>
+							Lifeboat Operations Coordinator, RNLI - date
+							<ErrorBoundary>
+								<Suspense>
+									<Image
+										imageSource={
+											"./src/assets/RNLI-logo.png"
+										}
+										alt={
+											"Flag with red cross and blue outline containing a gold crown, gold anchor and 'RNLI' in red"
+										}
+									/>
+								</Suspense>
+							</ErrorBoundary>
+						</li>
 					</ul>
 				</section>
 				<section>
-					<h2>Interests</h2>
+					<h2>My favourite</h2>
 					<ul>
-						<li>Sound design - visual elements</li>
-						<li>Linguistics - visual elements</li>
+						<li>Sound design software - SampleBrain</li>
+						<li>Language Script - Tifinagh</li>
+						<li>{"Chess opening (Bullet) - King's Gambit"}</li>
 					</ul>
 					<h2>Currently</h2>
 					<ul>
@@ -264,7 +256,7 @@ function Home() {
 						</li>
 					</ul>
 					<button
-						className="scroll-to-top"
+						className="scroll-to-top link-hover"
 						onClick={() =>
 							homeRef.current?.scrollIntoView({
 								behavior: "smooth",
