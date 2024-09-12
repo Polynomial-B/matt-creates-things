@@ -6,6 +6,7 @@ main {
 
 nav {
     padding: 10px 0;
+    gap: 5px 0;
 }
 
 #splash * {
@@ -26,7 +27,7 @@ nav {
 
 #splash-container {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     height: 100%;
     width: 100vw;
     justify-content: space-around;
@@ -39,39 +40,74 @@ nav {
 	font-weight: 500;
     letter-spacing: 0px;
 	font-optical-sizing: auto;
-    font-size: clamp(3em, 8vw, 6em);
-    text-align: center;
+    font-size: clamp(2.8em, 15vw, 4em);
+    justify-content: end;
     line-height: 80%;
     font-family: "Tenor Sans", "Montserrat", sans-serif;
     font-weight: 700;
-    width: 50vw;
+    width: 40vw;
 }
+
 #splash img {
-    width: clamp(220px, 20vw, 300px);
+    width: clamp(220px, 20vw, 400px);
 }
 
 #splash-text {
-    border: 1px solid red;
     display: flex;
-    width: 100%;
     padding: 0 10px;
+    flex-direction: row;
+    gap: 40px;
+    min-width: 400px;
 }
 
 #job-title {
-    font-size: clamp(2rem, 10vw, 4rem);
+    display: flex;
+    font-size: clamp(3rem, 10vw, 4rem);
     margin: 0;
     padding: 0;
+    width: 40vw;
     scroll-snap-align: none;
     font-weight: 100;
-    display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50vw;
+    line-height: 90%;
 }
 
 #job-item-one, #job-item-two {
     display: flex;
     width: 100%;
+}
+
+@keyframes fade-in-out {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    50% {
+        opacity: 0.8;
+        transform: translateY(0);
+    }
+    80% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.fade-in-out {
+    animation: fade-in-out 2s ease-in-out infinite;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .links-container {
@@ -82,6 +118,7 @@ nav {
     justify-content: space-around;
     align-self: flex-end;
     flex-wrap: wrap;
+    animation: fade 1s ease-in-out;
 }
 
 .links-container button {
@@ -185,7 +222,7 @@ figure svg {
 .legal {
     display: flex;
     justify-content: flex-end;
-    align-content: center;
+    align-content: space-around;
     margin: 10vh 0 3vh;
     flex-wrap: wrap;
     height: 30vh;
@@ -193,16 +230,24 @@ figure svg {
 
 .legal > * {
     display: flex;
-    margin: 10px;
+    margin: 5vh 0 0;
     padding: 5px;
     align-self: center;
     font-weight: 200;
+}
+
+.legal button {
+    margin: 0 0 30px;
 }
 
 #footer-email {
     font-size: 1.4rem;
     letter-spacing: 2px;
     font-family: "Encode Sans", sans-serif;
+}
+
+#copyright {
+    user-select: none;
 }
 
 #project-section {
@@ -259,4 +304,26 @@ figure svg {
 
 .language-header {
     font-size: 2rem;
+}
+
+@media screen and (max-width: 660px) {
+    #splash-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #splash-title span {
+        width: fit-content;
+        justify-content: left;
+    }
+    #job-title {
+        justify-content: center;
+        width: 20rem;
+    }
+    #job-title span {
+        width: max-content;
+    }
+    #job-item-one, #job-item-two {
+        align-self: center;
+    }
 }
