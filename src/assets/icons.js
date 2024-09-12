@@ -13,6 +13,9 @@ const icons = [
     { name: 'GitHub', icon: 'devicon-github-original' },
     { name: 'MongoDB', icon: 'devicon-mongodb-plain' },
     { name: 'Heroku', icon: 'devicon-heroku-plain' },
+    { name: 'Postman', icon: 'devicon-postman-plain'},
+    { name: 'Figma', icon: 'devicon-figma-plain'},
+    
 ];
 
 export default icons
