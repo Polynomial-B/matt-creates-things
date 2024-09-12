@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState, Suspense } from "react";
+import { useRef, Suspense } from "react";
 import Darklight from "./Darklight";
 import Titles from "./Titles";
 import icons from "../assets/icons";
@@ -6,6 +6,7 @@ import "../App.css";
 import Image from "./Image";
 import ErrorBoundary from "./ErrorBoundary";
 import Project from "./Project";
+
 
 function Home() {
 	const aboutRef = useRef();
@@ -51,11 +52,11 @@ function Home() {
 			<header id="splash">
 				<div id="splash-container">
 					<div id="splash-text">
-					<h1 translate="no" id="splash-title">
-						<span>Matt</span>
-						<span>Lamb</span>
-					</h1>
-					<Titles />
+						<h1 translate="no" id="splash-title">
+							<span>Matt</span>
+							<span>Lamb</span>
+						</h1>
+						<Titles />
 					</div>
 					<img
 						src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
@@ -70,10 +71,7 @@ function Home() {
 					<h2 id="about" ref={aboutRef}>
 						About
 					</h2>
-					<p>
-						A full-stack web developer, interested in building
-						creative/innovative/smart/impactful applications.
-					</p>
+
 					<p>
 						{
 							"UPDATE: I've always had an interest in functionality. My professional journey has allowed me to engage deeply with the welfare state, espresso, all-weather lifeboats, cartography and linguistics. I love learning and deepening my understanding, especially when I can apply it practically. I'm drawn to Software Engineering for its vast applications and creativity. Most of all, I find it immensely satisfying to build something and understand how it works."
@@ -98,50 +96,60 @@ function Home() {
 							Next.js
 							<i className="devicon-nextjs-plain" />
 						</span>
-						<span className="skill-element">
+						{/* <span className="skill-element">
 							Jest
 							<i className="devicon-jest-plain" />
-						</span>
+						</span> */}
 					</div>
 					<h2>Languages</h2>
 					<ul className="languages">
-						<li><span className="language-header">English</span><br/><span>native</span></li>
-						<li><span className="language-header">Spanish</span><br/><span>conversational</span></li>
-						<li><span className="language-header">Basque</span><br/><span>beginner</span></li>
+						<li>
+							<span className="language-header">English</span>
+							<br />
+							<span>native</span>
+						</li>
+						<li>
+							<span className="language-header">Spanish</span>
+							<br />
+							<span>conversational</span>
+						</li>
+						<li>
+							<span className="language-header">Basque</span>
+							<br />
+							<span>beginner</span>
+						</li>
 					</ul>
 				</section>
 				<section id="project-section">
-					<h2 ref={projectsRef}>
-						Projects
-					</h2>
+					<h2 ref={projectsRef}>Projects</h2>
 					<div className="project-container">
-					<Project
+						<Project
 							name="SynthSounds"
 							description="9 Days | Solo Project"
 							technologies="React.js, Tone.js, Django, Heroku"
 							imageSource="src/assets/synth-screenshot.png"
-							altText=""
+							altText="A musical synthesiser with each key as a small square in a grid."
 						/>
 						<Project
 							name="Shirtify"
 							description="7 Days | Paired Project"
 							technologies="React.js, MongoDB, Express.js, Node.js"
 							imageSource="src/assets/shirtify-home.png"
-							altText=""
+							altText="Large red text 'Shirtify' over image of man in green t-shirt and hat, smiling."
 						/>
 						<Project
 							name="MycoProject"
 							description="7 Days | Solo Project"
 							technologies="MongoDB, Express.js, Node.js, EJS"
-							imageSource="src/assets/myco-home.png"
-							altText=""
+							imageSource="src/assets/myco-home.webp"
+							altText="Colourful cartoon background. Grid containing 8 mushrooms, some with toxic symbols."
 						/>
 						<Project
 							name="Cosmic Ray"
 							description="7 Days | Solo Project"
 							technologies="JavaScript, HTML and CS"
-							imageSource="src/assets/cosmic-ray-screenshot.png"
-							altText="Space-themed arcade game with moving planets, asteroids and a manta ray"
+							imageSource="src/assets/cosmic-ray-screenshot.webp"
+							altText="Space-themed background with moving planets, asteroids and a manta ray, in an retro game machine style."
 						/>
 					</div>
 				</section>
@@ -169,7 +177,7 @@ function Home() {
 								<Suspense>
 									<Image
 										imageSource={
-											"./src/assets/RNLI-logo.png"
+											""
 										}
 										altText={""}
 									/>
@@ -194,16 +202,16 @@ function Home() {
 					</ul>
 				</section>
 				<section>
-					<h2>My favourite</h2>
+					{/* <h2>My favourite</h2>
 					<ul>
 						<li>Sound design software - SampleBrain</li>
 						<li>Language Script - Tifinagh</li>
 						<li>{"Chess opening (Bullet) - King's Gambit"}</li>
-					</ul>
+					</ul> */}
 					<h2>Currently</h2>
 					<ul>
 						<li>listening to / current playlist ... </li>
-						<li>reading Dawn by Octavia E. Butler</li>
+						<li>reading ...</li>
 					</ul>
 				</section>
 			</main>
@@ -255,6 +263,8 @@ function Home() {
 							</a>
 						</li>
 					</ul>
+				</section>
+				<section className="legal">
 					<button
 						className="scroll-to-top link-hover"
 						onClick={() =>
@@ -265,10 +275,8 @@ function Home() {
 					>
 						scroll to top
 					</button>
-				</section>
-				<section className="legal">
 					<div id="footer-email">m.lamb.dev@gmail.com</div>
-					<div>&copy; Matt Lamb {new Date().getFullYear()}</div>
+					<div id="copyright">&copy; Matt Lamb {new Date().getFullYear()}</div>
 				</section>
 			</footer>
 		</>
