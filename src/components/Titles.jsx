@@ -18,17 +18,18 @@ function Titles() {
     useEffect(() => {
         const updateJobItem = () => {
           currentIndexRef.current = (currentIndexRef.current + 1) % titlesArray.length;
-          setJobItem(titlesArray[currentIndexRef.current]);
+          setJobItem(
+            titlesArray[currentIndexRef.current]);
         };
 
-        intervalIdRef.current = setInterval(updateJobItem, 3000);
+        intervalIdRef.current = setInterval(updateJobItem, 2000);
 
         return () => {
           clearInterval(intervalIdRef.current);
         };
       }, []);
 
-    return <h2 id="job-title"><span id="job-item-one">{jobItem[0]}</span><span id="job-item-two">{jobItem[1]}</span></h2>
+    return <h2 id="job-title"><span id="job-item-one" className="fade-in-out">{jobItem[0]}</span><span id="job-item-two">{jobItem[1]}</span></h2>
 
 }
 
