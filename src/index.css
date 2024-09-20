@@ -11,14 +11,20 @@
     --text-color: #2f2f2f;
     --background: linear-gradient(
         135deg,
-        #ff6f91 0%,
-        #ff9671 25%,
-        #ffc75f 50%,
-        #f9f871 75%,
-        #00c9a7 100%
+        #5f87ff 0%,
+        #8d82ff 10%,
+        #c171ff 20%,
+        #c15fff 30%,
+        #c25fff 40%,
+        #a066f5 50%,
+        #7c71f9 60%,
+        #4e9cd6 70%,
+        #00b8c9 80%,
+        #00b8a0 90%,
+        #00b874 100%
     );
     --header-color: #333;
-	--icon-hover: rgb(13, 130, 44);
+	--icon-hover:  #c25fff;
     --icons: #2f2f2f;
 }
 
@@ -37,14 +43,20 @@ html {
     --header-color: #333;
     --background: linear-gradient(
         135deg,
-        #ff6f91 0%,
-        #ff9671 25%,
-        #ffc75f 50%,
-        #f9f871 75%,
-        #00c9a7 100%
+        #5f87ff 0%,
+        #8d82ff 10%,
+        #c171ff 20%,
+        #c15fff 30%,
+        #c25fff 40%,
+        #a066f5 50%,
+        #7c71f9 60%,
+        #4e9cd6 70%,
+        #00b8c9 80%,
+        #12a6bd 90%,
+        #06a59e 100%
     );
 	--icons: #2f2f2f;
-    --icon-hover: rgb(13, 130, 44);
+	--icon-hover:  #01467b;
 }
 
 .dark-mode {
