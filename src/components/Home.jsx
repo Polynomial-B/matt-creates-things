@@ -1,12 +1,13 @@
 import { useRef, Suspense } from "react";
-import Darklight from "./Darklight";
-import Titles from "./Titles";
 import icons from "../assets/icons";
 import "../App.css";
+import Darklight from "./Darklight";
+import Titles from "./Titles";
 import Image from "./Image";
 import ErrorBoundary from "./ErrorBoundary";
 import Project from "./Project";
-
+import Experience from "./Experience";
+import Currently from "./Currently";
 
 function Home() {
 	const aboutRef = useRef();
@@ -96,10 +97,10 @@ function Home() {
 							Next.js
 							<i className="devicon-nextjs-plain" />
 						</span>
-						{/* <span className="skill-element">
+						<span className="skill-element">
 							Jest
 							<i className="devicon-jest-plain" />
-						</span> */}
+						</span>
 					</div>
 					<h2>Languages</h2>
 					<ul className="languages">
@@ -125,28 +126,28 @@ function Home() {
 					<div className="project-container">
 						<Project
 							name="SynthSounds"
-							description="9 Days | Solo Project"
-							technologies="React.js, Tone.js, Django, Heroku"
+							description="9 Days (Solo Project)"
+							technologies="React.js, Tone.js, Django, postgreSQL, Heroku"
 							imageSource="src/assets/synth-screenshot.png"
 							altText="A musical synthesiser with each key as a small square in a grid."
 						/>
 						<Project
 							name="Shirtify"
-							description="7 Days | Paired Project"
+							description="7 Days (Paired Project)"
 							technologies="React.js, MongoDB, Express.js, Node.js"
 							imageSource="src/assets/shirtify-home.png"
-							altText="Large red text 'Shirtify' over image of man in green t-shirt and hat, smiling."
+							altText="Large red text 'Shirtify', man in green t-shirt and hat, smiling."
 						/>
 						<Project
 							name="MycoProject"
-							description="7 Days | Solo Project"
+							description="7 Days (Solo Project)"
 							technologies="MongoDB, Express.js, Node.js, EJS"
 							imageSource="src/assets/myco-home.webp"
-							altText="Colourful cartoon background. Grid containing 8 mushrooms, some with toxic symbols."
+							altText="Colourful cartoon background. Grid showing 8 mushroom species, some with toxic symbols."
 						/>
 						<Project
 							name="Cosmic Ray"
-							description="7 Days | Solo Project"
+							description="7 Days (Solo Project)"
 							technologies="JavaScript, HTML and CS"
 							imageSource="src/assets/cosmic-ray-screenshot.webp"
 							altText="Space-themed background with moving planets, asteroids and a manta ray, in an retro game machine style."
@@ -157,62 +158,84 @@ function Home() {
 					<h2>Experience</h2>
 					<ul className="experience">
 						<li>
-							General Assembly, SEB - 2024
-							<ErrorBoundary>
-								<Suspense>
-									<Image
-										imageSource={
-											"./src/assets/general-assembly-cog-logo.png"
-										}
-										altText={
-											"Red mechanical cog with 'GA' inside"
-										}
-									/>
-								</Suspense>
-							</ErrorBoundary>
+							<div className="experience-img">
+								<ErrorBoundary>
+									<Suspense>
+										<Image
+											imageSource={
+												"./src/assets/general-assembly-cog-logo.png"
+											}
+											altText={
+												"Red mechanical cog with 'GA' inside"
+											}
+										/>
+									</Suspense>
+								</ErrorBoundary>
+							</div>
+							<Experience
+								title="Sofware Engineering Bootcamp, General Assembly"
+								dates="2024"
+								list1="Experience with frontend and backend development, integrating APIs and managing databases."
+								list2="Experience with debugging, code refactoring and problem-solving."
+								list3="Daily standup, live classes, and practical labs."
+							/>
 						</li>
 						<li>
-							Private English Tutor
-							<ErrorBoundary>
-								<Suspense>
-									<Image
-										imageSource={
-											""
-										}
-										altText={""}
-									/>
-								</Suspense>
-							</ErrorBoundary>
+							<div className="experience-img">
+								<ErrorBoundary>
+									<Suspense>
+										<Image imageSource={""} altText={""} />
+									</Suspense>
+								</ErrorBoundary>
+							</div>
+							<Experience
+								title="Private English Tutor"
+								dates="2022 - present"
+								list1="Managed personal brand: communication, marketing and self-promotion."
+								list2="Created content, materials and curriculum: provided targets and activities."
+								list3="Organised events: game events, workshops and outings."
+							/>
 						</li>
 						<li>
-							Lifeboat Operations Coordinator, RNLI - date
-							<ErrorBoundary>
-								<Suspense>
-									<Image
-										imageSource={
-											"./src/assets/RNLI-logo.png"
-										}
-										alt={
-											"Flag with red cross and blue outline containing a gold crown, gold anchor and 'RNLI' in red"
-										}
-									/>
-								</Suspense>
-							</ErrorBoundary>
+							<div className="experience-img">
+								<ErrorBoundary>
+									<Suspense>
+										<Image
+											imageSource={
+												"./src/assets/RNLI-logo.png"
+											}
+											alt={
+												"Flag with red cross and blue outline containing a gold crown, gold anchor and 'RNLI' in red"
+											}
+										/>
+									</Suspense>
+								</ErrorBoundary>
+							</div>
+							<Experience
+								title="Lifeboat Operations Coordinator, RNLI"
+								dates="2020 - 2022"
+								list1="Managed annual tidal almanac distribution and updated physical and digital maps."
+								list2="Circulated critical safety notices across the British Isles and provided on-call support for lifesaving teams."
+								list3="Optimized database and intranet, ensuring content accuracy, and trained new staff both in-person and remotely."
+							/>
 						</li>
 					</ul>
 				</section>
 				<section>
-					{/* <h2>My favourite</h2>
-					<ul>
-						<li>Sound design software - SampleBrain</li>
-						<li>Language Script - Tifinagh</li>
-						<li>{"Chess opening (Bullet) - King's Gambit"}</li>
-					</ul> */}
 					<h2>Currently</h2>
-					<ul>
-						<li>listening to / current playlist ... </li>
-						<li>reading ...</li>
-					</ul>
+					<div className="interests">
+						<Currently
+							text="Listening to..."
+							imageSource="src/assets/wham-last-christmas.jpg"
+							altText=""
+						/>
+						<Currently
+							text="Reading..."
+							imageSource="src/assets/dawn-octavia-butler.jpg"
+							altText=""
+						/>
+
+					</div>
 				</section>
 			</main>
 			<footer>
@@ -273,10 +296,12 @@ function Home() {
 							})
 						}
 					>
-						scroll to top
+						<span>scroll to top</span>
 					</button>
 					<div id="footer-email">m.lamb.dev@gmail.com</div>
-					<div id="copyright">&copy; Matt Lamb {new Date().getFullYear()}</div>
+					<div id="copyright">
+						&copy; Matt Lamb {new Date().getFullYear()}
+					</div>
 				</section>
 			</footer>
 		</>
