@@ -1,7 +1,6 @@
 const icons = [
     { name: 'JavaScript', icon: 'devicon-javascript-plain' },
     { name: 'React.js', icon: 'devicon-react-original' },
-    { name: 'CSS', icon: 'devicon-css3-plain' },
     { name: 'HTML', icon: 'devicon-html5-plain' },
     { name: 'TypeScript', icon: 'devicon-typescript-plain' },
     { name: 'Express', icon: 'devicon-express-original' },
@@ -14,7 +13,9 @@ const icons = [
     { name: 'MongoDB', icon: 'devicon-mongodb-plain' },
     { name: 'Heroku', icon: 'devicon-heroku-plain' },
     { name: 'Postman', icon: 'devicon-postman-plain'},
-    { name: 'Figma', icon: 'devicon-figma-plain'},
+    { name: 'CSS', icon: 'devicon-css3-plain' },
+    { name: 'Tailwind', icon: 'devicon-tailwindcss-original' },
+    // { name: 'Figma', icon: 'devicon-figma-plain'},
     
 ];
 
