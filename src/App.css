@@ -384,7 +384,8 @@ figure svg {
     display: flex;
     width: 300px;
     height: 300px;
-    border-radius: 10px;
+    border-radius: 25px;
+    box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.371);
 }
 
 .currently-text {
@@ -393,11 +394,16 @@ figure svg {
     bottom: 0;
     left: 0;
     font-size: 2em;
-    color: grey;
-    background: rgba(0, 0, 0, 0.888);
+    color: var(--text-color);
+    background: var(--interests-bg);
     border-radius: 0 0 10px 10px;
     width: 300px;
     text-align: center;
+}
+
+#playlist:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 @media screen and (max-width: 660px) {
