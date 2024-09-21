@@ -3,9 +3,10 @@ import "../App.css";
 import Image from "./Image";
 import ErrorBoundary from "./ErrorBoundary";
 
-function Currently({text, imageSource, altText}) {
+function Currently({text, imageSource, altText, playlist, link}) {
 	return (
 		<>
+        <a href={link} target="_blank" id={playlist}>
         <div className="currently">
 			<ErrorBoundary>
 				<Suspense>
@@ -14,6 +15,7 @@ function Currently({text, imageSource, altText}) {
 			</ErrorBoundary>
             <div className="currently-text">{text}</div>
             </div>
+            </a>
         </>
 	);
 }

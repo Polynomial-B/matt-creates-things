@@ -7,7 +7,7 @@ import Image from "./Image";
 import ErrorBoundary from "./ErrorBoundary";
 import Project from "./Project";
 import Experience from "./Experience";
-import Currently from "./Currently";
+import Currently from "./Interests";
 
 function Home() {
 	const aboutRef = useRef();
@@ -222,12 +222,14 @@ function Home() {
 					</ul>
 				</section>
 				<section>
-					<h2>Currently</h2>
+					<h2>Interests</h2>
 					<div className="interests">
 						<Currently
 							text="Listening to..."
-							imageSource="src/assets/wham-last-christmas.jpg"
+							imageSource="src/assets/bluets-album.png"
 							altText=""
+							playlist="playlist"
+							link="https://open.spotify.com/playlist/2CGZ5GkE9lrNpGjcGDySfP?si=lJlREEUhSk2RuODsMRjS7Q"
 						/>
 						<Currently
 							text="Reading..."
