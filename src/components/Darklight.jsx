@@ -1,5 +1,3 @@
-import "../App.css";
-import "../index.css";
 import "../Darklight.css";
 import { useState } from "react";
 
