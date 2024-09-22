@@ -1,5 +1,4 @@
 import { Suspense } from "react";
-import "../App.css";
 import Image from "./Image";
 import ErrorBoundary from "./ErrorBoundary";
 
