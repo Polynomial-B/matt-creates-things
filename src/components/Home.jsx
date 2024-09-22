@@ -1,6 +1,5 @@
 import { useRef, Suspense } from "react";
 import icons from "../assets/icons";
-import "../App.css";
 import Darklight from "./Darklight";
 import Titles from "./Titles";
 import Image from "./Image";
@@ -127,30 +126,38 @@ function Home() {
 						<Project
 							name="SynthSounds"
 							description="9 Days (Solo Project)"
-							technologies="React.js, Tone.js, Django, postgreSQL, Heroku"
+							technologies="React.js, Django, PostgreSQL, Tone.js, Heroku, CSS"
 							imageSource="src/assets/synth-screenshot.png"
 							altText="A musical synthesiser with each key as a small square in a grid."
+							github="https://github.com/Polynomial-B/synth-app-frontend"
+							deployed="https://synth-sounds.netlify.app/synth"
 						/>
 						<Project
 							name="Shirtify"
 							description="7 Days (Paired Project)"
-							technologies="React.js, MongoDB, Express.js, Node.js"
+							technologies="MongoDB, Express.js, React.js, Node.js, CSS"
 							imageSource="src/assets/shirtify-home.png"
 							altText="Large red text 'Shirtify', man in green t-shirt and hat, smiling."
+							github="https://github.com/Polynomial-B/shirtify-mern-frontend"
+							deployed="https://shirtify-wishlist.netlify.app/"
 						/>
 						<Project
 							name="MycoProject"
 							description="7 Days (Solo Project)"
-							technologies="MongoDB, Express.js, Node.js, EJS"
+							technologies="MongoDB, Express.js, Node.js, EJS, CSS"
 							imageSource="src/assets/myco-home.webp"
 							altText="Colourful cartoon background. Grid showing 8 mushroom species, some with toxic symbols."
+							github="https://github.com/Polynomial-B/myco-project"
+							deployed="https://myco-project.netlify.app/"
 						/>
 						<Project
 							name="Cosmic Ray"
 							description="7 Days (Solo Project)"
-							technologies="JavaScript, HTML and CS"
+							technologies="JavaScript, HTML, CSS"
 							imageSource="src/assets/cosmic-ray-screenshot.webp"
 							altText="Space-themed background with moving planets, asteroids and a manta ray, in an retro game machine style."
+							github="https://github.com/Polynomial-B/cosmic-ray-game"
+							deployed="https://polynomial-b.github.io/cosmic-ray-game/"
 						/>
 					</div>
 				</section>
@@ -166,7 +173,7 @@ function Home() {
 												"./src/assets/general-assembly-cog-logo.png"
 											}
 											altText={
-												"Red mechanical cog with 'GA' inside"
+												"Red mechanical cog with letters 'GA' inside"
 											}
 										/>
 									</Suspense>
@@ -226,7 +233,7 @@ function Home() {
 					<div className="interests">
 						<Currently
 							text="Listening to..."
-							imageSource="src/assets/bluets-album.png"
+							imageSource="src/assets/listening-to.webp"
 							altText=""
 							playlist="playlist"
 							link="https://open.spotify.com/playlist/2CGZ5GkE9lrNpGjcGDySfP?si=lJlREEUhSk2RuODsMRjS7Q"
