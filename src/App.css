@@ -15,6 +15,7 @@ nav {
 }
 
 #splash {
+    min-height: 300px;
 	display: flex;
 	flex-wrap: wrap;
 	align-content: space-between;
@@ -183,8 +184,6 @@ p {
 	font-weight: 100;
 }
 
-
-
 .scroll-to-top {
 	display: flex;
 	justify-self: center;
@@ -266,6 +265,7 @@ figure svg {
 	margin: 10vh 0 3vh;
 	flex-wrap: wrap;
 	height: 30vh;
+    min-height: 200px;
 }
 
 .legal > * {
@@ -292,6 +292,18 @@ figure svg {
 #project-section {
 	width: auto;
 	padding: 0;
+}
+.project-links-container {
+    display: flex;
+    color: var(--text-color);
+    font-size: 1.2em;
+    margin: 5px 0 20px;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.project-links {
+	cursor: pointer;
 }
 
 .project-container {
@@ -372,12 +384,13 @@ figure svg {
     flex-wrap: wrap;
     gap: 5vw;
     justify-content: center;
+    margin: 20px 0 60px;
 }
 
 .currently {
     position: relative;
     z-index: 1;
-    font-family: "Tenor Sans", "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .currently img {
@@ -393,12 +406,13 @@ figure svg {
     z-index: 2;
     bottom: 0;
     left: 0;
-    font-size: 2em;
+    font-size: 1.6em;
     color: var(--text-color);
     background: var(--interests-bg);
     border-radius: 0 0 10px 10px;
     width: 300px;
     text-align: center;
+	font-weight: 300;
 }
 
 #playlist:hover {
