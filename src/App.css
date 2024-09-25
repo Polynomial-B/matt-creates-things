@@ -25,6 +25,8 @@ nav {
 	height: 80dvh;
 	height: 80svh;
 	padding: 0 0 10vh;
+	margin-top: 10vh;
+	min-height: 500px;
 }
 
 #splash-container {
@@ -32,8 +34,9 @@ nav {
 	flex-direction: column;
 	height: 100%;
 	width: 100vw;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
+	gap: 5vh;
 }
 
 #splash-title span {
@@ -423,6 +426,9 @@ figure svg {
 }
 
 @media screen and (max-width: 660px) {
+	#splash {
+		margin-top: 0;
+	}
 	#splash-text {
 		display: flex;
 		flex-direction: column;
@@ -442,5 +448,21 @@ figure svg {
 	#job-item-one,
 	#job-item-two {
 		align-self: center;
+	}
+}
+
+@media only screen and (orientation: landscape) {
+	#splash-container {
+		height: 80vh;
+		gap: 30vh;
+		margin-top: 20vh;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1400px) {
+	#splash-container {
+		height: 80vh;
+		gap: 5vh;
+		margin-top: 0;
 	}
 }

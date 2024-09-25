@@ -95,28 +95,27 @@ html {
     }
 }
 
-@media (prefers-reduced-motion: reduce) {
-    * {
-        animation: none !important;
-        transition: none !important;
-        scroll-behavior: auto !important;
-        scroll-snap-align: none !important;
-    }
-}
-
-body {
-    scroll-snap-type: y proximity;
-    -webkit-scroll-snap-type: y proximity;
-	color: var(--text-color);
-	background: var(--background);
-    margin: 0;
-}
-
 @media (prefers-reduced-motion: no-preference) {
 	html {
 		scroll-behavior: smooth;
 	}
 }
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+body {
+	color: var(--text-color);
+	background: var(--background);
+    margin: 0;
+}
+
+
 
 
 h1 {
@@ -135,10 +134,6 @@ h3 {
 
 h2, h3 {
     font-family: "Tenor Sans", "Montserrat", sans-serif;
-}
-
-#splash, .project-card, h2, .links-container {
-	scroll-snap-align: start;
 }
 
 section {

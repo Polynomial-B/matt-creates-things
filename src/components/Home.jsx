@@ -223,7 +223,8 @@ function Home() {
 								dates="2020 - 2022"
 								list1="Managed annual tidal almanac distribution and updated physical and digital maps."
 								list2="Circulated critical safety notices across the British Isles and provided on-call support for lifesaving teams."
-								list3="Optimized database and intranet, ensuring content accuracy, and trained new staff both in-person and remotely."
+								list3="Optimised database and intranet, ensuring content accuracy."
+								list4="Trained staff, both in-person and remote."
 							/>
 						</li>
 					</ul>
@@ -281,7 +282,6 @@ function Home() {
 							<a
 								target="_blank"
 								href="mailto:m.lamb.dev@gmail.com"
-								rel="noopener noreferrer"
 							>
 								<figure>
 									<figcaption>E-mail</figcaption>
