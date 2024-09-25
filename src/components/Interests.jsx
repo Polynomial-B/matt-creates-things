@@ -12,7 +12,7 @@ function Currently({text, imageSource, altText, playlist, link}) {
 					<Image imageSource={imageSource} altText={altText} />
 				</Suspense>
 			</ErrorBoundary>
-            <div className="currently-text">{text}</div>
+            <div className={`currently-text ${link && "link-hover"}`}>{text}</div>
             </div>
             </a>
         </>
