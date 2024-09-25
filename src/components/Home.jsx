@@ -127,7 +127,7 @@ function Home() {
 							name="SynthSounds"
 							description="9 Days (Solo Project)"
 							technologies="React.js, Django, PostgreSQL, Tone.js, Heroku, CSS"
-							imageSource="public/assets/images/synth-screenshot.png"
+							imageSource="/images/synth-screenshot.png"
 							altText="A musical synthesiser with each key as a small square in a grid."
 							github="https://github.com/Polynomial-B/synth-app-frontend"
 							deployed="https://synth-sounds.netlify.app/synth"
@@ -136,7 +136,7 @@ function Home() {
 							name="Shirtify"
 							description="7 Days (Paired Project)"
 							technologies="MongoDB, Express.js, React.js, Node.js, CSS"
-							imageSource="public/assets/images/shirtify-home.png"
+							imageSource="/images/shirtify-home.png"
 							altText="Large red text 'Shirtify', man in green t-shirt and hat, smiling."
 							github="https://github.com/Polynomial-B/shirtify-mern-frontend"
 							deployed="https://shirtify-wishlist.netlify.app/"
@@ -145,7 +145,7 @@ function Home() {
 							name="MycoProject"
 							description="7 Days (Solo Project)"
 							technologies="MongoDB, Express.js, Node.js, EJS, CSS"
-							imageSource="public/assets/images/myco-home.webp"
+							imageSource="/images/myco-home.webp"
 							altText="Colourful cartoon background. Grid showing 8 mushroom species, some with toxic symbols."
 							github="https://github.com/Polynomial-B/myco-project"
 							deployed="https://myco-project.netlify.app/"
@@ -154,7 +154,7 @@ function Home() {
 							name="Cosmic Ray"
 							description="7 Days (Solo Project)"
 							technologies="JavaScript, HTML, CSS"
-							imageSource="public/assets/images/cosmic-ray-screenshot.webp"
+							imageSource="/images/cosmic-ray-screenshot.webp"
 							altText="Space-themed background with moving planets, asteroids and a manta ray, in an retro game machine style."
 							github="https://github.com/Polynomial-B/cosmic-ray-game"
 							deployed="https://polynomial-b.github.io/cosmic-ray-game/"
@@ -170,7 +170,7 @@ function Home() {
 									<Suspense>
 										<Image
 											imageSource={
-												"public/assets/images/general-assembly-cog-logo.png"
+												"/images/general-assembly-cog-logo.png"
 											}
 											altText={
 												"Red mechanical cog with letters 'GA' inside"
@@ -191,7 +191,7 @@ function Home() {
 							<div className="experience-img">
 								<ErrorBoundary>
 									<Suspense>
-										<Image imageSource={"public/assets/images/logo.png"} altText={"isometric image of letters 'ML', with colour distortion"} />
+										<Image imageSource={"/images/logo.png"} altText={"isometric image of letters 'ML', with colour distortion"} />
 									</Suspense>
 								</ErrorBoundary>
 							</div>
@@ -209,7 +209,7 @@ function Home() {
 									<Suspense>
 										<Image
 											imageSource={
-												"public/assets/images/RNLI-logo.png"
+												"/images/RNLI-logo.png"
 											}
 											alt={
 												"Flag with red cross and blue outline containing a gold crown, gold anchor and 'RNLI' in red"
@@ -233,14 +233,14 @@ function Home() {
 					<div className="interests">
 						<Currently
 							text="Listening to..."
-							imageSource="public/assets/images/listening-to.webp"
+							imageSource="/images/listening-to.webp"
 							altText=""
 							playlist="playlist"
 							link="https://open.spotify.com/playlist/2CGZ5GkE9lrNpGjcGDySfP?si=lJlREEUhSk2RuODsMRjS7Q"
 						/>
 						<Currently
 							text="Reading..."
-							imageSource="public/assets/images/dawn-octavia-butler.jpg"
+							imageSource="/images/dawn-octavia-butler.jpg"
 							altText=""
 						/>
 
