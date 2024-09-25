@@ -50,7 +50,7 @@ nav {
 }
 
 #splash img {
-	width: clamp(220px, 20vw, 400px);
+	width: clamp(150px, 20vw, 400px);
 }
 
 #splash-text {
@@ -63,7 +63,7 @@ nav {
 
 #job-title {
 	display: flex;
-	font-size: clamp(3rem, 10vw, 4rem);
+	font-size: clamp(2rem, 10vw, 4rem);
 	margin: 0;
 	padding: 0;
 	width: 40vw;
