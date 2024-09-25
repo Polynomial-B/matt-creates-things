@@ -74,7 +74,7 @@ function Home() {
 
 					<p>
 						{
-							"UPDATE: I've always had an interest in functionality. My professional journey has allowed me to engage deeply with the welfare state, espresso, all-weather lifeboats, cartography and linguistics. I love learning and deepening my understanding, especially when I can apply it practically. I'm drawn to Software Engineering for its vast applications and creativity. Most of all, I find it immensely satisfying to build something and understand how it works."
+							"I’ve always been interested in functionality, from my professional experience I’ve learned about the welfare state, coffee roasting, wine tasting, lifesaving, lifeboats and teaching. I love learning and developing my understanding, especially when I can apply it practically which is why I'm drawn to Software Engineering. I find it incredibly satisfying to solve problems and to see ideas turn into functional applications. This is why I'm excited to progress in the world of software engineering."
 						}
 					</p>
 				</section>
@@ -191,7 +191,7 @@ function Home() {
 							<div className="experience-img">
 								<ErrorBoundary>
 									<Suspense>
-										<Image imageSource={""} altText={""} />
+										<Image imageSource={"src/assets/logo.png"} altText={"isometric image of letters 'ML', with colour distortion"} />
 									</Suspense>
 								</ErrorBoundary>
 							</div>

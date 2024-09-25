@@ -302,8 +302,9 @@ figure svg {
 	justify-content: space-between;
 }
 
-.project-links {
+.project-links a, a:visited {
 	cursor: pointer;
+	color: var(--text-color);
 }
 
 .project-container {
