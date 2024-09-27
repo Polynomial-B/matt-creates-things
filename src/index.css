@@ -9,12 +9,11 @@
 
     color-scheme: light dark;
     --text-color: #2f2f2f;
-    --background: #e6f0e8;
+    --background:  #f4d6fc;
     --header-color: #333;
-	--icon-hover:  #772828;
-    --icons: #d15555;
-    --interests-bg: #e8f0e7;
-    --photo: grayscale(0%);
+	--icon-hover:  #0c2c59;
+    --icons: #961796;
+    --interests-bg: #efefef;
 }
 
 body, html {
@@ -29,12 +28,11 @@ html {
 
 .light-mode {
     --text-color: #2f2f2f;
-    --background: #e6f0e8;
+    --background:  #f4d6fc;
     --header-color: #333;
-	--icon-hover:  #772828;
-    --icons: #d15555;
-    --interests-bg: #e8f0e7;
-    --photo: grayscale(0%);
+	--icon-hover:  #0c2c59;
+    --icons: #961796;
+    --interests-bg: #efefef;
 }
 
 .dark-mode {
@@ -49,9 +47,8 @@ html {
         #18314f 100%
     );
 	--icons: #94FFFD;
-    --icon-hover: rgb(36, 100, 163);
+    --icon-hover: #e998ff;
     --interests-bg: #242225;
-    --photo: grayscale(100%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -67,9 +64,8 @@ html {
             #18314f 100%
         );
         --icons: #94FFFD;
-        --icon-hover: rgb(36, 100, 163);
+        --icon-hover: #e998ff;
         --interests-bg: #242225;
-        --photo: grayscale(100%);
     }
 }
 
@@ -92,9 +88,6 @@ body {
 	background: var(--background);
     margin: 0;
 }
-
-
-
 
 h1 {
     margin: 0;
@@ -153,6 +146,7 @@ a {
 svg {
     fill: var(--icons);
 }
+
 
 .link-hover {
     position: relative;

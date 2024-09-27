@@ -172,7 +172,7 @@ function Home() {
 					<h2>Experience</h2>
 					<ul className="experience">
 						<li>
-							<div className="experience-img">
+							<div>
 								<ErrorBoundary>
 									<Suspense>
 										<Image
@@ -195,7 +195,7 @@ function Home() {
 							/>
 						</li>
 						<li>
-							<div className="experience-img">
+							<div>
 								<ErrorBoundary>
 									<Suspense>
 										<Image
@@ -216,7 +216,7 @@ function Home() {
 							/>
 						</li>
 						<li>
-							<div className="experience-img">
+							<div>
 								<ErrorBoundary>
 									<Suspense>
 										<Image

@@ -25,7 +25,7 @@ nav {
 	height: 80dvh;
 	height: 80svh;
 	padding: 0 0 10vh;
-	margin-top: 10vh;
+	margin-top: 5vh;
 	min-height: 500px;
 }
 
@@ -54,9 +54,9 @@ nav {
 }
 
 #splash img {
-	width: clamp(150px, 20vw, 400px);
+	width: 180px;
 	border-radius: 100%;
-	filter: var(--photo);
+	filter: grayscale(100%);
 }
 
 #splash-text {
@@ -92,7 +92,7 @@ nav {
 		transform: translateY(-40px);
 	}
 	50% {
-		opacity: 0.8;
+		opacity: 1;
 		transform: translateY(0);
 	}
 	80% {
@@ -425,6 +425,7 @@ figure svg {
 
 #playlist:hover {
     cursor: pointer;
+	filter: grayscale(80%);
 }
 
 @media screen and (max-width: 660px) {
@@ -464,7 +465,6 @@ figure svg {
 @media only screen and (min-width: 768px) and (max-width: 1400px) {
 	#splash-container {
 		height: 80vh;
-		gap: 5vh;
 		margin-top: 0;
 	}
 }
