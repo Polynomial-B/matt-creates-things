@@ -55,6 +55,8 @@ nav {
 
 #splash img {
 	width: clamp(150px, 20vw, 400px);
+	border-radius: 100%;
+	filter: var(--photo);
 }
 
 #splash-text {
@@ -247,6 +249,7 @@ footer ul {
 
 .contact figcaption {
 	text-align: center;
+	color: var(--text-color);
 }
 
 .contact-link *:hover {

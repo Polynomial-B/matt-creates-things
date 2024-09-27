@@ -9,24 +9,12 @@
 
     color-scheme: light dark;
     --text-color: #2f2f2f;
-    --background: linear-gradient(
-        135deg,
-        #5f87ff 0%,
-        #8d82ff 10%,
-        #c171ff 20%,
-        #c15fff 30%,
-        #c25fff 40%,
-        #a066f5 50%,
-        #7c71f9 60%,
-        #4e9cd6 70%,
-        #00b8c9 80%,
-        #00b8a0 90%,
-        #00b874 100%
-    );
+    --background: #eee9ff;
     --header-color: #333;
-	--icon-hover:  #8647ad;
-    --icons: #2f2f2f;
+	--icon-hover:  #7d0b72;
+    --icons: #bc4ad8;
     --interests-bg: #e8f0e7;
+    --photo: grayscale(0%);
 }
 
 body, html {
@@ -41,24 +29,12 @@ html {
 
 .light-mode {
     --text-color: #2f2f2f;
+    --background: #eee9ff;
     --header-color: #333;
-    --background: linear-gradient(
-        135deg,
-        #5f87ff 0%,
-        #8d82ff 10%,
-        #c171ff 20%,
-        #c15fff 30%,
-        #c25fff 40%,
-        #a066f5 50%,
-        #7c71f9 60%,
-        #4e9cd6 70%,
-        #00b8c9 80%,
-        #12a6bd 90%,
-        #06a59e 100%
-    );
-	--icons: #2f2f2f;
-    --icon-hover:  #8647ad;
+	--icon-hover:  #7d0b72;
+    --icons: #bc4ad8;
     --interests-bg: #e8f0e7;
+    --photo: grayscale(0%);
 }
 
 .dark-mode {
@@ -75,6 +51,7 @@ html {
 	--icons: #94FFFD;
     --icon-hover: rgb(36, 100, 163);
     --interests-bg: #242225;
+    --photo: grayscale(100%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -92,6 +69,7 @@ html {
         --icons: #94FFFD;
         --icon-hover: rgb(36, 100, 163);
         --interests-bg: #242225;
+        --photo: grayscale(100%);
     }
 }
 

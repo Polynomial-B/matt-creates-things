@@ -58,11 +58,18 @@ function Home() {
 						</h1>
 						<Titles />
 					</div>
-					<img
-						src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
-						alt=""
-						draggable="false"
-					/>
+					<ErrorBoundary>
+						<Suspense>
+							<Image
+								imageSource={
+									"public/images/Screenshot 2024-09-27 at 10.49.10.png"
+								}
+								altText={
+									""
+								}
+							/>
+						</Suspense>
+					</ErrorBoundary>
 				</div>
 			</header>
 
@@ -191,7 +198,12 @@ function Home() {
 							<div className="experience-img">
 								<ErrorBoundary>
 									<Suspense>
-										<Image imageSource={"/images/logo.png"} altText={"isometric image of letters 'ML', with colour distortion"} />
+										<Image
+											imageSource={"/images/logo.png"}
+											altText={
+												"isometric image of letters 'ML', with colour distortion"
+											}
+										/>
 									</Suspense>
 								</ErrorBoundary>
 							</div>
@@ -244,7 +256,6 @@ function Home() {
 							imageSource="/images/dawn-octavia-butler.jpg"
 							altText=""
 						/>
-
 					</div>
 				</section>
 			</main>
