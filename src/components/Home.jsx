@@ -62,10 +62,10 @@ function Home() {
 						<Suspense>
 							<Image
 								imageSource={
-									"public/images/Screenshot 2024-09-27 at 10.49.10.png"
+									"/images/photo.png"
 								}
 								altText={
-									""
+									"Portrait photo"
 								}
 							/>
 						</Suspense>
