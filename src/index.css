@@ -29,10 +29,10 @@ html {
 
 .light-mode {
     --text-color: #2f2f2f;
-    --background: #eee9ff;
+    --background: #e6f0e8;
     --header-color: #333;
-	--icon-hover:  #64105c;
-    --icons: #c948be;
+	--icon-hover:  #772828;
+    --icons: #d15555;
     --interests-bg: #e8f0e7;
     --photo: grayscale(0%);
 }
