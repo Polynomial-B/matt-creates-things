@@ -309,7 +309,6 @@ figure svg {
 }
 
 .project-links a, a:visited {
-	cursor: pointer;
 	color: var(--text-color);
 }
 
