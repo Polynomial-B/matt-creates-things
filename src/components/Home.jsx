@@ -223,7 +223,7 @@ function Home() {
 											imageSource={
 												"/images/RNLI-logo.png"
 											}
-											alt={
+											altText={
 												"Flag with red cross and blue outline containing a gold crown, gold anchor and 'RNLI' in red"
 											}
 										/>
@@ -258,7 +258,7 @@ function Home() {
 						/>
 						<Currently
 							text="Recording..."
-							imageSource="/images/rain.png"
+							imageSource="/images/rain.webp"
 							altText="Raindrops on a window, with trees in the background"
 						/>
 						<Currently
