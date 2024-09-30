@@ -247,14 +247,24 @@ function Home() {
 						<Currently
 							text="Listening to..."
 							imageSource="/images/listening-to.webp"
-							altText=""
+							altText="Four album covers"
 							playlist="playlist"
 							link="https://open.spotify.com/playlist/2CGZ5GkE9lrNpGjcGDySfP?si=lJlREEUhSk2RuODsMRjS7Q"
 						/>
 						<Currently
 							text="Reading..."
 							imageSource="/images/dawn-octavia-butler.jpg"
-							altText=""
+							altText="A book cover. Green red and yellow with a face obscured in the colours."
+						/>
+						<Currently
+							text="Recording..."
+							imageSource="/images/rain.png"
+							altText="Raindrops on a window, with trees in the background"
+						/>
+						<Currently
+							text="Creating..."
+							imageSource="/images/daw.png"
+							altText="Music editing software, showing waveform, echo effect and song arrangement in colour blocks."
 						/>
 					</div>
 				</section>
