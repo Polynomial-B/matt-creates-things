@@ -38,14 +38,7 @@ html {
 .dark-mode {
     --text-color: #f8f8ff;
     --header-color: #f8f8ff;
-    --background: linear-gradient(
-        135deg,
-        #111d4d 0%,
-        #0c2c59 25%,
-        #3b6090 50%,
-        #1d3c60 75%,
-        #18314f 100%
-    );
+    --background: #111d4d;
 	--icons: #94FFFD;
     --icon-hover: #e998ff;
     --interests-bg: #242225;
@@ -55,14 +48,7 @@ html {
     :root {
         --text-color: #f8f8ff;
         --header-color: #f8f8ff;
-        --background: linear-gradient(
-            135deg,
-            #111d4d 0%,
-            #0c2c59 25%,
-            #3b6090 50%,
-            #1d3c60 75%,
-            #18314f 100%
-        );
+        --background: #111d4d;
         --icons: #94FFFD;
         --icon-hover: #e998ff;
         --interests-bg: #242225;
