@@ -246,7 +246,7 @@ function Home() {
 					<div className="interests">
 						<Currently
 							text="Listening to..."
-							imageSource="/images/listening-to.webp"
+							imageSource="/images/listening-to.jpg"
 							altText="Four album covers"
 							playlist="playlist"
 							link="https://open.spotify.com/playlist/2CGZ5GkE9lrNpGjcGDySfP?si=lJlREEUhSk2RuODsMRjS7Q"
@@ -257,14 +257,9 @@ function Home() {
 							altText="A book cover. Green red and yellow with a face obscured in the colours."
 						/>
 						<Currently
-							text="Recording..."
-							imageSource="/images/rain.webp"
-							altText="Raindrops on a window, with trees in the background"
-						/>
-						<Currently
 							text="Creating..."
 							imageSource="/images/daw.png"
-							altText="Music editing software, showing waveform, echo effect and song arrangement in colour blocks."
+							altText="Music editing software, showing a waveform and track arrangement, in coloured blocks."
 						/>
 					</div>
 				</section>
