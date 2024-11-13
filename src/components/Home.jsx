@@ -61,12 +61,8 @@ function Home() {
 					<ErrorBoundary>
 						<Suspense>
 							<Image
-								imageSource={
-									"/images/photo.png"
-								}
-								altText={
-									"Portrait photo"
-								}
+								imageSource={"/images/photo.png"}
+								altText={"Portrait photo"}
 							/>
 						</Suspense>
 					</ErrorBoundary>
@@ -131,8 +127,32 @@ function Home() {
 					<h2 ref={projectsRef}>Projects</h2>
 					<div className="project-container">
 						<Project
-							name="SynthSounds"
-							description="9 Days (Solo Project)"
+							name="Baggins (WIP)"
+							description="An organisation tool to help packing your bag or doing shopping."
+							technologies="React.js, TypeScript, CSS"
+							imageSource="/images/baggins.png"
+							altText="A list of items: a gold ring, potatoes, a woolen blanket. An image of a golden ring with strange markings."
+							github="https://github.com/Polynomial-B/baggins"
+						/>
+						<Project
+							name="Weather App"
+							description="A 12-hour weather forecast tool."
+							technologies="React.js, TypeScript, Tailwind CSS, OpenWeather APIs"
+							imageSource="/images/weather-app.png"
+							altText="A weather forecast with a pink/purple background, showing description, an image and wind speed and direction."
+							github="https://github.com/Polynomial-B/tsx-weather-api"
+						/>
+						<Project
+							name="Word Analytics"
+							description="An app to calculate word and character length."
+							technologies="React.js, TypeScript"
+							imageSource="/images/word-analytics.png"
+							altText="An app with text, showing word count and word limits, the Instagram limit is a minus figure in red text."
+							github="https://github.com/Polynomial-B/word-analytics"
+						/>
+						<Project
+							name="SynthSounds (General Assembly)"
+							description="A CRUD app where you can adjust tones, effects and save a synthesiser to your collection. Created in 9 days (solo project)."
 							technologies="React.js, Django, PostgreSQL, Tone.js, Heroku, CSS"
 							imageSource="/images/synth-screenshot.png"
 							altText="A musical synthesiser with each key as a small square in a grid."
@@ -140,8 +160,8 @@ function Home() {
 							deployed="https://synth-sounds.netlify.app/synth"
 						/>
 						<Project
-							name="Shirtify"
-							description="7 Days (Paired Project)"
+							name="Shirtify (General Assembly)"
+							description="A CRUD app where you can customise shirts and save them to your wishlist. Created in 7 days (paired project)"
 							technologies="MongoDB, Express.js, React.js, Node.js, CSS"
 							imageSource="/images/shirtify-home.png"
 							altText="Large red text 'Shirtify', man in green t-shirt and hat, smiling."
@@ -149,8 +169,8 @@ function Home() {
 							deployed="https://shirtify-wishlist.netlify.app/"
 						/>
 						<Project
-							name="MycoProject"
-							description="7 Days (Solo Project)"
+							name="MycoProject (General Assembly)"
+							description="A CRUD app for mushroom identification. Created in 7 Days (solo project)"
 							technologies="MongoDB, Express.js, Node.js, EJS, CSS"
 							imageSource="/images/myco-home.webp"
 							altText="Colourful cartoon background. Grid showing 8 mushroom species, some with toxic symbols."
@@ -158,8 +178,8 @@ function Home() {
 							deployed="https://myco-project.netlify.app/"
 						/>
 						<Project
-							name="Cosmic Ray"
-							description="7 Days (Solo Project)"
+							name="Cosmic Ray (General Assembly)"
+							description="A game with collision logic and a win scenario. Created in 7 Days (solo project)"
 							technologies="JavaScript, HTML, CSS"
 							imageSource="/images/cosmic-ray-screenshot.webp"
 							altText="Space-themed background with moving planets, asteroids and a manta ray, in an retro game machine style."

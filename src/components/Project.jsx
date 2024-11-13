@@ -48,7 +48,9 @@ function Project({
 					<h3 className="card-title">{name}</h3>
 					<div className="card-description">
 						<p>{description}</p>
-						<p>{technologies}</p>
+						<p className="description-technologies">
+							{technologies}
+						</p>
 					</div>
 				</div>
 			</div>
