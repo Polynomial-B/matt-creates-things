@@ -61,7 +61,7 @@ function Home() {
 					<ErrorBoundary>
 						<Suspense>
 							<Image
-								imageSource={"/images/photo.png"}
+								imageSource={"/images/photo-1.png"}
 								altText={"Portrait photo"}
 							/>
 						</Suspense>
@@ -77,7 +77,7 @@ function Home() {
 
 					<p>
 						{
-							"I’ve always been interested in functionality, from my professional experience I’ve learned about the welfare state, coffee roasting, wine tasting, lifesaving, lifeboats and teaching. I love learning and developing my understanding, especially when I can apply it practically which is why I'm drawn to Software Engineering. I find it incredibly satisfying to solve problems and to see ideas turn into functional applications. This is why I'm excited to progress in the world of software engineering."
+							"I have always been interested in functionality, from my professional experience I have learned about the welfare state, coffee roasting, wine tasting, lifesaving, lifeboats and teaching. I love learning and developing my understanding, especially when I can apply it practically. It is incredibly satisfying to solve problems and to see ideas turn into functional applications which is why I am excited to progress in the world of Software Engineering."
 						}
 					</p>
 				</section>
@@ -145,7 +145,7 @@ function Home() {
 						<Project
 							name="Word Analytics"
 							description="An app to calculate word and character length."
-							technologies="React.js, TypeScript"
+							technologies="React.js, TypeScript, CSS"
 							imageSource="/images/word-analytics.png"
 							altText="An app with text, showing word count and word limits, the Instagram limit is a minus figure in red text."
 							github="https://github.com/Polynomial-B/word-analytics"
