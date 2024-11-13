@@ -77,7 +77,7 @@ function Home() {
 
 					<p>
 						{
-							"I have always been interested in functionality, from my professional experience I have learned about the welfare state, coffee roasting, wine tasting, lifesaving, lifeboats and teaching. I love learning and developing my understanding, especially when I can apply it practically. It is incredibly satisfying to solve problems and to see ideas turn into functional applications which is why I am excited to progress in the world of Software Engineering."
+							"I have always been interested in functionality. From my professional experience I have learned about the welfare state, coffee roasting, wine tasting, lifesaving, lifeboats and teaching. I love learning and developing my understanding, especially when I can apply it practically. It is incredibly satisfying to solve problems and to see ideas turn into functional applications which is why I am excited to progress in the world of Software Engineering."
 						}
 					</p>
 				</section>
