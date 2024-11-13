@@ -128,16 +128,16 @@ function Home() {
 					<div className="project-container">
 						<Project
 							name="Baggins (WIP)"
-							description="An organisation tool to help packing your bag or doing shopping."
+							description="An organisational tool to help packing your bag or doing shopping."
 							technologies="React.js, TypeScript, CSS"
 							imageSource="/images/baggins.png"
-							altText="A list of items: a gold ring, potatoes, a woolen blanket. An image of a golden ring with strange markings."
+							altText="A list of items: a gold ring, potatoes, a woollen blanket. An image of a golden ring with strange markings."
 							github="https://github.com/Polynomial-B/baggins"
 						/>
 						<Project
 							name="Weather App"
-							description="A 12-hour weather forecast tool."
-							technologies="React.js, TypeScript, Tailwind CSS, OpenWeather APIs"
+							description="A 12-hour weather forecast tool using OpenWeather's APIs."
+							technologies="React.js, TypeScript, Tailwind"
 							imageSource="/images/weather-app.png"
 							altText="A weather forecast with a pink/purple background, showing description, an image and wind speed and direction."
 							github="https://github.com/Polynomial-B/tsx-weather-api"
