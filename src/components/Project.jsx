@@ -15,17 +15,24 @@ function Project({
 		<>
 			<div className="project-card">
 				<div className="project-links-container">
-					<a href={github} target="_blank" rel="noopener noreferrer" className="project-links link-hover">
-						Github ↗
-					</a>
 					<a
-						href={deployed}
+						href={github}
 						target="_blank"
 						rel="noopener noreferrer"
 						className="project-links link-hover"
 					>
-						Deployed ↗
+						Github ↗
 					</a>
+					{deployed && (
+						<a
+							href={deployed}
+							target="_blank"
+							rel="noopener noreferrer"
+							className="project-links link-hover"
+						>
+							Deployed ↗
+						</a>
+					)}
 				</div>
 				<div className="card-image">
 					<ErrorBoundary>
