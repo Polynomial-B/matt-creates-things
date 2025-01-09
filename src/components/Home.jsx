@@ -124,16 +124,16 @@ function Home() {
 					</ul>
 				</section>
 				<section id="project-section">
-					<h2 ref={projectsRef}>Projects</h2>
+					<h2 ref={projectsRef}>Selected Projects</h2>
 					<div className="project-container">
-						<Project
+						{/* <Project
 							name="Baggins (WIP)"
 							description="An organisational tool to help packing your bag or doing shopping."
 							technologies="React.js, TypeScript, CSS"
 							imageSource="/images/baggins.png"
 							altText="A list of items: a gold ring, potatoes, a woollen blanket. An image of a golden ring with strange markings."
 							github="https://github.com/Polynomial-B/baggins"
-						/>
+						/> */}
 						<Project
 							name="Weather App"
 							description="A 12-hour weather forecast tool using OpenWeather's APIs."
@@ -142,16 +142,16 @@ function Home() {
 							altText="A weather forecast with a pink/purple background, showing description, an image and wind speed and direction."
 							github="https://github.com/Polynomial-B/tsx-weather-api"
 						/>
-						<Project
+						{/* <Project
 							name="Word Analytics"
 							description="An app to calculate word and character length."
 							technologies="React.js, TypeScript, CSS"
 							imageSource="/images/word-analytics.png"
 							altText="An app with text, showing word count and word limits, the Instagram limit is a minus figure in red text."
 							github="https://github.com/Polynomial-B/word-analytics"
-						/>
+						/> */}
 						<Project
-							name="SynthSounds (General Assembly)"
+							name="SynthSounds"
 							description="A CRUD app where you can adjust tones, effects and save a synthesiser to your collection. Created in 9 days (solo project)."
 							technologies="React.js, Django, PostgreSQL, Tone.js, Heroku, CSS"
 							imageSource="/images/synth-screenshot.png"
@@ -160,7 +160,7 @@ function Home() {
 							deployed="https://synth-sounds.netlify.app/synth"
 						/>
 						<Project
-							name="Shirtify (General Assembly)"
+							name="Shirtify"
 							description="A CRUD app where you can customise shirts and save them to your wishlist. Created in 7 days (paired project)"
 							technologies="MongoDB, Express.js, React.js, Node.js, CSS"
 							imageSource="/images/shirtify-home.png"
@@ -169,7 +169,7 @@ function Home() {
 							deployed="https://shirtify-wishlist.netlify.app/"
 						/>
 						<Project
-							name="MycoProject (General Assembly)"
+							name="MycoProject"
 							description="A CRUD app for mushroom identification. Created in 7 Days (solo project)"
 							technologies="MongoDB, Express.js, Node.js, EJS, CSS"
 							imageSource="/images/myco-home.webp"
@@ -178,7 +178,7 @@ function Home() {
 							deployed="https://myco-project.netlify.app/"
 						/>
 						<Project
-							name="Cosmic Ray (General Assembly)"
+							name="Cosmic Ray"
 							description="A game with collision logic and a win scenario. Created in 7 Days (solo project)"
 							technologies="JavaScript, HTML, CSS"
 							imageSource="/images/cosmic-ray-screenshot.webp"
@@ -276,11 +276,11 @@ function Home() {
 							imageSource="/images/dawn-octavia-butler.jpg"
 							altText="A book cover. Green red and yellow with a face obscured in the colours."
 						/>
-						<Currently
+						{/* <Currently
 							text="Creating..."
 							imageSource="/images/daw.png"
 							altText="Music editing software, showing a waveform and track arrangement, in coloured blocks."
-						/>
+						/> */}
 					</div>
 				</section>
 			</main>
