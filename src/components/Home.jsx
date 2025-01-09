@@ -343,7 +343,7 @@ function Home() {
 					>
 						<span>scroll to top</span>
 					</button>
-					<div id="footer-email">m.lamb.dev@gmail.com</div>
+					{/* <div id="footer-email">m.lamb.dev@gmail.com</div> */}
 					<div id="copyright">
 						&copy; Matt Lamb {new Date().getFullYear()}
 					</div>
