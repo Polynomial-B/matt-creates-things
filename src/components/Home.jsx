@@ -230,7 +230,7 @@ function Home() {
 							link="https://open.spotify.com/playlist/2CGZ5GkE9lrNpGjcGDySfP?si=lJlREEUhSk2RuODsMRjS7Q"
 						/>
 						<Currently
-							text="Reading..."
+							text="Reading"
 							imageSource="/images/dawn-octavia-butler.jpg"
 							altText="A book cover. Green red and yellow with a face obscured in the colours."
 						/>
