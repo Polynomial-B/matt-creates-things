@@ -1,4 +1,4 @@
-import { useRef, Suspense } from "react";
+import { useRef, Suspense, useState } from "react";
 import icons from "../assets/icons";
 import Darklight from "./Darklight";
 import Titles from "./Titles";
@@ -7,12 +7,20 @@ import ErrorBoundary from "./ErrorBoundary";
 import Project from "./Project";
 import Experience from "./Experience";
 import Currently from "./Interests";
+import ProjectGrid from "./ProjectGrid";
+import { projects } from "../assets/constants";
 
 function Home() {
+	const [activeProject, setActiveProject] = useState(projects[0]);
 	const aboutRef = useRef();
 	const projectsRef = useRef();
 	const contactRef = useRef();
 	const homeRef = useRef();
+
+	const handleSelectProject = (project) => {
+		setActiveProject(project);
+		console.log(activeProject);
+	};
 
 	return (
 		<>
@@ -126,65 +134,15 @@ function Home() {
 				<section id="project-section">
 					<h2 ref={projectsRef}>Selected Projects</h2>
 					<div className="project-container">
-						{/* <Project
-							name="Baggins (WIP)"
-							description="An organisational tool to help packing your bag or doing shopping."
-							technologies="React.js, TypeScript, CSS"
-							imageSource="/images/baggins.png"
-							altText="A list of items: a gold ring, potatoes, a woollen blanket. An image of a golden ring with strange markings."
-							github="https://github.com/Polynomial-B/baggins"
-						/> */}
+						<ProjectGrid onProjectChange={handleSelectProject} />
 						<Project
-							name="Weather App"
-							description="A 12-hour weather forecast tool using OpenWeather's APIs."
-							technologies="React.js, TypeScript, Tailwind"
-							imageSource="/images/weather-app.png"
-							altText="A weather forecast with a pink/purple background, showing description, an image and wind speed and direction."
-							github="https://github.com/Polynomial-B/tsx-weather-api"
-						/>
-						{/* <Project
-							name="Word Analytics"
-							description="An app to calculate word and character length."
-							technologies="React.js, TypeScript, CSS"
-							imageSource="/images/word-analytics.png"
-							altText="An app with text, showing word count and word limits, the Instagram limit is a minus figure in red text."
-							github="https://github.com/Polynomial-B/word-analytics"
-						/> */}
-						<Project
-							name="SynthSounds"
-							description="A CRUD app where you can adjust tones, effects and save a synthesiser to your collection. Created in 9 days (solo project)."
-							technologies="React.js, Django, PostgreSQL, Tone.js, Heroku, CSS"
-							imageSource="/images/synth-screenshot.png"
-							altText="A musical synthesiser with each key as a small square in a grid."
-							github="https://github.com/Polynomial-B/synth-app-frontend"
-							deployed="https://synth-sounds.netlify.app/synth"
-						/>
-						<Project
-							name="Shirtify"
-							description="A CRUD app where you can customise shirts and save them to your wishlist. Created in 7 days (paired project)"
-							technologies="MongoDB, Express.js, React.js, Node.js, CSS"
-							imageSource="/images/shirtify-home.png"
-							altText="Large red text 'Shirtify', man in green t-shirt and hat, smiling."
-							github="https://github.com/Polynomial-B/shirtify-mern-frontend"
-							deployed="https://shirtify-wishlist.netlify.app/"
-						/>
-						<Project
-							name="MycoProject"
-							description="A CRUD app for mushroom identification. Created in 7 Days (solo project)"
-							technologies="MongoDB, Express.js, Node.js, EJS, CSS"
-							imageSource="/images/myco-home.webp"
-							altText="Colourful cartoon background. Grid showing 8 mushroom species, some with toxic symbols."
-							github="https://github.com/Polynomial-B/myco-project"
-							deployed="https://myco-project.netlify.app/"
-						/>
-						<Project
-							name="Cosmic Ray"
-							description="A game with collision logic and a win scenario. Created in 7 Days (solo project)"
-							technologies="JavaScript, HTML, CSS"
-							imageSource="/images/cosmic-ray-screenshot.webp"
-							altText="Space-themed background with moving planets, asteroids and a manta ray, in an retro game machine style."
-							github="https://github.com/Polynomial-B/cosmic-ray-game"
-							deployed="https://polynomial-b.github.io/cosmic-ray-game/"
+							name={activeProject.name}
+							description={activeProject.description}
+							technologies={activeProject.technologies}
+							imageSource={activeProject.imageSource}
+							altText={activeProject.altText}
+							github={activeProject.github}
+							deployed={activeProject.deployed}
 						/>
 					</div>
 				</section>
@@ -265,7 +223,7 @@ function Home() {
 					<h2>Interests</h2>
 					<div className="interests">
 						<Currently
-							text="Listening to..."
+							text="Music"
 							imageSource="/images/listening-to.jpg"
 							altText="Four album covers"
 							playlist="playlist"
@@ -276,11 +234,6 @@ function Home() {
 							imageSource="/images/dawn-octavia-butler.jpg"
 							altText="A book cover. Green red and yellow with a face obscured in the colours."
 						/>
-						{/* <Currently
-							text="Creating..."
-							imageSource="/images/daw.png"
-							altText="Music editing software, showing a waveform and track arrangement, in coloured blocks."
-						/> */}
 					</div>
 				</section>
 			</main>

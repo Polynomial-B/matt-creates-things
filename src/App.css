@@ -298,6 +298,22 @@ figure svg {
 	width: auto;
 	padding: 0;
 }
+.project__grid {
+	display: grid;
+	grid-template-columns: repeat(5, minmax(80px, 1fr));
+	column-gap: 10px;
+	place-items: center;
+	cursor: pointer;
+}
+.project__grid img {
+	height: 100px;
+	width: 100px;
+	overflow: hidden;
+	margin: 10px;
+	position: relative;
+	object-fit: cover;
+}
+
 .project-links-container {
 	display: flex;
 	color: var(--text-color);
@@ -433,7 +449,6 @@ a:visited {
 #playlist:hover img {
 	cursor: pointer;
 	filter: hue-rotate(60deg);
-	transform: rotateY(180deg);
 }
 
 @media screen and (max-width: 660px) {
@@ -462,6 +477,17 @@ a:visited {
 	#job-item-one,
 	#job-item-two {
 		align-self: center;
+	}
+	.project__grid {
+		column-gap: 1px;
+		margin: 0;
+		grid-template-columns: repeat(5, minmax(50px, 1fr));
+	}
+
+	.project__grid img {
+		height: 50px;
+		width: 50px;
+		margin: 0px;
 	}
 }
 
