@@ -1,5 +1,15 @@
 export const projects = [
 	{
+		name: "Etymology Facts",
+		description: "An app for posting facts using hashtags.",
+		technologies: "React.js, TypeScript, Zustand, CSS, RadixUI",
+		imageSource: "/images/etymology-facts.png",
+		altText:
+			"Message board app with colourful grainy background and hashtags on the right side.",
+		github: "https://github.com/Polynomial-B/etymology-facts",
+		deployed: "",
+	},
+	{
 		name: "Weather App",
 		description:
 			"A 12-hour weather forecast tool using OpenWeather's APIs.",
@@ -31,16 +41,6 @@ export const projects = [
 			"Large red text 'Shirtify', man in green t-shirt and hat, smiling.",
 		github: "https://github.com/Polynomial-B/shirtify-mern-frontend",
 		deployed: "https://shirtify-wishlist.netlify.app/",
-	},
-	{
-		name: "MycoProject",
-		description: "A CRUD app for mushroom identification.",
-		technologies: "MongoDB, Express.js, Node.js, EJS, CSS",
-		imageSource: "/images/myco-home.webp",
-		altText:
-			"Colourful cartoon background. Grid showing 8 mushroom species, some with toxic symbols.",
-		github: "https://github.com/Polynomial-B/myco-project",
-		deployed: "https://myco-project.netlify.app/",
 	},
 	{
 		name: "Cosmic Ray",
