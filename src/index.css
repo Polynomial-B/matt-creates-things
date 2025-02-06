@@ -138,8 +138,8 @@ svg {
 
 .link-hover {
 	position: relative;
-	padding: 0;
 	margin: 0;
+	padding-bottom: 10px;
 }
 
 .link-hover::after {
