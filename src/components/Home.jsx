@@ -248,6 +248,7 @@ function Home() {
 					<h2 id="contact" ref={contactRef}>
 						Contact
 					</h2>
+					<div id="footer-email">m.lamb.dev@gmail.com</div>
 					<ul>
 						<li className="contact-link">
 							<a
@@ -291,8 +292,9 @@ function Home() {
 						</li>
 					</ul>
 				</section>
+
 				<section className="legal">
-					<button
+					{/* <button
 						className="scroll-to-top link-hover"
 						onClick={() =>
 							homeRef.current?.scrollIntoView({
@@ -301,8 +303,7 @@ function Home() {
 						}
 					>
 						<span>scroll to top</span>
-					</button>
-					{/* <div id="footer-email">m.lamb.dev@gmail.com</div> */}
+					</button> */}
 					<div id="copyright">
 						&copy; Matt Lamb {new Date().getFullYear()}
 					</div>
