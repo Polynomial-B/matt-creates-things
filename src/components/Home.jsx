@@ -15,16 +15,14 @@ function Home() {
 	const aboutRef = useRef();
 	const projectsRef = useRef();
 	const contactRef = useRef();
-	const homeRef = useRef();
 
 	const handleSelectProject = (project) => {
 		setActiveProject(project);
-		console.log(activeProject);
 	};
 
 	return (
 		<>
-			<nav className="links-container" ref={homeRef}>
+			<nav className="links-container">
 				<button
 					className="link-hover"
 					onClick={() =>
@@ -78,10 +76,8 @@ function Home() {
 			</header>
 
 			<main>
-				<section>
-					<h2 id="about" ref={aboutRef}>
-						About
-					</h2>
+				<section ref={aboutRef}>
+					<h2 id="about">About</h2>
 
 					<p>
 						{
@@ -131,8 +127,8 @@ function Home() {
 						</li>
 					</ul>
 				</section>
-				<section id="project-section">
-					<h2 ref={projectsRef}>Projects</h2>
+				<section id="project-section" ref={projectsRef}>
+					<h2>Projects</h2>
 					<div className="project-container">
 						<ErrorBoundary>
 							<Suspense>
@@ -244,10 +240,8 @@ function Home() {
 				</section>
 			</main>
 			<footer>
-				<section className="contact">
-					<h2 id="contact" ref={contactRef}>
-						Contact
-					</h2>
+				<section className="contact" ref={contactRef}>
+					<h2 id="contact">Contact</h2>
 					<div id="footer-email">m.lamb.dev@gmail.com</div>
 					<ul>
 						<li className="contact-link">
