@@ -5,8 +5,9 @@ main {
 }
 
 nav {
-	padding: 10px 0;
-	gap: 5px 0;
+	position: fixed;
+	z-index: 5;
+	top: 0;
 }
 
 #splash * {
@@ -141,8 +142,8 @@ img {
 
 h2 {
 	text-align: center;
-	margin: 5vh 0 5vh;
-	padding: 5vh 0 0;
+	/* margin: 5vh 0 5vh;
+	padding: 5vh 0 0; */
 }
 
 p {
@@ -230,7 +231,9 @@ footer ul {
 	display: flex;
 	justify-content: space-evenly;
 }
-
+#contact {
+	margin-top: 20vh;
+}
 .contact li {
 	display: flex;
 }
@@ -312,7 +315,6 @@ figure svg {
 	display: flex;
 	color: var(--text-color);
 	font-size: 1.2em;
-	margin: 5px 0 20px;
 	width: 100%;
 	justify-content: space-between;
 }
@@ -329,7 +331,6 @@ a:visited {
 
 .project-card {
 	display: flex;
-	margin: 3rem 0;
 	flex-direction: column-reverse;
 	width: 100%;
 	align-items: center;
@@ -349,7 +350,6 @@ a:visited {
 .card-description {
 	height: 100%;
 	text-align: center;
-	margin: 30px 0 50px 0;
 	font-style: italic;
 }
 
@@ -367,7 +367,6 @@ a:visited {
 
 .languages {
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-around;
 	width: 100%;
 	gap: 10vw;
@@ -482,6 +481,9 @@ a:visited {
 		height: 50px;
 		width: 50px;
 		margin: 0px;
+	}
+	.languages {
+		flex-wrap: wrap;
 	}
 }
 

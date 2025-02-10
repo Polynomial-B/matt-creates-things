@@ -70,6 +70,10 @@ html {
 	}
 }
 
+nav {
+	background-color: var(--background);
+}
+
 body {
 	color: var(--text-color);
 	background: var(--background);

@@ -132,18 +132,24 @@ function Home() {
 					</ul>
 				</section>
 				<section id="project-section">
-					<h2 ref={projectsRef}>Selected Projects</h2>
+					<h2 ref={projectsRef}>Projects</h2>
 					<div className="project-container">
-						<ProjectGrid onProjectChange={handleSelectProject} />
-						<Project
-							name={activeProject.name}
-							description={activeProject.description}
-							technologies={activeProject.technologies}
-							imageSource={activeProject.imageSource}
-							altText={activeProject.altText}
-							github={activeProject.github}
-							deployed={activeProject.deployed}
-						/>
+						<ErrorBoundary>
+							<Suspense>
+								<ProjectGrid
+									onProjectChange={handleSelectProject}
+								/>
+								<Project
+									name={activeProject.name}
+									description={activeProject.description}
+									technologies={activeProject.technologies}
+									imageSource={activeProject.imageSource}
+									altText={activeProject.altText}
+									github={activeProject.github}
+									deployed={activeProject.deployed}
+								/>
+							</Suspense>
+						</ErrorBoundary>
 					</div>
 				</section>
 				<section>
