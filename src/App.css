@@ -195,41 +195,20 @@ p {
 	border-radius: 7px;
 }
 
-@keyframes bounce {
-	0% {
-		transform: translateY(0);
-	}
-	10% {
-		transform: translateY(-5px);
-	}
-	40% {
-		transform: translateY(0);
-	}
-	80% {
-		transform: translateY(-2px);
-	}
-	100% {
-		transform: translateY(0);
-	}
-}
-
-.scroll-to-top span {
-	animation: bounce 3.2s ease-in-out infinite;
-}
-
 footer {
 	margin: 0 auto;
 	text-align: center;
-	max-width: 600px;
-	height: 100vh;
 }
 
 footer ul {
 	display: flex;
 	justify-content: space-evenly;
 }
-#contact {
-	margin-top: 20vh;
+.contact {
+	position: relative;
+	z-index: 5;
+	width: 600px;
+	align-self: center;
 }
 .contact li {
 	display: flex;
@@ -257,25 +236,33 @@ figure svg {
 	padding: 0;
 }
 
-.legal {
+.footer-container {
 	display: flex;
-	justify-content: flex-end;
-	align-content: space-around;
-	margin: 10vh 0 3vh;
-	flex-wrap: wrap;
-	height: 30vh;
-	min-height: 200px;
+	flex-direction: column;
+	position: relative;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	margin: 0;
+	padding: 0;
 }
 
-.legal > * {
-	display: flex;
-	padding: 5px;
-	align-self: center;
-	font-weight: 200;
+.end {
+	width: 100vw;
+	height: auto;
+	position: relative;
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+	left: 0;
+	bottom: 0;
 }
 
-.legal button {
-	margin: 0 0 30px;
+.end__break {
+	display: block;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
 }
 
 #footer-email {
@@ -290,6 +277,7 @@ figure svg {
 
 #copyright {
 	user-select: none;
+	align-self: center;
 }
 
 #project-section {
@@ -444,6 +432,12 @@ a:visited {
 	cursor: pointer;
 	filter: hue-rotate(60deg);
 }
+.section__break {
+	position: relative;
+	width: 100vw;
+	height: 400px;
+	object-fit: cover;
+}
 
 @media screen and (max-width: 660px) {
 	#splash {
@@ -489,6 +483,9 @@ a:visited {
 	h2 {
 		text-align: center;
 		margin: 15vh 0 0;
+	}
+	.contact {
+		max-width: 330px;
 	}
 }
 

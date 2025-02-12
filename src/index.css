@@ -40,8 +40,8 @@ html {
 	--text-color: #f8f8ff;
 	--header-color: #f8f8ff;
 	--background: #111d4d;
-	--icons: #94fffd;
-	--icon-hover: #e998ff;
+	--icons: #85fcea;
+	--icon-hover: #ae46eb;
 	--interests-bg: #242225;
 }
 
@@ -50,8 +50,8 @@ html {
 		--text-color: #f8f8ff;
 		--header-color: #f8f8ff;
 		--background: #111d4d;
-		--icons: #94fffd;
-		--icon-hover: #e998ff;
+		--icons: #85fcea;
+		--icon-hover: #ae46eb;
 		--interests-bg: #242225;
 	}
 }
