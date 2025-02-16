@@ -9,7 +9,7 @@ import Experience from "./Experience";
 import Currently from "./Interests";
 import ProjectGrid from "./ProjectGrid";
 import { projects } from "../assets/constants";
-import { EndBreak } from "./EndBreak";
+import { Break } from "./SVGImages";
 
 function Home() {
 	const [activeProject, setActiveProject] = useState(projects[0]);
@@ -108,7 +108,7 @@ function Home() {
 
 					<p>
 						{
-							"I am passionate about helping people. I have given in-person and remote advice and provided mentorship in different industries. I'm a patient and compassionate person with a good analytical side who is focused on finding meaningful work in the world of software engineering."
+							"Helping others is my motivation. I have been an advisor and provided mentorship in the public, charity and private sector for more than a decade. I'm a patient and compassionate person who is determined to find meaningful work in the world of software engineering."
 						}
 					</p>
 				</section>
@@ -319,7 +319,7 @@ function Home() {
 						<div></div>
 					</section>
 					<div className="end">
-						<EndBreak isDark={isDark} />
+						<Break isDark={isDark} />
 					</div>
 				</div>
 			</footer>

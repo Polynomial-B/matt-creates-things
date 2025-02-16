@@ -10,7 +10,7 @@ export default function ProjectGrid({ onProjectChange }) {
 			{projects.map((project) => {
 				return (
 					<li key={project.name} onClick={() => handleClick(project)}>
-						<img src={project.imageSource} />
+						<img src={project.imageSource} alt={project.altText} />
 					</li>
 				);
 			})}

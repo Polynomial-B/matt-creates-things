@@ -1,4 +1,4 @@
-export function EndBreak({ isDark }) {
+export function Break({ isDark }) {
 	return (
 		<svg
 			width="100%"
