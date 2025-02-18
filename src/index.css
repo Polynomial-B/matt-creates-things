@@ -105,12 +105,27 @@ section {
 	flex-direction: column;
 }
 
-[class^="devicon"] {
+/* [class^="devicon"] {
 	font-size: 80px;
 	margin: 0px;
 	z-index: 1;
 	color: var(--icons);
 	display: block;
+} */
+
+[class^="devicon"] {
+	font-size: 80px;
+	margin: 0px;
+	z-index: 1;
+	display: block;
+	background: linear-gradient(
+		150deg,
+		var(--icons) 50%,
+		var(--icon-hover) 80%
+	);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
 }
 
 button {

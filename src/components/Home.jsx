@@ -253,14 +253,14 @@ function Home() {
 					<div className="interests">
 						<Currently
 							text="Music"
-							imageSource="/images/listening-to.jpg"
+							imageSource="/images/interest-image-one.svg"
 							altText="Four album covers"
 							playlist="playlist"
 							link="https://open.spotify.com/playlist/2CGZ5GkE9lrNpGjcGDySfP?si=lJlREEUhSk2RuODsMRjS7Q"
 						/>
 						<Currently
 							text="Reading"
-							imageSource="/images/dawn-octavia-butler.jpg"
+							imageSource="/images/interest-image-two.svg"
 							altText="A book cover. Green red and yellow with a face obscured in the colours."
 						/>
 					</div>

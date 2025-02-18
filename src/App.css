@@ -404,38 +404,25 @@ a:visited {
 	position: relative;
 	z-index: 1;
 	font-family: "Montserrat", sans-serif;
-	background-image: url("src/assets/splash-svg.svg");
-	background-position: center;
-	background-size: auto;
-	background-repeat: no-repeat;
 }
 
 .currently img {
 	display: flex;
 	width: 300px;
 	height: 300px;
-	border-radius: 25px;
-	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.371);
 }
 
 .currently-text {
 	position: absolute;
 	z-index: 2;
-	bottom: 0;
-	left: 0;
+	top: 50px;
 	font-size: 1.6em;
-	color: var(--text-color);
-	background: var(--interests-bg);
-	border-radius: 0 0 20px 20px;
+	color: var(--background);
 	width: 300px;
 	text-align: center;
-	font-weight: 300;
+	font-weight: 500;
 }
 
-#playlist:hover img {
-	cursor: pointer;
-	/* filter: hue-rotate(60deg); */
-}
 .section__break {
 	position: relative;
 	width: 100vw;

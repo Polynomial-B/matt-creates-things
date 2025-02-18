@@ -1,0 +1,11 @@
+<svg id="10015.io" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <defs>
+        <linearGradient id="splashGradient" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="35%" stop-color="rgba(207, 121, 255)" />
+            <stop offset="100%" stop-color="rgba(133, 252, 234)" />
+        </linearGradient>
+    </defs>
+
+    <path fill="url(#splashGradient)" d="M430.5,329Q382,418,285,443.5Q188,469,115,402Q42,335,37.5,237.5Q33,140,111,78Q189,16,283,42Q377,68,428,154Q479,240,430.5,329Z"  />
+</svg>

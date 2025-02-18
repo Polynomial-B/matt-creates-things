@@ -17,13 +17,13 @@ export function Break({ isDark }) {
 					y2="0%"
 				>
 					<stop
-						offset="5%"
+						offset="20%"
 						stopColor={
-							isDark === "dark-mode" ? "#cf79ff" : "#961796"
+							isDark === "dark-mode" ? "#cf79ff" : "0c2c59"
 						}
 					></stop>
 					<stop
-						offset="75%"
+						offset={isDark === "dark-mode" ? "75%" : "60%"}
 						stopColor={
 							isDark === "dark-mode" ? "#85fcea" : "#ae46eb"
 						}
