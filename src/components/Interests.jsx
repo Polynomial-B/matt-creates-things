@@ -2,16 +2,12 @@ import { Suspense } from "react";
 import Image from "./Image";
 import ErrorBoundary from "./ErrorBoundary";
 
-function Currently({ text, imageSource, altText, link, body, isDark }) {
+function Currently({ text, imageSource, altText, link, body }) {
 	return (
 		<>
 			{link ? (
 				<a href={link} target="_blank" draggable={false}>
-					<div
-						className={`currently currently-link ${
-							!isDark ? "currently-light" : ""
-						}`}
-					>
+					<div className={"currently currently-link"}>
 						<ErrorBoundary>
 							<Suspense fallback={<div>Loading...</div>}>
 								<Image
@@ -26,9 +22,7 @@ function Currently({ text, imageSource, altText, link, body, isDark }) {
 					</div>
 				</a>
 			) : (
-				<div
-					className={`currently ${!isDark ? "currently-light" : ""}`}
-				>
+				<div className={"currently"}>
 					<ErrorBoundary>
 						<Suspense fallback={<div>Loading...</div>}>
 							<Image

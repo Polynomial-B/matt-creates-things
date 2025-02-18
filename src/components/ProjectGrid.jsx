@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import { projects } from "../assets/constants";
 import ErrorBoundary from "./ErrorBoundary";
+import Image from "./Image";
 
 export default function ProjectGrid({ onProjectChange }) {
 	const handleClick = (project) => {
@@ -14,9 +15,9 @@ export default function ProjectGrid({ onProjectChange }) {
 					<li key={project.id} onClick={() => handleClick(project)}>
 						<ErrorBoundary>
 							<Suspense fallback={<div>Loading image...</div>}>
-								<img
-									src={project.imageSource}
-									alt={project.altText}
+								<Image
+									imageSource={project.imageSource}
+									altText={project.altText}
 								/>
 							</Suspense>
 						</ErrorBoundary>
