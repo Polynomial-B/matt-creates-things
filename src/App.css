@@ -144,7 +144,7 @@ h2 {
 }
 
 p {
-	text-align: pretty;
+	text-wrap: pretty;
 }
 
 .skills-container {
@@ -412,15 +412,35 @@ a:visited {
 	height: 300px;
 }
 
-.currently-text {
+.currently-text,
+.currently-body,
+.currently-image {
 	position: absolute;
 	z-index: 2;
 	top: 50px;
 	font-size: 1.6em;
-	color: var(--background);
+	color: var(--interests-text);
 	width: 300px;
 	text-align: center;
 	font-weight: 500;
+}
+
+.currently-body {
+	display: flex;
+	width: 200px;
+	top: 100px;
+	left: 50px;
+	font-size: 1em;
+	text-wrap: pretty;
+}
+
+.currently-image {
+	font-size: 3em;
+	top: 180px;
+}
+
+.currently-link:hover {
+	transform: scale(1.1);
 }
 
 .section__break {

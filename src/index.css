@@ -13,7 +13,7 @@
 	--header-color: #333;
 	--icon-hover: #0c2c59;
 	--icons: #961796;
-	--interests-bg: #efefef;
+	--interests-text: #2f2f2f;
 }
 
 body,
@@ -33,7 +33,7 @@ html {
 	--header-color: #333;
 	--icon-hover: #0c2c59;
 	--icons: #961796;
-	--interests-bg: #efefef;
+	--interests-text: #2f2f2f;
 }
 
 .dark-mode {
@@ -42,7 +42,7 @@ html {
 	--background: #111d4d;
 	--icons: #85fcea;
 	--icon-hover: #ae46eb;
-	--interests-bg: #242225;
+	--interests-text: #111d4d;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -52,7 +52,7 @@ html {
 		--background: #111d4d;
 		--icons: #85fcea;
 		--icon-hover: #ae46eb;
-		--interests-bg: #242225;
+		--interests-text: #111d4d;
 	}
 }
 

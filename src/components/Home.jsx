@@ -179,71 +179,32 @@ function Home() {
 					<h2>Experience</h2>
 					<ul className="experience">
 						<li>
-							<div>
-								<ErrorBoundary>
-									<Suspense>
-										<Image
-											imageSource={
-												"/images/general-assembly-cog-logo.png"
-											}
-											altText={
-												"Red mechanical cog with letters 'GA' inside"
-											}
-										/>
-									</Suspense>
-								</ErrorBoundary>
-							</div>
 							<Experience
-								title="Sofware Engineering Bootcamp, General Assembly"
+								title="Sofware Engineering Student, General Assembly"
 								dates="2024"
-								list1="Experience with frontend and backend development, integrating APIs and managing databases."
-								list2="Experience with debugging, code refactoring and problem-solving."
-								list3="Daily standup, live classes, and practical labs."
+								list1="Learned full-stack technologies using SQL and NoSQL databases."
+								list2="Contributed to daily standup, live classes and practical labs."
+								list3="Worked on solo and paired projects within short timeframes."
+								list4="Learned debugging, code refactoring and problem-solving."
 							/>
 						</li>
 						<li>
-							<div>
-								<ErrorBoundary>
-									<Suspense>
-										<Image
-											imageSource={"/images/logo.png"}
-											altText={
-												"isometric image of letters 'ML', with colour distortion"
-											}
-										/>
-									</Suspense>
-								</ErrorBoundary>
-							</div>
 							<Experience
 								title="Private English Tutor"
 								dates="2022 - present"
 								list1="Managed personal brand: communication, marketing and self-promotion."
 								list2="Created content, materials and curriculum: provided targets and activities."
-								list3="Organised events: game events, workshops and outings."
+								list3="Organised game events, workshops and outings."
 							/>
 						</li>
 						<li>
-							<div>
-								<ErrorBoundary>
-									<Suspense>
-										<Image
-											imageSource={
-												"/images/RNLI-logo.png"
-											}
-											altText={
-												"Flag with red cross and blue outline containing a gold crown, gold anchor and 'RNLI' in red"
-											}
-										/>
-									</Suspense>
-								</ErrorBoundary>
-							</div>
 							<Experience
 								title="Lifeboat Operations Coordinator, RNLI"
 								dates="2020 - 2022"
-								list1="Managed annual tidal almanac distribution and updated physical and digital maps."
-								list2="Circulated critical safety notices across the British Isles and provided on-call support for lifesaving teams."
-								list3="Optimised database and intranet, ensuring content accuracy."
-								list4="Trained staff, both in-person and remote."
+								list1="Provided on-call support for lifeboats and lifeguards."
+								list2="Trained and on-boarded staff, both in-person and remote."
+								list3="Cleaned data and updated staff intranet."
+								list4="Distributed physical and digital maps."
 							/>
 						</li>
 					</ul>
@@ -252,16 +213,29 @@ function Home() {
 					<h2>Interests</h2>
 					<div className="interests">
 						<Currently
+							text="Producing"
+							imageSource="/images/interest-image-three.svg"
+							alt="Background, consisting of an imperfect circle with a gradient."
+							body="I'm currently composing downtempo pop, with lowercase and ambient influences"
+						/>
+						<Currently
 							text="Music"
 							imageSource="/images/interest-image-one.svg"
-							altText="Four album covers"
-							playlist="playlist"
+							alt="Background, consisting of an imperfect circle with a gradient."
+							body="Click here for my current playlist"
 							link="https://open.spotify.com/playlist/2CGZ5GkE9lrNpGjcGDySfP?si=lJlREEUhSk2RuODsMRjS7Q"
 						/>
 						<Currently
 							text="Reading"
 							imageSource="/images/interest-image-two.svg"
-							altText="A book cover. Green red and yellow with a face obscured in the colours."
+							alt="Background, consisting of an imperfect circle with a gradient."
+							body="I'm currently reading 'A Ghost in the Throat' by Doireann Ní Ghríofa"
+						/>
+						<Currently
+							text="Coding"
+							imageSource="/images/interest-image-four.svg"
+							alt="Background, consisting of an imperfect circle with a gradient."
+							body="I'm currently working on a job searching app called 'DevJobs' that can be seen on my GitHub page"
 						/>
 					</div>
 				</section>
