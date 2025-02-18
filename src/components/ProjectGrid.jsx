@@ -9,23 +9,18 @@ export default function ProjectGrid({ onProjectChange }) {
 
 	return (
 		<ul className="project__grid">
-			{projects.map((project, index) => {
+			{projects.map((project) => {
 				return (
-					<>
-						<li
-							key={project.name + index}
-							onClick={() => handleClick(project)}
-						>
-							<ErrorBoundary>
-								<Suspense>
-									<img
-										src={project.imageSource}
-										alt={project.altText}
-									/>
-								</Suspense>
-							</ErrorBoundary>
-						</li>
-					</>
+					<li key={project.id} onClick={() => handleClick(project)}>
+						<ErrorBoundary>
+							<Suspense fallback={<div>Loading image...</div>}>
+								<img
+									src={project.imageSource}
+									alt={project.altText}
+								/>
+							</Suspense>
+						</ErrorBoundary>
+					</li>
 				);
 			})}
 		</ul>

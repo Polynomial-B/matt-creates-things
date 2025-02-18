@@ -17,7 +17,7 @@ export function Break({ isDark }) {
 					y2="0%"
 				>
 					<stop
-						offset="20%"
+						offset="0%"
 						stopColor={
 							isDark === "dark-mode" ? "#cf79ff" : "0c2c59"
 						}

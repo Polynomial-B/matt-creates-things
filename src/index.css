@@ -113,7 +113,7 @@ section {
 	background: linear-gradient(
 		150deg,
 		var(--icons) 50%,
-		var(--icon-hover) 80%
+		var(--icon-hover) 100%
 	);
 	-webkit-background-clip: text;
 	background-clip: text;

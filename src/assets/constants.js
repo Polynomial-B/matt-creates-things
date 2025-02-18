@@ -1,5 +1,6 @@
 export const projects = [
 	{
+		id: 1,
 		name: "Etymology Facts",
 		description: "An app for posting facts using hashtags.",
 		technologies: "React.js, TypeScript, Zustand, CSS, RadixUI",
@@ -10,6 +11,7 @@ export const projects = [
 		deployed: "",
 	},
 	{
+		id: 2,
 		name: "Weather App",
 		description:
 			"A 12-hour weather forecast tool using OpenWeather's APIs.",
@@ -21,6 +23,7 @@ export const projects = [
 		deployed: "",
 	},
 	{
+		id: 3,
 		name: "SynthSounds",
 		description:
 			"A CRUD app where you can adjust tones, effects and save a synthesiser to your collection.",
@@ -32,6 +35,7 @@ export const projects = [
 		deployed: "https://synth-sounds.netlify.app/synth",
 	},
 	{
+		id: 4,
 		name: "Shirtify",
 		description:
 			"A CRUD app where you can customise shirts and save them to your wishlist.",
@@ -43,6 +47,7 @@ export const projects = [
 		deployed: "https://shirtify-wishlist.netlify.app/",
 	},
 	{
+		id: 5,
 		name: "Cosmic Ray",
 		description: "A game with collision logic and a win scenario.",
 		technologies: "JavaScript, HTML, CSS",
