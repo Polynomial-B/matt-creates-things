@@ -217,6 +217,7 @@ function Home() {
 							imageSource="/images/interest-image-three.svg"
 							alt="Background, consisting of an imperfect circle with a gradient."
 							body="I'm currently composing downtempo pop, with lowercase and ambient influences"
+							isDark={isDark}
 						/>
 						<Currently
 							text="Music"
@@ -224,18 +225,21 @@ function Home() {
 							alt="Background, consisting of an imperfect circle with a gradient."
 							body="Click here for my current playlist"
 							link="https://open.spotify.com/playlist/2CGZ5GkE9lrNpGjcGDySfP?si=lJlREEUhSk2RuODsMRjS7Q"
+							isDark={isDark}
 						/>
 						<Currently
 							text="Reading"
 							imageSource="/images/interest-image-two.svg"
 							alt="Background, consisting of an imperfect circle with a gradient."
 							body="I'm currently reading 'A Ghost in the Throat' by Doireann Ní Ghríofa"
+							isDark={isDark}
 						/>
 						<Currently
 							text="Coding"
 							imageSource="/images/interest-image-four.svg"
 							alt="Background, consisting of an imperfect circle with a gradient."
 							body="I'm currently working on a job searching app called 'DevJobs' that can be seen on my GitHub page"
+							isDark={isDark}
 						/>
 					</div>
 				</section>
