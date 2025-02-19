@@ -127,8 +127,8 @@ function Home() {
 					<h2>Learning</h2>
 					<div className="skills-container">
 						<span className="skill-element">
-							Next.js
-							<i className="devicon-nextjs-plain" />
+							Vue.js
+							<i className="devicon-vuejs-plain" />
 						</span>
 						<span className="skill-element">
 							Jest
