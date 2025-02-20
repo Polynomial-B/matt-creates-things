@@ -216,7 +216,7 @@ function Home() {
 							text="Producing"
 							imageSource="/images/interest-image-three.svg"
 							altText="Background, consisting of an imperfect circle with a gradient."
-							body="I'm currently composing downtempo pop, with lowercase and ambient influences"
+							body="I'm currently composing downtempo pop music using field-recordings and synthesisers"
 						/>
 						<Currently
 							text="Music"
@@ -230,12 +230,6 @@ function Home() {
 							imageSource="/images/interest-image-two.svg"
 							altText="Background, consisting of an imperfect circle with a gradient."
 							body="I'm currently reading 'A Ghost in the Throat' by Doireann Ní Ghríofa"
-						/>
-						<Currently
-							text="Coding"
-							imageSource="/images/interest-image-four.svg"
-							altText="Background, consisting of an imperfect circle with a gradient."
-							body="I'm currently working on a job searching app called 'DevJobs' that can be seen on my GitHub page"
 						/>
 					</div>
 				</section>
