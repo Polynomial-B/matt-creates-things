@@ -206,7 +206,7 @@ footer ul {
 }
 .contact {
 	position: relative;
-	z-index: 5;
+	z-index: 3;
 	width: 600px;
 	align-self: center;
 }
