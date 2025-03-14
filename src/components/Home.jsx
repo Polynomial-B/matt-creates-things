@@ -3,7 +3,7 @@ import Darklight from "./Darklight";
 import Titles from "./Titles";
 import { projects } from "../assets/constants";
 import About from "./About";
-import Skills from "./Skills";
+import Technologies from "./Technologies";
 import ProjectSection from "./ProjectSection";
 import ExperienceSection from "./ExperienceSection";
 import InterestsSection from "./InterestsSection";
@@ -65,16 +65,6 @@ function Home() {
 					<button
 						className="link-hover"
 						onClick={() =>
-							aboutRef.current?.scrollIntoView({
-								behavior: "smooth",
-							})
-						}
-					>
-						about
-					</button>
-					<button
-						className="link-hover"
-						onClick={() =>
 							projectsRef.current?.scrollIntoView({
 								behavior: "smooth",
 							})
@@ -82,6 +72,17 @@ function Home() {
 					>
 						projects
 					</button>
+					<button
+						className="link-hover"
+						onClick={() =>
+							aboutRef.current?.scrollIntoView({
+								behavior: "smooth",
+							})
+						}
+					>
+						about
+					</button>
+
 					<button
 						className="link-hover"
 						onClick={() =>
@@ -112,8 +113,8 @@ function Home() {
 					handleSelectProject={handleSelectProject}
 					activeProject={activeProject}
 				/>
-				<Skills />
 				<About aboutRef={aboutRef} />
+				<Technologies />
 				<ExperienceSection />
 				<InterestsSection isDark={isDark} />
 			</main>

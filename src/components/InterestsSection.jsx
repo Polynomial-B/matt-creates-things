@@ -9,7 +9,7 @@ export default function InterestsSection({ isDark }) {
 					text="Producing"
 					imageSource="/images/interest-image-three.svg"
 					altText="Background, consisting of an imperfect circle with a gradient."
-					body="I'm currently composing downtempo pop music using field-recordings and synthesisers"
+					body="I'm currently recording music using feedback loops, field recordings and synthesisers"
 					isDark={isDark}
 				/>
 				<Interests

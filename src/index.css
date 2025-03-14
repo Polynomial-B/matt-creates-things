@@ -10,11 +10,11 @@
 	color-scheme: light dark;
 	--text-color: #2f2f2f;
 	--secondary-text-color: #3f3ffa;
-	--background: #f2e0f7;
+	--background: #f0e0f7;
 	--header-color: #333;
 	--icon-hover: #0c2c59;
 	--icons: #961796;
-	--interests-text: #f6edf9;
+	--interests-text: #efefef;
 }
 
 body,
@@ -31,7 +31,7 @@ html {
 .light-mode {
 	--text-color: #2f2f2f;
 	--secondary-text-color: #512cbe;
-	--background: #f2e0f7;
+	--background: #f0e0f7;
 	--header-color: #333;
 	--icon-hover: #0c2c59;
 	--icons: #961796;
@@ -89,13 +89,14 @@ h1 {
 	color: var(--header-color);
 }
 
-h2 {
-	font-size: 3rem;
-}
-
 h2,
 h3 {
+	font-size: 3rem;
 	font-family: "Tenor Sans", "Montserrat", sans-serif;
+}
+
+h3 {
+	opacity: 0.7;
 }
 
 section {
