@@ -2,8 +2,8 @@ export const projects = [
 	{
 		id: 1,
 		name: "Etymology Facts",
-		description: "An app for posting facts using hashtags.",
-		technologies: "React.js, TypeScript, Zustand, CSS, RadixUI",
+		description: "Post and view language facts!",
+		technologies: "React, TypeScript, Zustand",
 		imageSource: "/images/etymology-facts.png",
 		altText:
 			"Message board app with colourful grainy background and hashtags on the right side.",
@@ -14,9 +14,8 @@ export const projects = [
 	{
 		id: 2,
 		name: "Weather App",
-		description:
-			"A 12-hour weather forecast tool using OpenWeather's APIs.",
-		technologies: "React.js, TypeScript, Tailwind",
+		description: "Check the weather! ☁",
+		technologies: "React, TypeScript, Tailwind",
 		imageSource: "/images/weather-app.png",
 		altText:
 			"A weather forecast with a pink/purple background, showing description, an image and wind speed and direction.",
@@ -27,9 +26,8 @@ export const projects = [
 	{
 		id: 3,
 		name: "SynthSounds",
-		description:
-			"A CRUD app where you can adjust tones, effects and save a synthesiser to your collection.",
-		technologies: "React.js, Django, PostgreSQL, Tone.js, Heroku, CSS",
+		description: "Create and save experimental sounds!",
+		technologies: "React, Django, PostgreSQL",
 		imageSource: "/images/synth-screenshot.png",
 		altText:
 			"A musical synthesiser with each key as a small square in a grid.",
@@ -40,9 +38,8 @@ export const projects = [
 	{
 		id: 4,
 		name: "Shirtify",
-		description:
-			"A CRUD app where you can customise shirts and save them to your wishlist.",
-		technologies: "MongoDB, Express.js, React.js, Node.js, CSS",
+		description: "Customise shirts and save to your wishlist!",
+		technologies: "MongoDB, Express, React, Node",
 		imageSource: "/images/shirtify-home.png",
 		altText:
 			"Large red text 'Shirtify', man in green t-shirt and hat, smiling.",
@@ -53,7 +50,7 @@ export const projects = [
 	{
 		id: 5,
 		name: "Cosmic Ray",
-		description: "A game with collision logic and a win scenario.",
+		description: "Navigate the cosmos with Ray!",
 		technologies: "JavaScript, HTML, CSS",
 		imageSource: "/images/cosmic-ray-screenshot.png",
 		altText:
