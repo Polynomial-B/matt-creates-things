@@ -9,9 +9,13 @@ nav {
 	z-index: 5;
 	top: 0;
 }
+.nav_name {
+	font-weight: 500;
+}
 
 #splash * {
 	font-family: "Encode Sans", sans-serif;
+	color: var(--header-color);
 }
 
 #splash {
@@ -24,7 +28,7 @@ nav {
 	height: 80vh;
 	height: 80dvh;
 	height: 80svh;
-	padding: 15vh 0 5vh;
+	padding: 10vh 0 5vh;
 	min-height: 500px;
 }
 
@@ -44,45 +48,39 @@ nav {
 	font-weight: 500;
 	letter-spacing: 0px;
 	font-optical-sizing: auto;
-	font-size: clamp(1.8em, 15vw, 4em);
+	font-size: clamp(80px, 15vw, 4em);
 	justify-content: end;
-	line-height: 80%;
-	font-family: "Tenor Sans", "Montserrat", sans-serif;
+	line-height: 100%;
+	font-family: "Kaushan Script", cursive;
 	font-weight: 700;
-	width: 40vw;
-}
-
-#splash img {
-	width: 180px;
-	border-radius: 100%;
-	filter: grayscale(100%);
-	margin-top: 40px;
 }
 
 #splash-text {
 	display: flex;
 	padding: 0 10px;
 	flex-direction: row;
-	gap: 40px;
+	gap: 80px;
 	min-width: 400px;
+	align-items: center;
 }
 
 #job-title {
-	display: flex;
-	font-size: clamp(2rem, 8vw, 4rem);
+	display: inline;
+	font-size: 30px;
 	margin: 0;
 	padding: 0;
 	width: 40vw;
+	max-width: 450px;
 	font-weight: 100;
-	flex-direction: column;
-	justify-content: center;
-	line-height: 90%;
+	text-wrap: pretty;
+	text-align: left;
 }
 
-#job-item-one,
-#job-item-two {
-	display: flex;
-	width: 100%;
+.title__extra_bold {
+	font-weight: 500;
+}
+.title__bold {
+	font-weight: 300;
 }
 
 @keyframes fade-in {
@@ -97,18 +95,7 @@ nav {
 }
 
 .fade-in {
-	animation: fade-in 2s ease-in-out 1;
-}
-
-@keyframes fade {
-	0% {
-		opacity: 0;
-		transform: translateY(-20px);
-	}
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
+	animation: fade-in 4s ease-in 1;
 }
 
 .links-container {
@@ -123,12 +110,20 @@ nav {
 
 .links-container button {
 	font-family: "Encode Sans", sans-serif;
-	font-size: clamp(1em, 2.2em, 3em);
-	width: 150px;
+	font-size: 2em;
+	width: 120px;
 	font-weight: 210;
 	border-radius: 0%;
 	align-self: center;
 	justify-content: center;
+}
+
+.links-container > .link-name {
+	width: 200px;
+	font-family: "Kaushan Script", cursive;
+}
+.links-container > .light-dark {
+	width: 70px;
 }
 
 img {
@@ -145,6 +140,19 @@ h2 {
 
 p {
 	text-wrap: pretty;
+}
+
+.about_contents {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+
+.about_img img {
+	width: 180px;
+	border-radius: 43% 57% 45% 55% / 63% 66% 34% 37%;
+	filter: grayscale(100%);
+	margin-top: 40px;
 }
 
 .skills-container {
@@ -181,18 +189,12 @@ p {
 	font-weight: 100;
 }
 
-.scroll-to-top {
-	display: flex;
-	justify-self: center;
-	align-self: center;
-	width: fit-content;
-	height: 44px;
-	font-size: 2em;
-	text-align: center;
-	margin: 10vh 0;
-	font-family: "Encode Sans", sans-serif;
-	font-weight: 200;
-	border-radius: 7px;
+.experience-body ul {
+	list-style: none;
+}
+
+.experience-body ul li::before {
+	content: "♥";
 }
 
 footer {
@@ -223,6 +225,9 @@ footer ul {
 	color: var(--text-color);
 }
 
+.contact-link * {
+	transition: color 250ms ease-in-out, fill 250ms ease-in-out;
+}
 .contact-link *:hover {
 	color: var(--icon-hover);
 	fill: var(--icon-hover);
@@ -439,6 +444,10 @@ a:visited {
 	top: 180px;
 }
 
+.currently-link {
+	transition: transform 0.3s ease-in-out;
+}
+
 .currently-link:hover {
 	transform: scale(1.1);
 }
@@ -450,36 +459,52 @@ a:visited {
 	object-fit: cover;
 }
 
-.currently-light {
-	filter: hue-rotate(120deg);
+.interest_dark {
+	filter: grayscale(1) invert(1);
 }
 
-@media screen and (max-width: 660px) {
-	#splash {
-		margin-top: 0;
-	}
+#job-title .title__color_one {
+	color: var(--icons);
+}
+#job-title .title__color_two {
+	color: var(--secondary-text-color);
+}
+
+@media screen and (max-width: 900px) {
 	#splash-text {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-	}
-	#splash img {
-		width: 120px;
+		gap: 10px;
 	}
 	#splash-title span {
-		width: fit-content;
-		justify-content: left;
+		width: 100%;
 	}
 	#job-title {
 		justify-content: center;
 		width: 20rem;
+		text-align: center;
+		font-size: 28px;
 	}
 	#job-title span {
 		width: max-content;
 	}
-	#job-item-one,
-	#job-item-two {
-		align-self: center;
+	#splash-title span {
+		width: 100%;
+		justify-content: center;
+	}
+}
+@media screen and (max-width: 660px) {
+	#splash {
+		margin-top: 0;
+	}
+
+	.about_contents {
+		display: block;
+	}
+	.about_img {
+		text-align: center;
+		padding-bottom: 30px;
 	}
 	.project__grid {
 		column-gap: 1px;
@@ -504,11 +529,22 @@ a:visited {
 	}
 }
 
-@media only device and (max-width: 767px) and (orientation: landscape) {
+@media only screen and (max-width: 767px) and (orientation: landscape) {
 	#splash-container {
 		height: 80vh;
-		gap: 30vh;
-		margin-top: 20vh;
+		display: flex;
+		flex-direction: row;
+	}
+	#splash-text {
+		flex-direction: row;
+		gap: 40px;
+	}
+	#job-title {
+		font-size: 20px;
+		text-align: left;
+	}
+	.end__break {
+		bottom: -20px;
 	}
 }
 

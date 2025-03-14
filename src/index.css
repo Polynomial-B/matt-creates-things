@@ -9,11 +9,12 @@
 
 	color-scheme: light dark;
 	--text-color: #2f2f2f;
+	--secondary-text-color: #3f3ffa;
 	--background: #f2e0f7;
 	--header-color: #333;
 	--icon-hover: #0c2c59;
 	--icons: #961796;
-	--interests-text: #2f2f2f;
+	--interests-text: #f6edf9;
 }
 
 body,
@@ -29,15 +30,17 @@ html {
 
 .light-mode {
 	--text-color: #2f2f2f;
+	--secondary-text-color: #512cbe;
 	--background: #f2e0f7;
 	--header-color: #333;
 	--icon-hover: #0c2c59;
 	--icons: #961796;
-	--interests-text: #2f2f2f;
+	--interests-text: #f6edf9;
 }
 
 .dark-mode {
 	--text-color: #f8f8ff;
+	--secondary-text-color: #f642c9;
 	--header-color: #f8f8ff;
 	--background: #111d4d;
 	--icons: #85fcea;
@@ -48,6 +51,7 @@ html {
 @media (prefers-color-scheme: dark) {
 	:root {
 		--text-color: #f8f8ff;
+		--secondary-text-color: #f642c9;
 		--header-color: #f8f8ff;
 		--background: #111d4d;
 		--icons: #85fcea;
@@ -87,11 +91,6 @@ h1 {
 
 h2 {
 	font-size: 3rem;
-}
-
-h3 {
-	font-family: "Encode Sans", sans-serif;
-	font-size: 2rem;
 }
 
 h2,
@@ -164,7 +163,7 @@ svg {
 	opacity: 90%;
 	transform: scaleX(0);
 	transform-origin: center;
-	transition: transform 200ms ease-in;
+	transition: transform 250ms ease-in;
 }
 
 .link-hover:hover::after {
