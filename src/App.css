@@ -8,6 +8,7 @@ nav {
 	position: fixed;
 	z-index: 5;
 	top: 0;
+	width: 100vw;
 }
 .nav_name {
 	font-weight: 500;
@@ -72,7 +73,7 @@ nav {
 	width: 40vw;
 	max-width: 450px;
 	font-weight: 100;
-	text-wrap: pretty;
+	text-wrap: balance;
 	text-align: left;
 }
 
@@ -99,18 +100,19 @@ nav {
 }
 
 .links-container {
-	margin: 0;
+	margin: 10px 0 0;
 	display: flex;
-	width: 100%;
+	/* max-width: 1000px; */
 	height: auto;
 	justify-content: space-around;
 	align-self: flex-end;
+	justify-self: center;
 	flex-wrap: wrap;
 }
 
 .links-container button {
+	font-size: 1.4em;
 	font-family: "Encode Sans", sans-serif;
-	font-size: 2em;
 	width: 120px;
 	font-weight: 210;
 	border-radius: 0%;
@@ -119,7 +121,7 @@ nav {
 }
 
 .links-container > .link-name {
-	width: 200px;
+	width: 220px;
 	font-family: "Kaushan Script", cursive;
 }
 .links-container > .light-dark {
@@ -139,7 +141,7 @@ h2 {
 }
 
 p {
-	text-wrap: pretty;
+	text-wrap: balance;
 }
 
 .about_contents {
@@ -181,7 +183,7 @@ p {
 	margin: 20px 0 10px;
 }
 .experience {
-	text-wrap: pretty;
+	text-wrap: balance;
 }
 
 .experience-title {
@@ -355,7 +357,7 @@ a:visited {
 .card-image img {
 	width: 80vw;
 	max-width: 700px;
-	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.371);
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.271);
 	border-radius: 5px;
 }
 
@@ -436,7 +438,7 @@ a:visited {
 	top: 100px;
 	left: 50px;
 	font-size: 1em;
-	text-wrap: pretty;
+	text-wrap: balance;
 }
 
 .currently-image {
@@ -471,6 +473,9 @@ a:visited {
 }
 
 @media screen and (max-width: 900px) {
+	#links-container {
+		margin: 0;
+	}
 	#splash-text {
 		display: flex;
 		flex-direction: column;

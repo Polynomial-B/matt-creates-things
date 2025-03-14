@@ -48,49 +48,51 @@ function Home() {
 
 	return (
 		<>
-			<nav className="links-container">
-				<button
-					className="link-hover link-name"
-					translate="no"
-					onClick={() =>
-						homeRef.current?.scrollIntoView({
-							behavior: "smooth",
-						})
-					}
-				>
-					Matt Lamb
-				</button>
-				<Darklight isDark={isDark} handleIsDark={handleIsDark} />
-				<button
-					className="link-hover"
-					onClick={() =>
-						aboutRef.current?.scrollIntoView({
-							behavior: "smooth",
-						})
-					}
-				>
-					about
-				</button>
-				<button
-					className="link-hover"
-					onClick={() =>
-						projectsRef.current?.scrollIntoView({
-							behavior: "smooth",
-						})
-					}
-				>
-					projects
-				</button>
-				<button
-					className="link-hover"
-					onClick={() =>
-						contactRef.current?.scrollIntoView({
-							behavior: "smooth",
-						})
-					}
-				>
-					contact
-				</button>
+			<nav>
+				<div className="links-container">
+					<button
+						className="link-hover link-name"
+						translate="no"
+						onClick={() =>
+							homeRef.current?.scrollIntoView({
+								behavior: "smooth",
+							})
+						}
+					>
+						Matt Lamb
+					</button>
+					<Darklight isDark={isDark} handleIsDark={handleIsDark} />
+					<button
+						className="link-hover"
+						onClick={() =>
+							aboutRef.current?.scrollIntoView({
+								behavior: "smooth",
+							})
+						}
+					>
+						about
+					</button>
+					<button
+						className="link-hover"
+						onClick={() =>
+							projectsRef.current?.scrollIntoView({
+								behavior: "smooth",
+							})
+						}
+					>
+						projects
+					</button>
+					<button
+						className="link-hover"
+						onClick={() =>
+							contactRef.current?.scrollIntoView({
+								behavior: "smooth",
+							})
+						}
+					>
+						contact
+					</button>
+				</div>
 			</nav>
 			<header id="splash" ref={homeRef}>
 				<div id="splash-container">

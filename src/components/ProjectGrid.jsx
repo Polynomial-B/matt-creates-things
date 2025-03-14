@@ -18,6 +18,7 @@ export default function ProjectGrid({ onProjectChange }) {
 								<Image
 									imageSource={project.imageSource}
 									altText={project.altText}
+									borderRadius={project.border}
 								/>
 							</Suspense>
 						</ErrorBoundary>
