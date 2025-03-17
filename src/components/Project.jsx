@@ -36,7 +36,7 @@ function Project({
 				</div>
 				<div className="card-image">
 					<ErrorBoundary>
-						<Suspense fallback={<div>Loading...</div>}>
+						<Suspense fallback={<div className="spinner" />}>
 							<Image
 								imageSource={imageSource}
 								altText={altText}

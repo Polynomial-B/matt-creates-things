@@ -14,7 +14,9 @@ function Interests({ text, imageSource, altText, link, body, isDark }) {
 							}
 						>
 							<ErrorBoundary>
-								<Suspense fallback={<div>Loading...</div>}>
+								<Suspense
+									fallback={<div className="spinner" />}
+								>
 									<Image
 										imageSource={imageSource}
 										altText={altText}

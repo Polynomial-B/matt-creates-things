@@ -9,7 +9,7 @@ export default function About({ aboutRef }) {
 			<div className="about_contents">
 				<div className="about_img">
 					<ErrorBoundary>
-						<Suspense fallback={<div>Loading...</div>}>
+						<Suspense fallback={<div className="spinner" />}>
 							<Image
 								imageSource={"/images/photo-1.png"}
 								altText={"Portrait photo"}

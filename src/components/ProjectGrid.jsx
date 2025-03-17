@@ -14,7 +14,7 @@ export default function ProjectGrid({ onProjectChange }) {
 				return (
 					<li key={project.id} onClick={() => handleClick(project)}>
 						<ErrorBoundary>
-							<Suspense fallback={<div>Loading image...</div>}>
+							<Suspense fallback={<div className="spinner" />}>
 								<Image
 									imageSource={project.imageSource}
 									altText={project.altText}
