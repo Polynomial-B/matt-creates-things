@@ -130,7 +130,6 @@ nav {
 
 img {
 	-webkit-user-drag: none;
-	user-drag: none;
 	border-radius: 10%;
 	pointer-events: none;
 }
@@ -228,6 +227,7 @@ footer ul {
 .contact-link * {
 	transition: color 250ms ease-in-out, fill 250ms ease-in-out;
 }
+
 .contact-link *:hover {
 	color: var(--icon-hover);
 	fill: var(--icon-hover);
@@ -287,7 +287,7 @@ figure svg {
 
 #project-section {
 	width: auto;
-	padding: 0;
+	padding: 0 0 20vh;
 }
 .project__grid {
 	display: grid;
@@ -360,7 +360,7 @@ a:visited {
 }
 .card-image img {
 	width: 80vw;
-	max-width: 700px;
+	max-width: 300px;
 	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.271);
 	border-radius: 5px;
 }

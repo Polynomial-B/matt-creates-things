@@ -1,26 +1,15 @@
 export const projects = [
 	{
 		id: 1,
-		name: "Etymology Facts",
-		description: "Post and view language facts!",
-		technologies: "TypeScript, React, Zustand",
-		imageSource: "/images/etymology-facts.png",
-		altText:
-			"Message board app with colourful grainy background and hashtags on the right side.",
-		github: "https://github.com/Polynomial-B/etymology-facts",
-		deployed: "",
-		border: "35% 65% 56% 44% / 67% 54% 46% 33%",
-	},
-	{
-		id: 6,
 		name: "devJobs",
+		year: 2025,
 		description: "Search for jobs!",
 		technologies: "TypeScript, React, Tanstack Query",
 		imageSource: "/images/devjobs.png",
 		altText:
 			"A pink/purple background, search bar and container in white, showing a job advert.",
 		github: "https://github.com/Polynomial-B/devjobs",
-		deployed: "",
+		deployed: "https://dev-jobs-mini.netlify.app/",
 		border: "35% 65% 41% 59% / 67% 46% 54% 33%",
 	},
 	// {
@@ -36,8 +25,22 @@ export const projects = [
 	// 	border: "35% 65% 41% 59% / 67% 46% 54% 33%",
 	// },
 	{
+		id: 2,
+		name: "Etymology Facts",
+		year: 2024,
+		description: "Post and view language facts!",
+		technologies: "TypeScript, React, Zustand",
+		imageSource: "/images/etymology-facts.png",
+		altText:
+			"Message board app with colourful grainy background and hashtags on the right side.",
+		github: "https://github.com/Polynomial-B/etymology-facts",
+		deployed: "",
+		border: "35% 65% 56% 44% / 67% 54% 46% 33%",
+	},
+	{
 		id: 3,
 		name: "SynthSounds",
+		year: 2024,
 		description: "Create and save experimental sounds!",
 		technologies: "React, Django, PostgreSQL",
 		imageSource: "/images/synth-screenshot.png",
@@ -50,6 +53,7 @@ export const projects = [
 	{
 		id: 4,
 		name: "Shirtify",
+		year: 2024,
 		description: "Customise shirts and save to your wishlist!",
 		technologies: "MongoDB, Express, React, Node",
 		imageSource: "/images/shirtify-home.png",
@@ -62,6 +66,7 @@ export const projects = [
 	{
 		id: 5,
 		name: "Cosmic Ray",
+		year: 2024,
 		description: "Navigate the cosmos with Ray!",
 		technologies: "JavaScript, HTML, CSS",
 		imageSource: "/images/cosmic-ray-screenshot.png",

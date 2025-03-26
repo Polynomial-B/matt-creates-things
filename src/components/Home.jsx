@@ -10,7 +10,7 @@ import InterestsSection from "./InterestsSection";
 import Footer from "./Footer";
 
 function Home() {
-	const [activeProject, setActiveProject] = useState(projects[2]);
+	const [activeProject, setActiveProject] = useState(projects[0]);
 	const homeRef = useRef();
 	const aboutRef = useRef();
 	const projectsRef = useRef();
