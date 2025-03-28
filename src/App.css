@@ -75,6 +75,7 @@ nav {
 	font-weight: 100;
 	text-wrap: balance;
 	text-align: left;
+	line-height: 110%;
 }
 
 .title__extra_bold {
@@ -293,12 +294,14 @@ figure svg {
 	display: grid;
 	grid-template-columns: repeat(5, minmax(80px, 1fr));
 	column-gap: 10px;
+	max-width: 500px;
+	margin: 0 auto;
 	place-items: center;
 	cursor: pointer;
 }
 .project__grid img {
-	height: 100px;
-	width: 100px;
+	height: 80px;
+	width: 80px;
 	overflow: hidden;
 	margin: 10px;
 	position: relative;
@@ -310,7 +313,8 @@ figure svg {
 	color: var(--text-color);
 	font-size: 1.2em;
 	width: 100%;
-	justify-content: space-between;
+	max-width: 400px;
+	justify-content: space-around;
 }
 
 .project-links a,
@@ -357,12 +361,27 @@ a:visited {
 	font-variant: small-caps;
 	font-weight: 700;
 	font-style: normal;
+	color: var(--icons);
 }
+
+.description-technologies__item {
+	display: inline;
+	width: 100%;
+	padding: 0.4rem;
+	margin: 0 0.2rem;
+	border: 2px solid;
+	border-radius: 15px;
+	box-shadow: 0 -25px 18px -14px inset, var(--icons);
+	opacity: 0.8;
+}
+
 .card-image img {
 	width: 80vw;
 	max-width: 300px;
+	max-height: 200px;
 	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.271);
 	border-radius: 5px;
+	margin: 10px 0;
 }
 
 .languages {
@@ -476,72 +495,7 @@ a:visited {
 	color: var(--secondary-text-color);
 }
 
-@media screen and (max-width: 900px) {
-	#links-container {
-		margin: 0;
-	}
-	#splash-text {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 10px;
-	}
-	#splash-title span {
-		width: 100%;
-	}
-	#job-title {
-		justify-content: center;
-		width: 20rem;
-		text-align: center;
-		font-size: 28px;
-	}
-	#job-title span {
-		width: max-content;
-	}
-	#splash-title span {
-		width: 100%;
-		justify-content: center;
-	}
-}
-@media screen and (max-width: 660px) {
-	#splash {
-		margin-top: 0;
-	}
-
-	.about_contents {
-		display: block;
-	}
-	.about_img {
-		text-align: center;
-		padding-bottom: 30px;
-	}
-	.project__grid {
-		column-gap: 1px;
-		margin: 0;
-		grid-template-columns: repeat(5, minmax(50px, 1fr));
-	}
-
-	.project__grid img {
-		height: 50px;
-		width: 50px;
-		margin: 0px;
-	}
-	.languages {
-		display: block;
-		align-self: center;
-		width: 200px;
-	}
-	h2 {
-		text-align: center;
-		margin: 100px 0 0;
-	}
-	.contact {
-		max-width: 330px;
-		min-height: 500px;
-	}
-}
-
-@media only screen and (max-width: 767px) and (orientation: landscape) {
+@media only screen and (orientation: landscape) and (max-width: 767px) {
 	#splash-container {
 		height: 80vh;
 		display: flex;
@@ -563,9 +517,79 @@ a:visited {
 	}
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1400px) {
+@media screen and (max-width: 660px) {
+	#links-container {
+		margin: 0;
+	}
+	#dark-mode {
+		width: 280px;
+	}
+	.link-name {
+		min-width: 280px;
+	}
+	#splash-text {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+	}
+	#splash-title span {
+		width: 100%;
+	}
+	#job-title {
+		justify-content: center;
+		width: 20rem;
+		margin-top: 50px;
+		text-align: center;
+		font-size: 28px;
+	}
+	#splash-title span {
+		width: 100%;
+		justify-content: center;
+	}
+}
+.about_contents {
+	display: block;
+}
+.about_img {
+	text-align: center;
+	padding-bottom: 30px;
+}
+.project__grid {
+	column-gap: 5px;
+	margin: 0 auto;
+	grid-template-columns: repeat(5, minmax(50px, 1fr));
+}
+
+.project__grid img {
+	height: 50px;
+	width: 50px;
+}
+.languages {
+	display: block;
+	align-self: center;
+	width: 200px;
+}
+h2 {
+	text-align: center;
+	margin: 100px 0 0;
+}
+.contact {
+	max-width: 330px;
+	min-height: 500px;
+}
+@media screen and (max-width: 560px) {
+	#dark-mode {
+		width: 40px;
+	}
+	.link-name {
+		min-width: 180px;
+	}
+}
+
+/* @media only screen and (min-width: 768px) and (max-width: 1400px) {
 	#splash-container {
 		height: 80vh;
 		margin-top: 0;
 	}
-}
+} */
