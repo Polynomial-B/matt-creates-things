@@ -4,7 +4,7 @@ export const projects = [
 		name: "devJobs",
 		year: 2025,
 		description: "Search for jobs!",
-		technologies: "TypeScript, React, Tanstack Query",
+		technologies: ["TypeScript", "React", "Tanstack Query"],
 		imageSource: "/images/devjobs.png",
 		altText:
 			"A pink/purple background, search bar and container in white, showing a job advert.",
@@ -29,7 +29,7 @@ export const projects = [
 		name: "Etymology Facts",
 		year: 2024,
 		description: "Post and view language facts!",
-		technologies: "TypeScript, React, Zustand",
+		technologies: ["TypeScript", "React", "Zustand"],
 		imageSource: "/images/etymology-facts.png",
 		altText:
 			"Message board app with colourful grainy background and hashtags on the right side.",
@@ -42,7 +42,7 @@ export const projects = [
 		name: "SynthSounds",
 		year: 2024,
 		description: "Create and save experimental sounds!",
-		technologies: "React, Django, PostgreSQL",
+		technologies: ["React", "Django", "PostgreSQL"],
 		imageSource: "/images/synth-screenshot.png",
 		altText:
 			"A musical synthesiser with each key as a small square in a grid.",
@@ -55,7 +55,7 @@ export const projects = [
 		name: "Shirtify",
 		year: 2024,
 		description: "Customise shirts and save to your wishlist!",
-		technologies: "MongoDB, Express, React, Node",
+		technologies: ["MongoDB", "Express", "React", "Node"],
 		imageSource: "/images/shirtify-home.png",
 		altText:
 			"Large red text 'Shirtify', man in green t-shirt and hat, smiling.",
@@ -68,7 +68,7 @@ export const projects = [
 		name: "Cosmic Ray",
 		year: 2024,
 		description: "Navigate the cosmos with Ray!",
-		technologies: "JavaScript, HTML, CSS",
+		technologies: ["JavaScript", "HTML", "CSS"],
 		imageSource: "/images/cosmic-ray-screenshot.png",
 		altText:
 			"Space-themed background with moving planets, asteroids and a manta ray, in an retro game machine style.",

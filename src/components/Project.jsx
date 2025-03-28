@@ -30,7 +30,7 @@ function Project({
 							rel="noopener noreferrer"
 							className="project-links link-hover"
 						>
-							Deployed ↗
+							Website ↗
 						</a>
 					)}
 				</div>
@@ -49,7 +49,16 @@ function Project({
 					<div className="card-description">
 						<p>{description}</p>
 						<p className="description-technologies">
-							{technologies}
+							{technologies.map((item, index) => {
+								return (
+									<div
+										className="description-technologies__item"
+										key={index}
+									>
+										{item}
+									</div>
+								);
+							})}
 						</p>
 					</div>
 				</div>

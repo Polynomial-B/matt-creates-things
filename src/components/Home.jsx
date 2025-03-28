@@ -15,20 +15,17 @@ function Home() {
 	const aboutRef = useRef();
 	const projectsRef = useRef();
 	const contactRef = useRef();
-
-	const handleSelectProject = (project) => {
-		setActiveProject(project);
-	};
-
-	const getTheme = () => {
+	const [isDark, setIsDark] = useState(() => {
 		const prefersDark = window.matchMedia(
 			"(prefers-color-scheme: dark)"
 		).matches;
 
 		return prefersDark ? "dark-mode" : "light-mode";
-	};
+	});
 
-	const [isDark, setIsDark] = useState(getTheme);
+	const handleSelectProject = (project) => {
+		setActiveProject(project);
+	};
 
 	function handleIsDark() {
 		setIsDark((previousState) => {
