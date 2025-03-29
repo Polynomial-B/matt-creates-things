@@ -48,7 +48,7 @@ function Project({
 					<h3 className="card-title">{name}</h3>
 					<div className="card-description">
 						<p>{description}</p>
-						<p className="description-technologies">
+						<div className="description-technologies">
 							{technologies.map((item, index) => {
 								return (
 									<div
@@ -59,7 +59,7 @@ function Project({
 									</div>
 								);
 							})}
-						</p>
+						</div>
 					</div>
 				</div>
 			</div>

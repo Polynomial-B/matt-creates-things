@@ -361,7 +361,9 @@ a:visited {
 	font-variant: small-caps;
 	font-weight: 700;
 	font-style: normal;
+	font-size: 0.7rem;
 	color: var(--icons);
+	height: 50px;
 }
 
 .description-technologies__item {
@@ -376,9 +378,8 @@ a:visited {
 }
 
 .card-image img {
-	width: 80vw;
-	max-width: 300px;
-	max-height: 200px;
+	height: 40vh;
+	min-height: 200px;
 	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.271);
 	border-radius: 5px;
 	margin: 10px 0;
