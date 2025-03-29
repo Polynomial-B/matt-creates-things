@@ -4,7 +4,7 @@ export const projects = [
 		name: "devJobs",
 		year: 2025,
 		description: "Search for jobs!",
-		technologies: ["TypeScript", "React", "Tanstack Query"],
+		technologies: ["TypeScript", "React", "React Query"],
 		imageSource: "/images/devjobs.png",
 		altText:
 			"A pink/purple background, search bar and container in white, showing a job advert.",
@@ -42,7 +42,7 @@ export const projects = [
 		name: "SynthSounds",
 		year: 2024,
 		description: "Create and save experimental sounds!",
-		technologies: ["React", "Django", "PostgreSQL"],
+		technologies: ["React", "Django", "PostgreSQL", "JWT"],
 		imageSource: "/images/synth-screenshot.png",
 		altText:
 			"A musical synthesiser with each key as a small square in a grid.",
