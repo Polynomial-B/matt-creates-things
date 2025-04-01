@@ -14,7 +14,10 @@ export default function ProjectSection({
 			<div className="project-container">
 				<ErrorBoundary>
 					<Suspense fallback={<div className="spinner" />}>
-						<ProjectGrid onProjectChange={handleSelectProject} />
+						<ProjectGrid
+							onProjectChange={handleSelectProject}
+							activeProject={activeProject}
+						/>
 						<Project
 							name={activeProject.name}
 							description={activeProject.description}
