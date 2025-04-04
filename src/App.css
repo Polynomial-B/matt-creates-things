@@ -1,7 +1,7 @@
 main {
 	max-width: 700px;
 	margin: 0 auto;
-	padding: 0 7vw;
+	padding: 100px 7vw 0;
 }
 
 nav {
@@ -20,16 +20,15 @@ nav {
 }
 
 #splash {
-	min-height: 300px;
 	display: flex;
 	flex-wrap: wrap;
 	align-content: space-between;
 	justify-content: center;
 	user-select: none;
-	height: 80vh;
-	height: 80dvh;
-	height: 80svh;
-	padding: 10vh 0 5vh;
+	height: 75vh;
+	height: 75dvh;
+	height: 75svh;
+	padding: 10vh 0 0;
 	min-height: 500px;
 }
 
@@ -103,7 +102,6 @@ nav {
 .links-container {
 	margin: 10px 0 0;
 	display: flex;
-	/* max-width: 1000px; */
 	height: auto;
 	justify-content: space-around;
 	align-self: flex-end;
@@ -120,13 +118,21 @@ nav {
 	align-self: center;
 	justify-content: center;
 }
+.link-top {
+	display: flex;
+	justify-content: center;
+}
 
-.links-container > .link-name {
+.link-routes {
+	min-width: 300px;
+}
+.links-container .link-name {
 	width: 220px;
 	font-family: "Kaushan Script", cursive;
 }
-.links-container > .light-dark {
+.links-container .light-dark {
 	width: 70px;
+	top: 2px;
 }
 
 img {
@@ -288,7 +294,6 @@ figure svg {
 
 #project-section {
 	width: auto;
-	padding: 0 0 20vh;
 }
 .project__grid {
 	display: grid;
@@ -329,7 +334,6 @@ figure svg {
 	color: var(--text-color);
 	font-size: 1.2em;
 	width: 100%;
-	max-width: 400px;
 	justify-content: space-around;
 }
 
@@ -345,9 +349,10 @@ a:visited {
 
 .project-card {
 	display: flex;
-	flex-direction: column-reverse;
+	flex-direction: row;
 	width: 100%;
 	align-items: center;
+	padding: 50px 0;
 }
 
 .project-card h3 {
@@ -358,7 +363,9 @@ a:visited {
 .card-content {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	width: 100%;
+	min-height: 226px;
 }
 
 .card-title {
@@ -393,8 +400,7 @@ a:visited {
 }
 
 .card-image img {
-	max-height: 40vh;
-	min-height: 200px;
+	height: 200px;
 	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.271);
 	border-radius: 5px;
 	margin: 10px 0;
@@ -511,9 +517,12 @@ a:visited {
 	color: var(--secondary-text-color);
 }
 
-@media only screen and (orientation: landscape) and (max-width: 767px) {
+@media only screen and (orientation: landscape) and (max-width: 850px) {
+	#splash {
+		min-height: 180px;
+	}
 	#splash-container {
-		height: 80vh;
+		height: 70vh;
 		display: flex;
 		flex-direction: row;
 	}
@@ -525,6 +534,9 @@ a:visited {
 		font-size: 20px;
 		text-align: left;
 	}
+	h2 {
+		margin: 40px 0 0;
+	}
 	.contact {
 		max-height: 350px;
 	}
@@ -533,16 +545,13 @@ a:visited {
 	}
 }
 
+@media screen and (max-width: 900px) {
+	.project-card {
+		flex-direction: column-reverse;
+		padding: 0;
+	}
+}
 @media screen and (max-width: 660px) {
-	#links-container {
-		margin: 0;
-	}
-	#dark-mode {
-		width: 280px;
-	}
-	.link-name {
-		min-width: 280px;
-	}
 	#splash-text {
 		display: flex;
 		flex-direction: column;
@@ -596,7 +605,7 @@ a:visited {
 	}
 	h2 {
 		text-align: center;
-		margin: 100px 0 0;
+		margin-top: 100px;
 	}
 	.contact {
 		max-width: 330px;
@@ -604,17 +613,10 @@ a:visited {
 	}
 }
 @media screen and (max-width: 560px) {
-	#dark-mode {
-		width: 40px;
+	.light-dark button {
+		width: 100px;
 	}
 	.link-name {
 		min-width: 180px;
 	}
 }
-
-/* @media only screen and (min-width: 768px) and (max-width: 1400px) {
-	#splash-container {
-		height: 80vh;
-		margin-top: 0;
-	}
-} */
