@@ -8,6 +8,7 @@ import ProjectSection from "./ProjectSection";
 import ExperienceSection from "./ExperienceSection";
 import InterestsSection from "./InterestsSection";
 import Footer from "./Footer";
+import SectionBreak from "./SectionBreak";
 
 function Home() {
 	const [activeProject, setActiveProject] = useState(projects[0]);
@@ -47,51 +48,59 @@ function Home() {
 		<>
 			<nav>
 				<div className="links-container">
-					<button
-						className="link-hover link-name"
-						translate="no"
-						onClick={() =>
-							homeRef.current?.scrollIntoView({
-								behavior: "smooth",
-							})
-						}
-					>
-						Matt Lamb
-					</button>
-					<Darklight isDark={isDark} handleIsDark={handleIsDark} />
-					<button
-						className="link-hover"
-						onClick={() =>
-							projectsRef.current?.scrollIntoView({
-								behavior: "smooth",
-							})
-						}
-					>
-						projects
-					</button>
-					<button
-						className="link-hover"
-						onClick={() =>
-							aboutRef.current?.scrollIntoView({
-								behavior: "smooth",
-							})
-						}
-					>
-						about
-					</button>
+					<div className="link-top">
+						<button
+							className="link-hover link-name"
+							translate="no"
+							onClick={() =>
+								homeRef.current?.scrollIntoView({
+									behavior: "smooth",
+								})
+							}
+						>
+							Matt Lamb
+						</button>
+						<Darklight
+							isDark={isDark}
+							handleIsDark={handleIsDark}
+						/>
+					</div>
+					<div className="link-routes">
+						<button
+							className="link-hover"
+							onClick={() =>
+								projectsRef.current?.scrollIntoView({
+									behavior: "smooth",
+								})
+							}
+						>
+							projects
+						</button>
+						<button
+							className="link-hover"
+							onClick={() =>
+								aboutRef.current?.scrollIntoView({
+									behavior: "smooth",
+								})
+							}
+						>
+							about
+						</button>
 
-					<button
-						className="link-hover"
-						onClick={() =>
-							contactRef.current?.scrollIntoView({
-								behavior: "smooth",
-							})
-						}
-					>
-						contact
-					</button>
+						<button
+							className="link-hover"
+							onClick={() =>
+								contactRef.current?.scrollIntoView({
+									behavior: "smooth",
+								})
+							}
+						>
+							contact
+						</button>
+					</div>
 				</div>
 			</nav>
+
 			<header id="splash" ref={homeRef}>
 				<div id="splash-container">
 					<div id="splash-text">
@@ -102,6 +111,7 @@ function Home() {
 						<Titles />
 					</div>
 				</div>
+				<SectionBreak isDark={isDark} />
 			</header>
 
 			<main>
@@ -110,10 +120,14 @@ function Home() {
 					handleSelectProject={handleSelectProject}
 					activeProject={activeProject}
 				/>
+				<SectionBreak isDark={isDark} />
 				<About aboutRef={aboutRef} />
 				<Technologies />
+				<SectionBreak isDark={isDark} />
 				<ExperienceSection />
+				<SectionBreak isDark={isDark} />
 				<InterestsSection isDark={isDark} />
+				<SectionBreak isDark={isDark} />
 			</main>
 			<Footer contactRef={contactRef} isDark={isDark} />
 		</>

@@ -6,7 +6,6 @@ function Darklight({ handleIsDark, isDark }) {
 		<>
 			<button
 				onClick={handleIsDark}
-				id={isDark}
 				className="link-hover light-dark"
 				title={`Activate ${
 					isDark === "dark-mode" ? "light-mode" : "dark-mode"

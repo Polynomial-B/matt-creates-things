@@ -14,26 +14,6 @@ function Project({
 	return (
 		<>
 			<div className="project-card">
-				<div className="project-links-container">
-					<a
-						href={github}
-						target="_blank"
-						rel="noopener noreferrer"
-						className="project-links link-hover"
-					>
-						Github ↗
-					</a>
-					{deployed && (
-						<a
-							href={deployed}
-							target="_blank"
-							rel="noopener noreferrer"
-							className="project-links link-hover"
-						>
-							Website ↗
-						</a>
-					)}
-				</div>
 				<div className="card-image">
 					<ErrorBoundary>
 						<Suspense fallback={<div className="spinner" />}>
@@ -44,6 +24,7 @@ function Project({
 						</Suspense>
 					</ErrorBoundary>
 				</div>
+
 				<div className="card-content">
 					<h3 className="card-title">{name}</h3>
 					<div className="card-description">
@@ -60,6 +41,26 @@ function Project({
 								);
 							})}
 						</div>
+					</div>
+					<div className="project-links-container">
+						<a
+							href={github}
+							target="_blank"
+							rel="noopener noreferrer"
+							className="project-links link-hover"
+						>
+							Github ↗
+						</a>
+						{deployed && (
+							<a
+								href={deployed}
+								target="_blank"
+								rel="noopener noreferrer"
+								className="project-links link-hover"
+							>
+								Website ↗
+							</a>
+						)}
 					</div>
 				</div>
 			</div>
