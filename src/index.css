@@ -132,7 +132,7 @@ button {
 a,
 a:visited {
 	text-decoration: none;
-	color: var(--icons);
+	color: var(--text-color);
 }
 
 a {
