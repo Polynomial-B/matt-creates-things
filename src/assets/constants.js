@@ -3,8 +3,8 @@ export const projects = [
 		id: 1,
 		name: "devJobs",
 		year: 2025,
-		description: "Search for jobs!",
-		technologies: ["TypeScript", "React", "React Query"],
+		description: "Search for jobs and save them under your bookmarks.",
+		technologies: ["TypeScript", "React", "ReactQuery"],
 		imageSource: "/images/devjobs.png",
 		altText:
 			"A pink/purple background, search bar and container in white, showing a job advert.",
@@ -28,7 +28,8 @@ export const projects = [
 		id: 2,
 		name: "Etymology Facts",
 		year: 2024,
-		description: "Post and view language facts!",
+		description:
+			"Post and view language facts in this message-board prototype application.",
 		technologies: ["TypeScript", "React", "Zustand"],
 		imageSource: "/images/etymology-facts.png",
 		altText:
@@ -41,7 +42,8 @@ export const projects = [
 		id: 3,
 		name: "SynthSounds",
 		year: 2024,
-		description: "Create and save experimental sounds!",
+		description:
+			"Create and save experimental sounds by adjusting settings and changing intervals. ",
 		technologies: ["React", "Django", "PostgreSQL", "JWT"],
 		imageSource: "/images/synth-screenshot.png",
 		altText:
@@ -54,7 +56,8 @@ export const projects = [
 		id: 4,
 		name: "Shirtify",
 		year: 2024,
-		description: "Customise shirts and save to your wishlist!",
+		description:
+			"Customise shirt colours and images and then save them to your wishlist.",
 		technologies: ["MongoDB", "Express", "React", "Node"],
 		imageSource: "/images/shirtify-home.png",
 		altText:
@@ -67,7 +70,7 @@ export const projects = [
 		id: 5,
 		name: "Cosmic Ray",
 		year: 2024,
-		description: "Navigate the cosmos with Ray!",
+		description: "Navigate the cosmos in this 2D arcade game.",
 		technologies: ["JavaScript", "HTML", "CSS"],
 		imageSource: "/images/cosmic-ray-screenshot.png",
 		altText:
