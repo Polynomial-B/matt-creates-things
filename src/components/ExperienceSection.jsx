@@ -9,29 +9,21 @@ export default function ExperienceSection() {
 					<Experience
 						title="Software Engineering Student, General Assembly"
 						dates="2024"
-						list1="Built solo and group full-stack apps using React, Node and Python with SQL and noSQL databases"
-						// list2="Contributed to daily standup, live classes and practical labs"
-						// list3="Worked on solo and paired projects within short timeframes"
-						// list4="Learned debugging, code refactoring and problem-solving"
+						list1="Built solo and paired full-stack apps in short timeframes. Contributed to daily standup. Presented and showcased completed projects."
 					/>
 				</li>
 				<li>
 					<Experience
 						title="Private English Tutor"
 						dates="2022 - present"
-						list1="Grew personal business"
-						// list2="Created content, materials and curriculum: provided targets and activities"
-						// list3="Organised events: games, workshops and outings"
+						list1="Grew personal business. Taught classes and hosted events across Bilbao for children and adults."
 					/>
 				</li>
 				<li>
 					<Experience
 						title="Lifeboat Operations Coordinator, RNLI"
 						dates="2020 - 2022"
-						list1="Provided on-call support for lifeboats and lifeguards"
-						list2="Trained and on-boarded staff, both in-person and remote"
-						list3="Cleaned data and updated staff intranet"
-						list4="Distributed physical and digital maps"
+						list1="Provided critical on-call support for staff and volunteers. Worked as Data Protection officer. Cleaned data and updated staff intranet."
 					/>
 				</li>
 			</ul>
