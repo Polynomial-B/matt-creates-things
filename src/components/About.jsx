@@ -18,7 +18,7 @@ export default function About({ aboutRef }) {
 					</ErrorBoundary>
 				</div>
 				{
-					"Helping others is my motivation. I have been an advisor and provided mentorship in the public, charity and private sector for more than a decade. I'm a patient and compassionate person who is determined to find meaningful work in the world of software engineering."
+					"With a background in human-centered roles, I love to develop software with a focus on accessibility. My decade of experience understanding diverse needs translates directly into my goal of building creative, practical and inclusive applications."
 				}
 			</div>
 		</section>
