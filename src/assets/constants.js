@@ -1,6 +1,19 @@
 export const projects = [
 	{
 		id: 1,
+		name: "EventApp",
+		year: 2024,
+		description: "Search your area for upcoming events.",
+		technologies: ["Next.js", "Zod", "Prisma", "SQLite"],
+		imageSource: "/images/events-app.png",
+		altText:
+			"Grey text showing a 'Disability and Climate' event page, abstract image of person reading in pink, yellow and blue.",
+		github: "https://github.com/Polynomial-B/event-planner",
+		// deployed: "",
+		border: "33% 71% 45% 80% / 29% 44% 76% 88% ",
+	},
+	{
+		id: 5,
 		name: "devJobs",
 		year: 2025,
 		description: "Search for jobs and save them under your bookmarks.",
@@ -12,20 +25,8 @@ export const projects = [
 		deployed: "https://dev-jobs-mini.netlify.app/",
 		border: "35% 65% 41% 59% / 67% 46% 54% 33%",
 	},
-	// {
-	// 	id: 2,
-	// 	name: "Weather App",
-	// 	description: "Check the weather! ☁",
-	// 	technologies: "React, TypeScript, Tailwind",
-	// 	imageSource: "/images/weather-app.png",
-	// 	altText:
-	// 		"A weather forecast with a pink/purple background, showing description, an image and wind speed and direction.",
-	// 	github: "https://github.com/Polynomial-B/tsx-weather-api",
-	// 	deployed: "",
-	// 	border: "35% 65% 41% 59% / 67% 46% 54% 33%",
-	// },
 	{
-		id: 2,
+		id: 10,
 		name: "Etymology Facts",
 		year: 2024,
 		description:
@@ -39,7 +40,7 @@ export const projects = [
 		border: "35% 65% 56% 44% / 67% 54% 46% 33%",
 	},
 	{
-		id: 3,
+		id: 15,
 		name: "SynthSounds",
 		year: 2024,
 		description:
@@ -52,22 +53,22 @@ export const projects = [
 		deployed: "https://synth-sounds.netlify.app/synth",
 		border: "34% 66% 32% 68% / 62% 39% 61% 38%",
 	},
+	// {
+	// 	id: 4,
+	// 	name: "Shirtify",
+	// 	year: 2024,
+	// 	description:
+	// 		"Customise shirt colours and images and then save them to your wishlist.",
+	// 	technologies: ["MongoDB", "Express", "React", "Node"],
+	// 	imageSource: "/images/shirtify-home.png",
+	// 	altText:
+	// 		"Large red text 'Shirtify', man in green t-shirt and hat, smiling.",
+	// 	github: "https://github.com/Polynomial-B/shirtify-mern-frontend",
+	// 	deployed: "https://shirtify-wishlist.netlify.app/",
+	// 	border: "29% 71% 25% 75% / 79% 24% 76% 21% ",
+	// },
 	{
-		id: 4,
-		name: "Shirtify",
-		year: 2024,
-		description:
-			"Customise shirt colours and images and then save them to your wishlist.",
-		technologies: ["MongoDB", "Express", "React", "Node"],
-		imageSource: "/images/shirtify-home.png",
-		altText:
-			"Large red text 'Shirtify', man in green t-shirt and hat, smiling.",
-		github: "https://github.com/Polynomial-B/shirtify-mern-frontend",
-		deployed: "https://shirtify-wishlist.netlify.app/",
-		border: "29% 71% 25% 75% / 79% 24% 76% 21% ",
-	},
-	{
-		id: 5,
+		id: 20,
 		name: "Cosmic Ray",
 		year: 2024,
 		description: "Navigate the cosmos in this 2D arcade game.",
