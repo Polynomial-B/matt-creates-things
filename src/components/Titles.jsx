@@ -10,7 +10,6 @@ function Titles() {
 			<span className="title__extra_bold title__color_two">
 				sound designer,
 			</span>{" "}
-			<span className="fade-in">and ambient-pop</span> <br />
 			<span className="title__extra_bold">producer.</span>
 		</h2>
 	);

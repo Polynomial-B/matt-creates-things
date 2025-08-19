@@ -17,12 +17,8 @@ export default function Technologies() {
 			<h3>Learning</h3>
 			<div className="skills-container">
 				<span className="skill-element">
-					Next.js
-					<i className="devicon-nextjs-plain" />
-				</span>
-				<span className="skill-element">
-					Kotlin
-					<i className="devicon-kotlin-plain" />
+					Rust
+					<i className="devicon-rust-original" />
 				</span>
 			</div>
 			<h2>Languages</h2>
