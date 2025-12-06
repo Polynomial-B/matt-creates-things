@@ -5,7 +5,7 @@ export const projects = [
 		year: 2024,
 		description: "Search your area for upcoming events.",
 		technologies: ["Next.js", "Zod", "Prisma", "SQLite"],
-		imageSource: "/images/events-app.png",
+		imageSource: "/images/event-app-screenshot.png",
 		altText:
 			"Grey text showing a 'Disability and Climate' event page, abstract image of person reading in pink, yellow and blue.",
 		github: "https://github.com/Polynomial-B/event-planner",
