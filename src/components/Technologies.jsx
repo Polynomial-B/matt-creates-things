@@ -14,13 +14,12 @@ export default function Technologies() {
 					);
 				})}
 			</div>
-			{/* <h3>Learning</h3>
+			<h3 className="learning">Learning</h3>
 			<div className="skills-container">
-				<span className="skill-element">
-					Rust
-					<i className="devicon-rust-original" />
-				</span>
-			</div> */}
+				{/* <span className="skill-element"> */}
+				<i className="devicon-go-original-wordmark" />
+				{/* </span> */}
+			</div>
 			<h2>Languages</h2>
 			<ul className="languages">
 				<li>

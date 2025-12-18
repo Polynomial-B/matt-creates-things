@@ -443,7 +443,7 @@ a:visited {
 
 .experience-list {
 	font-size: 20px;
-	margin: 1em 0;
+	margin: 10px 0;
 }
 
 .interests {
@@ -500,6 +500,9 @@ a:visited {
 
 .currently-link:hover {
 	transform: scale(1.1);
+}
+.learning {
+	margin: 50px 0 0;
 }
 
 .section__break {

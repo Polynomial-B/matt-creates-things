@@ -1,10 +1,10 @@
 const icons = [
 	{ name: "TypeScript", icon: "devicon-typescript-plain" },
 	{ name: "React", icon: "devicon-react-original" },
+	{ name: "Python", icon: "devicon-python-plain" },
+	{ name: "Node", icon: "devicon-nodejs-plain" },
 	{ name: "SvelteKit", icon: "devicon-svelte-plain" },
 	{ name: "Next", icon: "devicon-nextjs-plain" },
-	{ name: "Node", icon: "devicon-nodejs-plain" },
-	{ name: "Python", icon: "devicon-python-plain" },
 	{ name: "Django", icon: "devicon-django-plain" },
 	// { name: "Express", icon: "devicon-express-original" },
 	// { name: "Jest", icon: "devicon-jest-plain" },
