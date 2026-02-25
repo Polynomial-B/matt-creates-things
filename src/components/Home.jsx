@@ -48,7 +48,7 @@ function Home() {
 	return (
 		<>
 			<nav>
-				<div className="links-container home-icon">
+				<div className="links-container">
 					<div className="link-top">
 						<button
 							className="link-hover home-icon"
