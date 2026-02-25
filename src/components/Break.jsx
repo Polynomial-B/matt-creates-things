@@ -19,13 +19,13 @@ export function Break({ isDark }) {
 					<stop
 						offset="0%"
 						stopColor={
-							isDark === "dark-mode" ? "#cf79ff" : "#0c2c59"
+							isDark === "dark-mode" ? "#cf79ff" : "#7595c2"
 						}
 					></stop>
 					<stop
 						offset={isDark === "dark-mode" ? "75%" : "60%"}
 						stopColor={
-							isDark === "dark-mode" ? "#85fcea" : "#961796"
+							isDark === "dark-mode" ? "#85fcea" : "#c3bbdb"
 						}
 					></stop>
 				</linearGradient>

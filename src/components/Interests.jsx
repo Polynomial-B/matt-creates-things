@@ -26,7 +26,6 @@ function Interests({ text, imageSource, altText, link, body, isDark }) {
 						</div>
 						<div className="currently-text">{text}</div>
 						<div className="currently-body">{body}</div>
-						<div className="currently-image">♫</div>
 					</div>
 				</a>
 			) : (

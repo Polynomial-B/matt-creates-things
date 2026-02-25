@@ -9,6 +9,7 @@ import ExperienceSection from "./ExperienceSection";
 import InterestsSection from "./InterestsSection";
 import Footer from "./Footer";
 import SectionBreak from "./SectionBreak";
+import IconHome from "./IconHome";
 
 function Home() {
 	const [activeProject, setActiveProject] = useState(projects[0]);
@@ -18,7 +19,7 @@ function Home() {
 	const contactRef = useRef();
 	const [isDark, setIsDark] = useState(() => {
 		const prefersDark = window.matchMedia(
-			"(prefers-color-scheme: dark)"
+			"(prefers-color-scheme: dark)",
 		).matches;
 
 		return prefersDark ? "dark-mode" : "light-mode";
@@ -47,10 +48,10 @@ function Home() {
 	return (
 		<>
 			<nav>
-				<div className="links-container">
+				<div className="links-container home-icon">
 					<div className="link-top">
 						<button
-							className="link-hover link-name"
+							className="link-hover home-icon"
 							translate="no"
 							onClick={() =>
 								homeRef.current?.scrollIntoView({
@@ -58,7 +59,7 @@ function Home() {
 								})
 							}
 						>
-							Matt Lamb
+							<IconHome />
 						</button>
 						<Darklight
 							isDark={isDark}

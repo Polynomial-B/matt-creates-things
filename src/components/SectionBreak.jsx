@@ -1,6 +1,7 @@
 export default function SectionBreak({ isDark }) {
 	return (
 		<div
+			className="section-break"
 			style={{
 				width: "100vw",
 				marginLeft: "calc(-50vw + 50%)",
@@ -25,37 +26,39 @@ export default function SectionBreak({ isDark }) {
 						<stop
 							offset={isDark === "dark-mode" ? "20%" : "10%"}
 							stopColor={
-								isDark === "dark-mode" ? "#cf79ff" : "#0c2c59"
+								isDark === "dark-mode"
+									? "#cf79ff"
+									: "rgb(197, 205, 231)"
 							}
 						></stop>
 						<stop
 							offset={isDark === "dark-mode" ? "45%" : "15%"}
 							stopColor={
-								isDark === "dark-mode" ? "#85fcea" : "#512CBE"
+								isDark === "dark-mode" ? "#85fcea" : "#d4cee6"
 							}
 						></stop>
 						<stop
 							offset={isDark === "dark-mode" ? "48%" : "30%"}
 							stopColor={
-								isDark === "dark-mode" ? "#85fcea" : "#961796"
+								isDark === "dark-mode" ? "#85fcea" : "#e3cdee"
 							}
 						></stop>
 						<stop
 							offset={isDark === "dark-mode" ? "50%" : "35%"}
 							stopColor={
-								isDark === "dark-mode" ? "#85fcea" : "#961796"
+								isDark === "dark-mode" ? "#85fcea" : "#cedef5"
 							}
 						></stop>
 						<stop
 							offset={isDark === "dark-mode" ? "52%" : "85%"}
 							stopColor={
-								isDark === "dark-mode" ? "#85fcea" : "#512CBE"
+								isDark === "dark-mode" ? "#85fcea" : "#e3def1"
 							}
 						></stop>
 						<stop
 							offset={isDark === "dark-mode" ? "85%" : "95%"}
 							stopColor={
-								isDark === "dark-mode" ? "#cf79ff" : "#0c2c59"
+								isDark === "dark-mode" ? "#cf79ff" : "#ebf3f1"
 							}
 						></stop>
 					</linearGradient>
