@@ -9,7 +9,7 @@ export default function InterestsSection({ isDark }) {
 					text="Producing"
 					imageSource="/images/interest-image-three.svg"
 					altText="Background, consisting of an imperfect circle with a gradient."
-					body="I'm currently recording music using feedback loops, field recordings and synthesisers"
+					body="Music using feedback loops, field recordings and synthesisers"
 					isDark={isDark}
 				/>
 				<Interests
@@ -24,7 +24,7 @@ export default function InterestsSection({ isDark }) {
 					text="Reading"
 					imageSource="/images/interest-image-two.svg"
 					altText="Background, consisting of an imperfect circle with a gradient."
-					body="I'm currently reading 'A Ghost in the Throat' by Doireann Ní Ghríofa"
+					body="'The Dawn of Everything' by David Graeber and David Wengrow"
 					isDark={isDark}
 				/>
 			</div>
