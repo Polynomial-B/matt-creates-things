@@ -304,7 +304,7 @@ figure svg {
 }
 .project__grid {
 	display: grid;
-	grid-template-columns: repeat(5, minmax(80px, 1fr));
+	grid-template-columns: repeat(4, minmax(80px, 1fr));
 	column-gap: 10px;
 	max-width: 500px;
 	margin: 0 auto;
@@ -575,7 +575,7 @@ a:visited {
 	.project__grid {
 		column-gap: 5px;
 		margin: 0 auto;
-		grid-template-columns: repeat(5, minmax(50px, 1fr));
+		grid-template-columns: repeat(4, minmax(50px, 1fr));
 	}
 
 	.project__grid img {
