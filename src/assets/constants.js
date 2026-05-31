@@ -2,7 +2,7 @@ export const projects = [
 	{
 		id: 1,
 		name: "EventApp",
-		year: 2024,
+		year: 2025,
 		description: "Search your area for upcoming events.",
 		technologies: ["Next.js", "Zod", "Prisma", "SQLite"],
 		imageSource: "/images/event-app-screenshot.png",
@@ -10,7 +10,7 @@ export const projects = [
 			"Grey text showing a 'Disability and Climate' event page, abstract image of person reading in pink, yellow and blue.",
 		github: "https://github.com/Polynomial-B/event-planner",
 		// deployed: "",
-		border: "33% 71% 45% 80% / 29% 44% 76% 88% ",
+		// border: "33% 71% 45% 80% / 29% 44% 76% 88% ",
 	},
 	{
 		id: 5,
@@ -23,25 +23,11 @@ export const projects = [
 			"A pink/purple background, search bar and container in white, showing a job advert.",
 		github: "https://github.com/Polynomial-B/devjobs",
 		deployed: "https://dev-jobs-mini.netlify.app/",
-		border: "35% 65% 41% 59% / 67% 46% 54% 33%",
-	},
-	{
-		id: 10,
-		name: "Etymology Facts",
-		year: 2024,
-		description:
-			"Post and view language facts in this message-board prototype application.",
-		technologies: ["TypeScript", "React", "Zustand"],
-		imageSource: "/images/etymology-facts.png",
-		altText:
-			"Message board app with colourful grainy background and hashtags on the right side.",
-		github: "https://github.com/Polynomial-B/etymology-facts",
-		deployed: "",
-		border: "35% 65% 56% 44% / 67% 54% 46% 33%",
+		// border: "35% 65% 41% 59% / 67% 46% 54% 33%",
 	},
 	{
 		id: 15,
-		name: "SynthSounds",
+		name: "Microtonal Synth",
 		year: 2024,
 		description:
 			"Create and save experimental sounds by adjusting settings and changing intervals. ",
@@ -51,22 +37,8 @@ export const projects = [
 			"A musical synthesiser with each key as a small square in a grid.",
 		github: "https://github.com/Polynomial-B/synth-app-frontend",
 		deployed: "https://synth-sounds.netlify.app/synth",
-		border: "34% 66% 32% 68% / 62% 39% 61% 38%",
+		// border: "34% 66% 32% 68% / 62% 39% 61% 38%",
 	},
-	// {
-	// 	id: 4,
-	// 	name: "Shirtify",
-	// 	year: 2024,
-	// 	description:
-	// 		"Customise shirt colours and images and then save them to your wishlist.",
-	// 	technologies: ["MongoDB", "Express", "React", "Node"],
-	// 	imageSource: "/images/shirtify-home.png",
-	// 	altText:
-	// 		"Large red text 'Shirtify', man in green t-shirt and hat, smiling.",
-	// 	github: "https://github.com/Polynomial-B/shirtify-mern-frontend",
-	// 	deployed: "https://shirtify-wishlist.netlify.app/",
-	// 	border: "29% 71% 25% 75% / 79% 24% 76% 21% ",
-	// },
 	{
 		id: 20,
 		name: "Cosmic Ray",
@@ -78,6 +50,6 @@ export const projects = [
 			"Space-themed background with moving planets, asteroids and a manta ray, in an retro game machine style.",
 		github: "https://github.com/Polynomial-B/cosmic-ray-game",
 		deployed: "https://polynomial-b.github.io/cosmic-ray-game/",
-		border: "46% 54% 44% 56% / 63% 36% 64% 37% ",
+		// border: "46% 54% 44% 56% / 63% 36% 64% 37% ",
 	},
 ];

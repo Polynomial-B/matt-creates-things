@@ -403,11 +403,10 @@ a:visited {
 .description-technologies__item {
 	padding: 0.4rem;
 	border: 2px solid;
-	border-radius: 15px;
+	border-radius: 5px;
 	box-shadow:
 		0 -25px 18px -14px inset,
 		var(--icons);
-	opacity: 0.9;
 }
 
 .card-image img {

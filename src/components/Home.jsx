@@ -127,8 +127,8 @@ function Home() {
 				<SectionBreak isDark={isDark} />
 				<ExperienceSection />
 				<SectionBreak isDark={isDark} />
-				<InterestsSection isDark={isDark} />
-				<SectionBreak isDark={isDark} />
+				{/* <InterestsSection isDark={isDark} /> */}
+				{/* <SectionBreak isDark={isDark} /> */}
 			</main>
 			<Footer contactRef={contactRef} isDark={isDark} />
 		</>

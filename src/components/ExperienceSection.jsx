@@ -16,14 +16,14 @@ export default function ExperienceSection() {
 					<Experience
 						title="Software Engineering Student, General Assembly"
 						dates="2024"
-						list1="Built solo and paired full-stack apps in short timeframes. Contributed to daily standup. Presented and showcased completed projects."
+						list1="Built full-stack applications in an agile team environment, practising daily stand-ups and pair programming across projects including an experimental synthesizer (React, Django, JWT), a MERN e-commerce prototype, and a retro arcade game."
 					/>
 				</li>
 				<li>
 					<Experience
 						title="Lifeboat Operations Coordinator, RNLI"
-						dates="2020 - 2022"
-						list1="Updated and distributed charts for British Isles. Supported central Operations Room in safety-critical role."
+						dates="2020 - 2023"
+						list1="Managed safety-critical operations including duty officer handovers, staff training, and the distribution of nautical charts to lifeboat stations across the British Isles. Optimised operational databases and intranet workflows while circulating safety-critical notices and coordinating yearly tidal almanac distribution."
 					/>
 				</li>
 			</ul>
