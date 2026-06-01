@@ -10,7 +10,7 @@ export default function ProjectSection({
 }) {
 	return (
 		<section id="project-section" ref={projectsRef}>
-			<h2>Projects</h2>
+			<h2>Featured Projects</h2>
 			<div className="project-container">
 				<ErrorBoundary>
 					<Suspense fallback={<div className="spinner" />}>

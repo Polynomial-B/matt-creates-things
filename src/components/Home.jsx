@@ -116,14 +116,14 @@ function Home() {
 			</header>
 
 			<main>
+				<About aboutRef={aboutRef} />
+				<Technologies />
+				<SectionBreak isDark={isDark} />
 				<ProjectSection
 					projectsRef={projectsRef}
 					handleSelectProject={handleSelectProject}
 					activeProject={activeProject}
 				/>
-				<SectionBreak isDark={isDark} />
-				<About aboutRef={aboutRef} />
-				<Technologies />
 				<SectionBreak isDark={isDark} />
 				<ExperienceSection />
 				<SectionBreak isDark={isDark} />

@@ -1,17 +1,31 @@
 export const projects = [
 	{
 		id: 1,
-		name: "EventApp",
-		year: 2025,
-		description: "Search your area for upcoming events.",
-		technologies: ["Next.js", "Zod", "Prisma", "SQLite"],
-		imageSource: "/images/event-app-screenshot.png",
+		name: "Inside Beauty London",
+		year: 2026,
+		description:
+			"Application for a beauty salon, built in collaboration with a UI/UX designer.",
+		technologies: ["SvelteKit", "Figma", "Google APIs"],
+		imageSource: "/images/ibl-screenshot.png",
 		altText:
 			"Grey text showing a 'Disability and Climate' event page, abstract image of person reading in pink, yellow and blue.",
-		github: "https://github.com/Polynomial-B/event-planner",
-		// deployed: "",
+		github: "https://github.com/Polynomial-B/ibl-website",
+		deployed: "https://inside-beauty.netlify.app/",
 		// border: "33% 71% 45% 80% / 29% 44% 76% 88% ",
 	},
+	// {
+	// 	id: 3,
+	// 	name: "EventApp",
+	// 	year: 2025,
+	// 	description: "Search your area for upcoming events.",
+	// 	technologies: ["Next.js", "Zod", "Prisma", "SQLite"],
+	// 	imageSource: "/images/event-app-screenshot.png",
+	// 	altText:
+	// 		"Grey text showing a 'Disability and Climate' event page, abstract image of person reading in pink, yellow and blue.",
+	// 	github: "https://github.com/Polynomial-B/event-planner",
+	// 	// deployed: "",
+	// 	// border: "33% 71% 45% 80% / 29% 44% 76% 88% ",
+	// },
 	{
 		id: 5,
 		name: "devJobs",
