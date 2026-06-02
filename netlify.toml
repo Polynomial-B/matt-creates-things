@@ -1,0 +1,6 @@
+[build]
+  command = "pnpm build"
+  publish = "dist"  # or your publish directory
+
+[functions]
+  node_bundler = "esbuild"
