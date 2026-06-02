@@ -297,6 +297,7 @@ figure svg {
 #copyright {
 	user-select: none;
 	align-self: center;
+	bottom: 0;
 }
 
 #project-section {
@@ -321,6 +322,16 @@ figure svg {
 	overflow: hidden;
 	margin: 10px;
 	object-fit: cover;
+	border-radius: 30% / 30%;
+	box-shadow: 0 5px 20px color-mix(in oklch, black 45%, transparent);
+}
+
+.project__active img {
+	border-radius: 40% 40% / 30% 60%;
+}
+
+.project__grid li img {
+	transition: transform 0.2s cubic-bezier(0.2, 0.9, 0.4, 1.1);
 }
 
 .project__active::after {
@@ -338,11 +349,17 @@ figure svg {
 
 .project-links-container {
 	display: flex;
-	color: var(--text-color);
+	color: var(--icon-hover);
 	font-size: 1.2em;
-	max-width: 12rem;
-	width: 100%;
+	width: 250px;
 	justify-content: space-between;
+	gap: 20px;
+}
+
+.project-links-container svg {
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
 }
 
 .project-links a,
@@ -411,7 +428,7 @@ a:visited {
 
 .card-image img {
 	height: 200px;
-	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.171);
+	box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.171);
 	border-radius: 5px;
 	margin: 10px 0;
 }

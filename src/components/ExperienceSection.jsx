@@ -9,7 +9,7 @@ export default function ExperienceSection() {
 					<Experience
 						title="Freelance Software Developer"
 						dates="2025 - present"
-						list1="Working with UI/UX designers to create applications for businesses using modern frameworks, including SvelteKit and Next.js."
+						list1="Working with UI/UX designers to create applications for businesses using SvelteKit and utilising APIs."
 					/>
 				</li>
 				<li>

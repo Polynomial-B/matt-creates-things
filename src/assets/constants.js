@@ -8,24 +8,12 @@ export const projects = [
 		technologies: ["SvelteKit", "Figma", "Google APIs"],
 		imageSource: "/images/ibl-screenshot.png",
 		altText:
-			"Grey text showing a 'Disability and Climate' event page, abstract image of person reading in pink, yellow and blue.",
+			"Three arched images with text underneath displaying different treatments.",
 		github: "https://github.com/Polynomial-B/ibl-website",
 		deployed: "https://inside-beauty.netlify.app/",
-		// border: "33% 71% 45% 80% / 29% 44% 76% 88% ",
+		// border: "10% 30% 30% 50%",
 	},
-	// {
-	// 	id: 3,
-	// 	name: "EventApp",
-	// 	year: 2025,
-	// 	description: "Search your area for upcoming events.",
-	// 	technologies: ["Next.js", "Zod", "Prisma", "SQLite"],
-	// 	imageSource: "/images/event-app-screenshot.png",
-	// 	altText:
-	// 		"Grey text showing a 'Disability and Climate' event page, abstract image of person reading in pink, yellow and blue.",
-	// 	github: "https://github.com/Polynomial-B/event-planner",
-	// 	// deployed: "",
-	// 	// border: "33% 71% 45% 80% / 29% 44% 76% 88% ",
-	// },
+
 	{
 		id: 5,
 		name: "devJobs",
@@ -64,6 +52,6 @@ export const projects = [
 			"Space-themed background with moving planets, asteroids and a manta ray, in an retro game machine style.",
 		github: "https://github.com/Polynomial-B/cosmic-ray-game",
 		deployed: "https://polynomial-b.github.io/cosmic-ray-game/",
-		// border: "46% 54% 44% 56% / 63% 36% 64% 37% ",
+		// border: "30% 50% 10% 30%",
 	},
 ];

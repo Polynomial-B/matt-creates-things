@@ -70,22 +70,22 @@ function Home() {
 						<button
 							className="link-hover"
 							onClick={() =>
-								projectsRef.current?.scrollIntoView({
-									behavior: "smooth",
-								})
-							}
-						>
-							projects
-						</button>
-						<button
-							className="link-hover"
-							onClick={() =>
 								aboutRef.current?.scrollIntoView({
 									behavior: "smooth",
 								})
 							}
 						>
 							about
+						</button>
+						<button
+							className="link-hover"
+							onClick={() =>
+								projectsRef.current?.scrollIntoView({
+									behavior: "smooth",
+								})
+							}
+						>
+							projects
 						</button>
 
 						<button
