@@ -14,7 +14,7 @@ import IconHome from "./IconHome";
 function Home() {
 	const [activeProject, setActiveProject] = useState(projects[0]);
 	const homeRef = useRef();
-	const aboutRef = useRef();
+	const experienceRef = useRef();
 	const projectsRef = useRef();
 	const contactRef = useRef();
 	const [isDark, setIsDark] = useState(() => {
@@ -70,16 +70,6 @@ function Home() {
 						<button
 							className="link-hover"
 							onClick={() =>
-								aboutRef.current?.scrollIntoView({
-									behavior: "smooth",
-								})
-							}
-						>
-							about
-						</button>
-						<button
-							className="link-hover"
-							onClick={() =>
 								projectsRef.current?.scrollIntoView({
 									behavior: "smooth",
 								})
@@ -87,7 +77,16 @@ function Home() {
 						>
 							projects
 						</button>
-
+						<button
+							className="link-hover"
+							onClick={() =>
+								experienceRef.current?.scrollIntoView({
+									behavior: "smooth",
+								})
+							}
+						>
+							experience
+						</button>
 						<button
 							className="link-hover"
 							onClick={() =>
@@ -116,7 +115,7 @@ function Home() {
 			</header>
 
 			<main>
-				<About aboutRef={aboutRef} />
+				{/* <About aboutRef={aboutRef} /> */}
 				<Technologies />
 				<SectionBreak isDark={isDark} />
 				<ProjectSection
@@ -125,7 +124,7 @@ function Home() {
 					activeProject={activeProject}
 				/>
 				<SectionBreak isDark={isDark} />
-				<ExperienceSection />
+				<ExperienceSection experienceRef={experienceRef} />
 				<SectionBreak isDark={isDark} />
 				{/* <InterestsSection isDark={isDark} /> */}
 				{/* <SectionBreak isDark={isDark} /> */}

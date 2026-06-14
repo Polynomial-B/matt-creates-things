@@ -48,7 +48,7 @@ nav {
 	font-weight: 500;
 	letter-spacing: 0px;
 	font-optical-sizing: auto;
-	font-size: clamp(80px, 15vw, 4em);
+	font-size: clamp(80px, 15vw, 2em);
 	justify-content: end;
 	line-height: 100%;
 	font-family: serif;
@@ -64,6 +64,34 @@ nav {
 	align-items: center;
 }
 
+.contact-link {
+	margin: 0;
+	display: flex;
+}
+
+#splash-text .contact-link {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 50px;
+}
+
+#splash-text .contact-link figure {
+	margin: 0;
+}
+
+#splash-text [class^="devicon"] {
+	font-size: 44px;
+}
+
+.titles-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	gap: 20px;
+}
+
 #job-title {
 	display: inline;
 	font-size: 30px;
@@ -76,6 +104,20 @@ nav {
 	line-height: 110%;
 }
 
+#splash .contact-link {
+	width: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+#splash-text ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 0;
+	gap: 20px;
+}
+
 .title__extra_bold {
 	font-weight: 500;
 }
@@ -86,16 +128,20 @@ nav {
 @keyframes fade-in {
 	0% {
 		opacity: 0;
-		transform: translateY(-40px);
 	}
 	100% {
 		opacity: 1;
-		transform: translateY(0);
 	}
 }
 
-.fade-in {
-	animation: fade-in 4s ease-in 1;
+.fade-in__one {
+	animation: fade-in 1200ms ease-in 1;
+}
+.fade-in__two {
+	animation: fade-in 3600ms ease-in 1;
+}
+.fade-in__three {
+	animation: fade-in 1800ms ease-in 1;
 }
 
 .links-container {
@@ -238,10 +284,11 @@ footer ul {
 
 .contact-link * {
 	transition:
-		color 250ms ease-in-out,
+		color 550ms ease-in-out,
 		fill 250ms ease-in-out;
 }
 
+#splash-text [class^="devicon"]:hover,
 .contact-link *:hover {
 	color: var(--icon-hover);
 	fill: var(--icon-hover);
@@ -326,12 +373,15 @@ figure svg {
 	box-shadow: 0 5px 20px color-mix(in oklch, black 45%, transparent);
 }
 
-.project__active img {
-	border-radius: 40% 40% / 30% 60%;
+.project__grid li {
+	transition: transform 0.5s cubic-bezier(0.2, 0.6, 0.4, 1.1);
+}
+.project__grid li:hover {
+	transform: scale(1.05);
 }
 
-.project__grid li img {
-	transition: transform 0.2s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+.project__grid li.project__active {
+	transform: scale(1);
 }
 
 .project__active::after {
@@ -576,32 +626,39 @@ a:visited {
 @media screen and (max-width: 900px) {
 	.project-card {
 		flex-direction: column;
+		padding-top: 5px;
+		width: 350px;
+		margin: 0 auto;
+	}
+
+	.project-links-container {
+		padding-top: 0;
+	}
+	#project-section h2 {
+		font-size: 2rem;
+		margin: 10px 0;
 	}
 	.card-content {
 		min-height: 100%;
 		align-items: center;
 		margin-left: 0;
 	}
+
 	.card-description {
 		text-align: center;
 	}
+
 	.description-technologies {
+		align-items: flex-end;
 		justify-content: center;
-		padding: 10px;
 	}
+
 	.project__grid {
 		column-gap: 5px;
 		margin: 0 auto;
 		grid-template-columns: repeat(4, minmax(50px, 1fr));
 	}
 
-	.project__grid img {
-		height: 50px;
-		width: 50px;
-	}
-	.project-links-container {
-		padding-top: 10px;
-	}
 	.project__active::after {
 		width: 40px;
 	}
@@ -613,13 +670,22 @@ a:visited {
 		align-items: center;
 		gap: 10px;
 	}
+	#splash-text ul {
+		justify-content: center;
+		width: 100%;
+		gap: 20px;
+	}
 	#splash-title span {
 		width: 100%;
 	}
+
+	.titles-container {
+		gap: 20px;
+	}
+
 	#job-title {
 		justify-content: center;
 		width: 20rem;
-		margin-top: 50px;
 		text-align: center;
 		font-size: 28px;
 	}

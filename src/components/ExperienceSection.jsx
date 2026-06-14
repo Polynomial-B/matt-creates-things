@@ -1,8 +1,8 @@
 import Experience from "./Experience";
 
-export default function ExperienceSection() {
+export default function ExperienceSection({ experienceRef }) {
 	return (
-		<section>
+		<section ref={experienceRef}>
 			<h2>Experience</h2>
 			<ul className="experience">
 				<li>

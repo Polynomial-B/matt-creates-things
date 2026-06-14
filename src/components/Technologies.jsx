@@ -20,7 +20,7 @@ export default function Technologies() {
 					<i className="devicon-go-original-wordmark" />
 				</span>
 			</div> */}
-			<h2>Languages</h2>
+			{/* <h2>Languages</h2>
 			<ul className="languages">
 				<li>
 					<span className="language-header">English</span>
@@ -37,7 +37,7 @@ export default function Technologies() {
 					<br />
 					<span>beginner</span>
 				</li>
-			</ul>
+			</ul> */}
 		</section>
 	);
 }

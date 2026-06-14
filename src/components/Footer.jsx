@@ -32,7 +32,7 @@ export default function Footer({ contactRef, isDark }) {
 								</figure>
 							</a>
 						</li>
-						<li className="contact-link">
+						{/* <li className="contact-link">
 							<a
 								target="_blank"
 								href="mailto:m.lamb.dev@gmail.com"
@@ -47,7 +47,7 @@ export default function Footer({ contactRef, isDark }) {
 									</svg>
 								</figure>
 							</a>
-						</li>
+						</li> */}
 					</ul>
 					<div id="copyright">
 						&copy; Matt Lamb {new Date().getFullYear()}
