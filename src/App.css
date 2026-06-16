@@ -668,7 +668,6 @@ a:visited {
 	.project-card {
 		flex-direction: column;
 		padding-top: 5px;
-		width: 350px;
 		margin: 0 auto;
 	}
 
