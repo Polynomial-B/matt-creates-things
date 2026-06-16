@@ -10,6 +10,9 @@ function Darklight({ handleIsDark, isDark }) {
 				title={`Activate ${
 					isDark === "dark-mode" ? "light-mode" : "dark-mode"
 				}`}
+				aria-label={
+					isDark ? "Switch to light mode" : "Switch to dark mode"
+				}
 			>
 				{isDark === "dark-mode" ? <IconLight /> : <IconDark />}
 			</button>

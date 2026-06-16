@@ -16,6 +16,7 @@ function Titles() {
 			<ul>
 				<li className="contact-link">
 					<a
+						title="external link to LinkedIn profile"
 						target="_blank"
 						href="http://www.linkedin.com/in/matt-lamb-dev"
 						rel="noopener noreferrer"
@@ -30,6 +31,7 @@ function Titles() {
 					style={{ height: "50px", width: "50px" }}
 				>
 					<a
+						title="external link to GitHub profile"
 						target="_blank"
 						href="https://github.com/Polynomial-B"
 						rel="noopener noreferrer"

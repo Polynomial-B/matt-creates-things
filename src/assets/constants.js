@@ -11,7 +11,7 @@ export const projects = [
 			"Three arched images with text underneath displaying different treatments.",
 		github: "https://github.com/Polynomial-B/ibl-website",
 		deployed: "https://inside-beauty.netlify.app/",
-		// border: "10% 30% 30% 50%",
+		break: true,
 	},
 
 	{
@@ -25,7 +25,7 @@ export const projects = [
 			"A pink/purple background, search bar and container in white, showing a job advert.",
 		github: "https://github.com/Polynomial-B/devjobs",
 		deployed: "https://dev-jobs-mini.netlify.app/",
-		// border: "35% 65% 41% 59% / 67% 46% 54% 33%",
+		break: true,
 	},
 	{
 		id: 15,
@@ -39,7 +39,7 @@ export const projects = [
 			"A musical synthesiser with each key as a small square in a grid.",
 		github: "https://github.com/Polynomial-B/synth-app-frontend",
 		deployed: "https://synth-sounds.netlify.app/synth",
-		// border: "34% 66% 32% 68% / 62% 39% 61% 38%",
+		break: true,
 	},
 	{
 		id: 20,
@@ -52,6 +52,6 @@ export const projects = [
 			"Space-themed background with moving planets, asteroids and a manta ray, in an retro game machine style.",
 		github: "https://github.com/Polynomial-B/cosmic-ray-game",
 		deployed: "https://polynomial-b.github.io/cosmic-ray-game/",
-		// border: "30% 50% 10% 30%",
+		break: false,
 	},
 ];

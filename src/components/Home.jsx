@@ -51,6 +51,7 @@ function Home() {
 				<div className="links-container">
 					<div className="link-top">
 						<button
+							aria-label="navigate to top of page"
 							className="link-hover home-icon"
 							translate="no"
 							onClick={() =>

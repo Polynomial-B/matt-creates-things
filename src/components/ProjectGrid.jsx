@@ -22,7 +22,7 @@ export default function ProjectGrid({ onProjectChange, activeProject }) {
 						<ErrorBoundary>
 							<Suspense fallback={<div className="spinner" />}>
 								<Image
-									imageSource={project.imageSource}
+									imageSource={project.favIcon}
 									altText={project.altText}
 									borderRadius={project.border}
 								/>

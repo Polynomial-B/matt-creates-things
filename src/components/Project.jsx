@@ -13,11 +13,12 @@ function Project({
 }) {
 	return (
 		<>
-			<div className="project-card">
+			<div className="project-card" key={name}>
 				<div className="card-image">
 					<ErrorBoundary>
 						<Suspense fallback={<div className="spinner" />}>
 							<Image
+								key={`img-${imageSource}`}
 								imageSource={imageSource}
 								altText={altText}
 							/>
@@ -26,8 +27,16 @@ function Project({
 				</div>
 
 				<div className="card-content">
-					<h3 className="card-title">{name}</h3>
-					<div className="card-description">
+					<h3
+						className="card-title"
+						key={`card-title-${imageSource}`}
+					>
+						{name}
+					</h3>
+					<div
+						className="card-description"
+						key={`card-description-${imageSource}`}
+					>
 						<p>{description}</p>
 						<div className="description-technologies">
 							{technologies.map((item, index) => {
@@ -44,6 +53,7 @@ function Project({
 					</div>
 					<div className="project-links-container">
 						<a
+							title="external link to github"
 							href={github}
 							target="_blank"
 							rel="noopener noreferrer"
@@ -61,6 +71,7 @@ function Project({
 						</a>
 						{deployed && (
 							<a
+								title="external link to deployed website"
 								href={deployed}
 								target="_blank"
 								rel="noopener noreferrer"

@@ -1,12 +1,13 @@
 import { Suspense } from "react";
 import Project from "./Project";
-import ProjectGrid from "./ProjectGrid";
+// import ProjectGrid from "./ProjectGrid";
 import ErrorBoundary from "./ErrorBoundary";
+import { projects } from "../assets/constants";
 
 export default function ProjectSection({
 	projectsRef,
 	handleSelectProject,
-	activeProject,
+	project,
 }) {
 	return (
 		<section id="project-section" ref={projectsRef}>
@@ -14,19 +15,20 @@ export default function ProjectSection({
 			<div className="project-container">
 				<ErrorBoundary>
 					<Suspense fallback={<div className="spinner" />}>
-						<ProjectGrid
-							onProjectChange={handleSelectProject}
-							activeProject={activeProject}
-						/>
-						<Project
-							name={activeProject.name}
-							description={activeProject.description}
-							technologies={activeProject.technologies}
-							imageSource={activeProject.imageSource}
-							altText={activeProject.altText}
-							github={activeProject.github}
-							deployed={activeProject.deployed}
-						/>
+						{projects.map((project, key) => {
+							return (
+								<Project
+									key={project.name}
+									name={project.name}
+									description={project.description}
+									technologies={project.technologies}
+									imageSource={project.imageSource}
+									altText={project.altText}
+									github={project.github}
+									deployed={project.deployed}
+								/>
+							);
+						})}
 					</Suspense>
 				</ErrorBoundary>
 			</div>

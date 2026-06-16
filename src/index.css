@@ -14,7 +14,7 @@
 	--header-color: hsl(0, 0%, 20%);
 	--icon-hover: hsl(283.4, 16%, 64.5%);
 	--icons: hsl(226.2, 28.9%, 64.7%);
-	--interests-text: hsl(285, 66.7%, 95.3%);
+	--interests-text: hsl(306, 6%, 32%);
 }
 
 body,
@@ -35,7 +35,7 @@ html {
 	--header-color: hsl(0, 0%, 20%);
 	--icon-hover: hsl(283.4, 16%, 64.5%);
 	--icons: hsl(226.2, 28.9%, 64.7%);
-	--interests-text: hsl(285, 66.7%, 95.3%);
+	--interests-text: hsl(306, 6%, 32%);
 }
 
 .dark-mode {
@@ -45,7 +45,7 @@ html {
 	--background: hsl(226.7, 63.8%, 18.4%);
 	--icons: hsl(171.4, 94.2%, 75.5%);
 	--icon-hover: hsl(276.4, 80.4%, 59.8%);
-	--interests-text: hsl(226.7, 63.8%, 18.4%);
+	--interests-text: hsl(172, 58%, 81%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -56,7 +56,7 @@ html {
 		--background: hsl(226.7, 63.8%, 18.4%);
 		--icons: hsl(171.4, 94.2%, 75.5%);
 		--icon-hover: hsl(276.4, 80.4%, 59.8%);
-		--interests-text: hsl(226.7, 63.8%, 18.4%);
+		--interests-text: hsl(172, 58%, 81%);
 	}
 }
 
